@@ -1,0 +1,47 @@
+@use '../../Foundation/mixin';
+
+.p-nav--btn {
+    display:none;
+    @include mixin.mq(tb){
+        display: block;
+    }
+    > a {
+        display: block;
+        position: relative;
+        width: 50px;
+        height: 50px;
+    }
+    > a::before {
+        position:absolute;
+        top: 15px;
+        left: 14px;
+        content: "";
+        width: 23px;
+        height: 2px;
+        background-color:#000;
+    }
+    > a > span {
+        display: block;
+        overflow: hidden;
+        width: 1px;
+        height: 1px;
+    }
+    > a > span::after{
+        position:absolute;
+        top: 24px;
+        left: 14px;
+        content: "";
+        width: 23px;
+        height: 2px;
+        background-color:#000;
+    }
+    > a::after {
+        position:absolute;
+        bottom: 15px;
+        left: 14px;
+        content: "";
+        width: 23px;
+        height: 2px;
+        background-color:#000;
+    }
+}
