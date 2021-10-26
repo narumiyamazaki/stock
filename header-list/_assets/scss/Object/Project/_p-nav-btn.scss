@@ -19,6 +19,7 @@
         width: 23px;
         height: 2px;
         background-color:#000;
+        transition: .2s;
     }
     > a > span {
         display: block;
@@ -34,6 +35,7 @@
         width: 23px;
         height: 2px;
         background-color:#000;
+        transition: .2s;
     }
     > a::after {
         position:absolute;
@@ -43,5 +45,17 @@
         width: 23px;
         height: 2px;
         background-color:#000;
+    }
+    //ハンバーガーメニューのボタンを押したときの挙動
+    > a.open::before {
+        top: 24px;
+        transform: rotate(-45deg);
+    }
+    > a.open::after {
+        display:none;
+    }
+    > a.open > span::after {
+        bottom: 24px;
+        transform: rotate(-135deg);
     }
 }
