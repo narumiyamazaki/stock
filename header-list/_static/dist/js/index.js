@@ -1,18 +1,4 @@
-//windowサイズを取得
-$(window).resize((event) => {
-    //横幅を取得
-    var width = $(window).width();
-
-    //とりあえず色を変えてみる
-    
-    if (width <= 768) {
-        $("p").css("color", "tomato");
-    }
-    else {
-        $("p").css("color", "skyblue");
-    }
-})
-
+/*ブレイクポイント時の処理*/
 const mediaQueryList = window.matchMedia("(max-width:768px)");
 
 /*イベントリスナー*/

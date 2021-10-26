@@ -4,10 +4,11 @@
         <meta charset="utf-8">
         <title>カーソルを合わせるとサブメニューを表示する デモ</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- CSS -->
         <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
         <link href="./css/style.css" rel="stylesheet">
+    <!--jQuery-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/b8a7fea4d4.js"></script>
     </head>
@@ -16,24 +17,27 @@
         <header class="l-header">
             <!--ロゴ-->
             <img class="p-header--logo">
-            <nav class="p-header--nav">
-                <p class="p-nav--btn">
+            <div class="p-header--link">
+                <p class="p-nav-btn">
                     <a href="javascript:void(0)"><span>メニューを開く</span></a>
                 </p>
-                <ul class="p-main-menu">
-                    <li><a href="#">ホーム</a></li>
-                    <li class="p-has-menu">
-                        <a href="#">サービス</a>
-                        <ul class="p-sub-menu--service">
-                            <li><a href="#">サービス A</a></li>
-                            <li><a href="#">サービス B</a></li>
-                            <li><a href="#">サービス C</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">会社概要</a></li>
-                    <li><a href="#">お問い合わせ</a></li>
-                </ul>
-            </nav>
+                <nav class="p-header--nav-body">
+                    <ul class="p-main-menu">
+                        <li class="p-nav--home"><a href="#">ホーム</a></li>
+                        <li class="p-nav--service">
+                            <a href="#">サービス</a>
+                            <ul class="p-sub-menu--service">
+                                <li><a href="#">サービス A</a></li>
+                                <li><a href="#">サービス B</a></li>
+                                <li><a href="#">サービス C</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">会社概要</a></li>
+                        <li class="p-nav--contact"><a href="#">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
+    <script src="js/on.click.js"></script>
 	</body>
 </html>

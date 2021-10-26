@@ -554,6 +554,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .p-main-menu {
@@ -563,7 +567,7 @@ body {
 .p-main-menu > li > a {
   background: #0bd;
   color: #fff;
-  width: 100px;
+  width: 14rem;
   margin-right: 1rem;
   font-size: 1.5rem;
   text-align: center;
@@ -575,9 +579,9 @@ body {
 .p-main-menu > li > a > :hover {
   background: #0090aa;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1024px) {
   .p-main-menu {
-    display: none;
+    flex-direction: column;
   }
 }
 
@@ -600,6 +604,7 @@ body {
 }
 
 .p-sub-menu--service {
+  display: none;
   position: absolute;
 }
 .p-sub-menu--service > li > a {
@@ -607,8 +612,23 @@ body {
   background: #f5f5f5;
   font-size: 2rem;
   display: flex;
-  width: 22rem;
+  width: 14rem;
   justify-content: center;
+}
+@media screen and (max-width: 1024px) {
+  .p-sub-menu--service > li > a {
+    flex-direction: column;
+    position: static;
+  }
+}
+
+.p-sub-menu--service.open {
+  display: block;
+}
+@media screen and (max-width: 1024px) {
+  .p-sub-menu--service.open {
+    position: static;
+  }
 }
 
 .p-header--logo {
@@ -617,21 +637,21 @@ body {
   background-color: bisque;
 }
 
-.p-nav--btn {
+.p-nav-btn {
   display: none;
 }
-@media screen and (min-width: 768px) {
-  .p-nav--btn {
+@media screen and (max-width: 1024px) {
+  .p-nav-btn {
     display: block;
   }
 }
-.p-nav--btn > a {
+.p-nav-btn > a {
   display: block;
   position: relative;
   width: 50px;
   height: 50px;
 }
-.p-nav--btn > a::before {
+.p-nav-btn > a::before {
   position: absolute;
   top: 15px;
   left: 14px;
@@ -640,13 +660,13 @@ body {
   height: 2px;
   background-color: #000;
 }
-.p-nav--btn > a > span {
+.p-nav-btn > a > span {
   display: block;
   overflow: hidden;
   width: 1px;
   height: 1px;
 }
-.p-nav--btn > a > span::after {
+.p-nav-btn > a > span::after {
   position: absolute;
   top: 24px;
   left: 14px;
@@ -655,7 +675,7 @@ body {
   height: 2px;
   background-color: #000;
 }
-.p-nav--btn > a::after {
+.p-nav-btn > a::after {
   position: absolute;
   bottom: 15px;
   left: 14px;
@@ -663,6 +683,23 @@ body {
   width: 23px;
   height: 2px;
   background-color: #000;
+}
+
+@media screen and (max-width: 1024px) {
+  .p-header--nav-body {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .p-header--nav-body.open {
+    display: block;
+  }
 }
 
 .background {
@@ -675,7 +712,7 @@ body {
   padding-top: 1rem;
   padding: 0 10rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1024px) {
   .container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -688,7 +725,7 @@ body {
   font-size: 1.2rem;
   padding: 1rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1024px) {
   .item {
     width: 10rem;
     margin-bottom: 2rem;
