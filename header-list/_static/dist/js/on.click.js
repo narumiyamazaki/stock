@@ -8,4 +8,3 @@ $('.p-nav-btn').on('click', function () {
 $('.p-nav--service').on('click', function () {
     $('.p-sub-menu--service').toggleClass('open');
 });
-

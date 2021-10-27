@@ -13,6 +13,7 @@
         @include mixin.mq(tb){
             flex-direction: column;
             position: static;
+            width:100%;
         }
     }
 }

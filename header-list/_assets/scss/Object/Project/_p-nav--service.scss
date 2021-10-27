@@ -1,4 +1,4 @@
-.p-has-menu {
+.p-nav--service {
     position: relative;
     > a::after {
         font-family: "Font Awesome 5 Pro";
@@ -6,12 +6,4 @@
         content: "\f078";
         margin-left: .5rem;  
     }
-}
-
-.p-has-menu > ul {
-    display: none;
-}
-
-.p-has-menu:hover > ul {
-    display: block;
 }

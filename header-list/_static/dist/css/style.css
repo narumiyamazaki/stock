@@ -580,27 +580,24 @@ body {
   background: #0090aa;
 }
 @media screen and (max-width: 1024px) {
+  .p-main-menu > li > a {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
   .p-main-menu {
     flex-direction: column;
   }
 }
 
-.p-has-menu {
+.p-nav--service {
   position: relative;
 }
-.p-has-menu > a::after {
+.p-nav--service > a::after {
   font-family: "Font Awesome 5 Pro";
   font-weight: 900;
   content: "\f078";
   margin-left: 0.5rem;
-}
-
-.p-has-menu > ul {
-  display: none;
-}
-
-.p-has-menu:hover > ul {
-  display: block;
 }
 
 .p-sub-menu--service {
@@ -619,6 +616,7 @@ body {
   .p-sub-menu--service > li > a {
     flex-direction: column;
     position: static;
+    width: 100%;
   }
 }
 
@@ -635,6 +633,11 @@ body {
   width: 20%;
   height: 70px;
   background-color: bisque;
+}
+@media screen and (max-width: 1024px) {
+  .p-header--logo {
+    width: 35%;
+  }
 }
 
 .p-nav-btn {

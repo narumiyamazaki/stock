@@ -17,6 +17,9 @@
         justify-content: center;
         > :hover{
             background: #0090aa;
+        }
+        @include mixin.mq(tb){
+            width: 100%;
         }  
     }
     @include mixin.mq(tb){
