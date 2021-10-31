@@ -1,5 +1,8 @@
 //変数の定義
 
+//サイドバーのアイテムの長さ
+$sidebar-width:14rem;
+
 //サイトの基本設定
 
 //フォント
@@ -7,7 +10,7 @@ $font-base:'M PLUS 1p', sans-serif,'Hiragino Kaku Gothic ProN', 'ヒラギノ角
 
 // メディアクエリのブレイクポイント用変数
 $breakpoints: (
-    'sp': 'screen and (max-width: 414px)',
-    'tb': 'screen and (max-width: 768px)',
-    'pc': 'screen and (max-width: 1024px)',
+    'sp': 'screen and (max-width: 767px)',
+    'tb': 'screen and (min-width: 768px)',
+    'pc': 'screen and (min-width: 1024px)',
   ) !default;

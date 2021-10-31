@@ -556,9 +556,34 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  background-color: gray;
+  height: 100%;
+}
+@media screen and (max-width: 1023px) {
+  .l-header {
+    position: relative;
+    width: 100%;
+    display: flex;
+  }
 }
 
+.l-footer {
+  margin-left: 14rem;
+  height: 10rem;
+  background-color: firebrick;
+}
+@media screen and (max-width: 1023px) {
+  .l-footer {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .p-main-menu {
+    display: flex;
+  }
+}
 .p-main-menu > li > a {
   background: #0bd;
   color: #fff;
@@ -571,14 +596,9 @@ body {
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 375px) {
   .p-main-menu > li > a {
     width: 100%;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .p-main-menu {
-    flex-direction: column;
   }
 }
 
@@ -590,11 +610,19 @@ body {
   font-weight: 900;
   content: "\f078";
   margin-left: 0.5rem;
+  transform: rotate(-90deg);
+}
+@media screen and (max-width: 1023px) {
+  .p-nav--service > a::after {
+    transform: rotate(0deg);
+  }
 }
 
 .p-sub-menu--service {
   display: none;
   position: fixed;
+  top: 0;
+  left: 14rem;
 }
 .p-sub-menu--service > li > a {
   margin: 1px;
@@ -604,38 +632,39 @@ body {
   width: 14rem;
   justify-content: center;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .p-sub-menu--service > li > a {
     flex-direction: column;
     position: static;
-    width: 100%;
   }
 }
 
 .p-sub-menu--service.open {
   display: block;
+  width: 60rem;
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .p-sub-menu--service.open {
-    position: static;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    left: 0;
+    height: 60rem;
   }
 }
 
 .p-header--logo {
-  width: 15%;
+  width: 14rem;
   height: 70px;
   background-color: bisque;
-}
-@media screen and (max-width: 1024px) {
-  .p-header--logo {
-    width: 20%;
-  }
 }
 
 .p-nav-btn {
   display: none;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .p-nav-btn {
     display: block;
   }
@@ -693,20 +722,48 @@ body {
   transform: rotate(-135deg);
 }
 
-@media screen and (max-width: 1024px) {
-  .p-header--nav-body {
-    display: none;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    right: 0;
-    background-color: #fff;
+.p-article--demo {
+  margin-left: 14rem;
+}
+@media screen and (max-width: 1023px) {
+  .p-article--demo {
+    margin: 0;
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .p-header--nav-body.open {
-    display: block;
+.p-article--box1 {
+  width: 40rem;
+  height: 40rem;
+  background-color: cornflowerblue;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 1023px) {
+  .p-article--box1 {
+    width: 100%;
+  }
+}
+
+.p-article--box2 {
+  width: 40rem;
+  height: 40rem;
+  background-color: forestgreen;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 1023px) {
+  .p-article--box2 {
+    width: 100%;
+  }
+}
+
+.p-article--box3 {
+  width: 40rem;
+  height: 40rem;
+  background-color: goldenrod;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 1023px) {
+  .p-article--box3 {
+    width: 100%;
   }
 }
 
@@ -720,7 +777,7 @@ body {
   padding-top: 1rem;
   padding: 0 10rem;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -733,7 +790,7 @@ body {
   font-size: 1.2rem;
   padding: 1rem;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .item {
     width: 10rem;
     margin-bottom: 2rem;

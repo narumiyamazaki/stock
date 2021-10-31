@@ -1,8 +1,11 @@
 @use '../../Foundation/mixin';
+@use '../../Foundation/vars' as v;
 
 .p-sub-menu--service {
     display: none;
     position: fixed;
+    top: 0;
+    left: v.$sidebar-width;
     >li > a {
         margin: 1px;
         background: #f5f5f5;
@@ -13,14 +16,20 @@
         @include mixin.mq(tb){
             flex-direction: column;
             position: static;
-            width:100%;
         }
     }
 }
 
 .p-sub-menu--service.open{
     display: block;
+    width: 60rem;
+    background:rgba(0,0,0,.8);
+    height: 100%;
     @include mixin.mq(tb){
-        position:static;
+        position:absolute;
+        width:100%;
+        top: 70px;
+        left: 0;
+        height:60rem;
     }
 }

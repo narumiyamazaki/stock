@@ -1,0 +1,11 @@
+@use '../../Foundation/mixin';
+
+.p-article--box3{
+    width: 40rem;
+    height: 40rem;
+    background-color: goldenrod;
+    margin-bottom: 2rem;
+    @include mixin.mq(tb){
+        width:100%;
+    }
+}

@@ -1,10 +1,14 @@
 @use '../../../scss/Foundation/mixin';
+@use '../../Foundation/vars' as v;
 
 .p-main-menu {
+    @include mixin.mq(tb){
+        display:flex;
+    }
     > li > a {
         background: #0bd;
         color: #fff;
-        width:14rem;
+        width:v.$sidebar-width;
         margin-right: 1rem;
         font-size: 1.5rem;
         text-align: center;
@@ -13,11 +17,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        @include mixin.mq(tb){
-            width: 100%;
-        }  
-    }
-    @include mixin.mq(tb){
-        flex-direction: column;
+        @include mixin.mq(sp){
+            width:100%;
+        }
     }
 }
