@@ -1,0 +1,9 @@
+@use '../../Foundation/vars' as v;
+@use '../../Foundation/mixin';
+
+.p-article--demo {
+    margin-left: v.$sidebar-width;
+    @include mixin.mq(tb){
+        margin:0;
+    }
+}

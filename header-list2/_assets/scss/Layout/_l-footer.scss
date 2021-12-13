@@ -1,0 +1,12 @@
+@use '../Foundation/vars' as v;
+@use '../Foundation/mixin';
+
+.l-footer{
+    margin-left: v.$sidebar-width;
+    height: 10rem;
+    background-color:firebrick;
+    @include mixin.mq(tb){
+        width:100%;
+        margin:0;
+    }
+}
