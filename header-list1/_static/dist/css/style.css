@@ -555,9 +555,11 @@ body {
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
+  background-color: #fff;
 }
 
 .p-main-menu {
@@ -716,6 +718,12 @@ body {
   .p-header--nav-body.open {
     display: block;
   }
+}
+
+.p-main {
+  background-color: azure;
+  height: 100rem;
+  position: relative;
 }
 
 .background {
