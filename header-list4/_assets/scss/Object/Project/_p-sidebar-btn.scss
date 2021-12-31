@@ -1,0 +1,64 @@
+.p-sidebar-btn{
+    position:relative;
+    left:70%;
+    > a {
+        display: block;
+        position: relative;
+        width: 50px;
+        height: 50px;
+    }
+    > a::before {
+        position:absolute;
+        top: 33px;
+        left: 14px;
+        content: "";
+        width: 23px;
+        height: 1.5px;
+        background-color:#000;
+        transition: .2s;
+        transform: rotate(45deg);
+        display: none;
+    }
+    /*
+    > a > span {
+        display: block;
+        overflow: hidden;
+        width: 1px;
+        height: 1px;
+    }
+    > a > span::after{
+        position:absolute;
+        top: 24px;
+        left: 14px;
+        content: "";
+        width: 23px;
+        height: 2px;
+        background-color:#000;
+        transition: .2s;
+    }
+    */
+    > a::after {
+        position:absolute;
+        bottom: 15px;
+        left: 14px;
+        content: "";
+        width: 23px;
+        height: 1.5px;
+        background-color:#000;
+        transform: rotate(-45deg);
+        display: none;
+    }
+    //ハンバーガーメニューのボタンを押したときの挙動
+    > a.is-open::before {
+        display: block;
+    }
+    > a.is-open::after {
+        display:block;
+    }
+    /*
+    > a.is-open > span::after {
+        bottom: 24px;
+        transform: rotate(-135deg);
+    }
+    */
+}

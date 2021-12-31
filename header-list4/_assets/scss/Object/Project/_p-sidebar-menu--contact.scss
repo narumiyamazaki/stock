@@ -1,0 +1,5 @@
+@use '../../Foundation/extend';
+
+.p-sidebar-menu--contact{
+    @extend %p-sidebar-menu--home;
+}
