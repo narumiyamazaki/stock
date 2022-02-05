@@ -1,0 +1,27 @@
+.p-selectbox4-2{
+    width:100px;
+    height:40px;
+    overflow:scroll;
+}
+
+#select2-data-15-mlld{
+    height:1000px;
+}
+
+#select2-data-15-ta4g{
+    background-color: red;
+}
+
+.select2-selection.select2-selection--multiple{
+    height:0px;
+    //overflow-y: scroll;
+}
+
+.p-selectbox4-2 + .select2{
+    background:red;
+}
+
+
+.p-selectbox4-2 + .select2.is-scroll{
+    overflow-y: scroll;
+}

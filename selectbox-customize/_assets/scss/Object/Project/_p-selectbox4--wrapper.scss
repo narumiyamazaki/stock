@@ -1,0 +1,11 @@
+.p-selectbox4--wrapper{
+    margin-top:30px;
+    padding:20px 0 20px 40px;
+    width:500px;
+    border-radius: 8px;
+    box-shadow: 0 0 2px gray;
+    display: none;
+    &.is-show{
+        display:block;
+    }
+}

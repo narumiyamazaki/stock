@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>セレクトボックスカスタマイズ</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+        <link href="./css/style.css" rel="stylesheet">
+        <link href="css/select2.min.css" rel="stylesheet">
+    </head>
+	<body class="l-body">
+        <main>
+            <!--multipleの時のタグ-->
+            <select class="p-selectbox1" multiple="multiple"></select>
+            <!--特にカスタマイズしない時-->
+            <select class="p-selectbox2">
+                <option value="こぶた">こぶた</option>
+                <option value="たぬき">たぬき</option>
+                <option value="きつね">きつね</option>
+                <option value="ねこ">ねこ</option>
+            </select>
+            <select class="p-selectbox3">
+                <option value="カップヌードル">カップヌードル</option>
+                <option value="どんべい">どんべい</option>
+                <option value="あかいきつね">あかいきつね</option>
+                <option value="麺の達人">麺の達人</option>
+            </select>
+            <div class="p-border"></div>
+            <p>商品名</p>
+            <button class="p-button--product-name">ボタンです</button>
+            <!--ボタンクリック時に出す-->
+            <div class="p-selectbox4--wrapper">
+                <select class="p-selectbox4-1">
+                    <option value="こぶた">こぶた</option>
+                    <option value="たぬき">たぬき</option>
+                    <option value="きつね">きつね</option>
+                    <option value="ねこ">ねこ</option>
+                </select>
+                <select class="p-selectbox4-2">
+                    <option value="カップヌードル">カップヌードル</option>
+                    <option value="どんべい">どんべい</option>
+                    <option value="あかいきつね">あかいきつね</option>
+                    <option value="麺の達人">麺の達人</option>
+                </select>
+            </div>
+            <div class="p-border"></div> 
+            <div class="p-box--height1"></div>
+        </main>
+        <div class="p-select"></div>
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/selectbox.js"></script>
+    <script src="js/main.js"></script>
+	</body>
+</html>
