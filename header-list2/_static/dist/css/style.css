@@ -559,7 +559,7 @@ body {
   background-color: gray;
   height: 100%;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
   .l-header {
     position: relative;
     width: 100%;
@@ -572,14 +572,14 @@ body {
   height: 10rem;
   background-color: firebrick;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
   .l-footer {
     width: 100%;
     margin: 0;
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
   .p-main-menu {
     display: flex;
   }
@@ -596,7 +596,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   .p-main-menu > li > a {
     width: 100%;
   }
@@ -612,7 +612,7 @@ body {
   margin-left: 0.5rem;
   transform: rotate(-90deg);
 }
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
   .p-nav--service > a::after {
     transform: rotate(0deg);
   }
@@ -632,7 +632,7 @@ body {
   width: 14rem;
   justify-content: center;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
   .p-sub-menu--service > li > a {
     flex-direction: column;
     position: static;
@@ -645,7 +645,7 @@ body {
   background: rgba(0, 0, 0, 0.8);
   height: 100%;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
   .p-sub-menu--service.open {
     position: absolute;
     width: 100%;
@@ -664,7 +664,7 @@ body {
 .p-nav-btn {
   display: none;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
   .p-nav-btn {
     display: block;
   }
@@ -725,7 +725,7 @@ body {
 .p-article--demo {
   margin-left: 14rem;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
   .p-article--demo {
     margin: 0;
   }
@@ -737,7 +737,7 @@ body {
   background-color: cornflowerblue;
   margin-bottom: 1rem;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
   .p-article--box1 {
     width: 100%;
   }
@@ -749,7 +749,7 @@ body {
   background-color: forestgreen;
   margin-bottom: 1rem;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
   .p-article--box2 {
     width: 100%;
   }
@@ -761,7 +761,7 @@ body {
   background-color: goldenrod;
   margin-bottom: 2rem;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
   .p-article--box3 {
     width: 100%;
   }
@@ -777,7 +777,7 @@ body {
   padding-top: 1rem;
   padding: 0 10rem;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
   .container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -790,7 +790,7 @@ body {
   font-size: 1.2rem;
   padding: 1rem;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
   .item {
     width: 10rem;
     margin-bottom: 2rem;
