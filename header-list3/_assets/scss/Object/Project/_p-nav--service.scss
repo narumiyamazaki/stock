@@ -1,3 +1,5 @@
+@use '../../Foundation/mixin';
+
 .p-nav--service {
     position: relative;
     > a::after {
@@ -6,7 +8,11 @@
         content: "\f078";
         margin-left: .5rem;  
     }
-    &:hover > ul{
-        display: block;
-    }
+    &:hover > ul {
+        @include mixin.mq(pc){
+            display: block;
+            position:absolute;
+        }
+    }    
+
 }

@@ -565,11 +565,17 @@ body {
 .p-main-menu {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 1025px) {
+  .p-main-menu {
+    flex-direction: row;
+  }
 }
 .p-main-menu > li > a {
   background: #0bd;
   color: #fff;
-  width: 14rem;
+  width: 100%;
   margin-right: 1rem;
   font-size: 1.5rem;
   text-align: center;
@@ -581,14 +587,9 @@ body {
 .p-main-menu > li > a > :hover {
   background: #0090aa;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .p-main-menu > li > a {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .p-main-menu {
-    flex-direction: column;
+    width: 140px;
   }
 }
 
@@ -601,36 +602,38 @@ body {
   content: "\f078";
   margin-left: 0.5rem;
 }
-.p-nav--service:hover > ul {
-  display: block;
+@media screen and (min-width: 1025px) {
+  .p-nav--service:hover > ul {
+    display: block;
+    position: absolute;
+  }
 }
 
 .p-sub-menu--service {
   display: none;
-  position: absolute;
 }
 .p-sub-menu--service > li > a {
   margin: 1px;
   background: #f5f5f5;
   font-size: 2rem;
   display: flex;
-  width: 14rem;
   justify-content: center;
+  flex-direction: column;
+  position: static;
+  width: 100%;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .p-sub-menu--service > li > a {
-    flex-direction: column;
-    position: static;
-    width: 100%;
+    width: 14rem;
   }
 }
 
 .p-sub-menu--service.open {
   display: block;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .p-sub-menu--service.open {
-    position: static;
+    position: absolute;
   }
 }
 
@@ -639,18 +642,15 @@ body {
   height: 70px;
   background-color: bisque;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
   .p-header--logo {
     width: 35%;
   }
 }
 
-.p-nav-btn {
-  display: none;
-}
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .p-nav-btn {
-    display: block;
+    display: none;
   }
 }
 .p-nav-btn > a {
@@ -706,21 +706,23 @@ body {
   transform: rotate(-135deg);
 }
 
-@media screen and (max-width: 1024px) {
+.p-header--nav-body {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+@media screen and (min-width: 1025px) {
   .p-header--nav-body {
-    display: none;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    right: 0;
-    background-color: #fff;
+    position: static;
+    display: block;
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .p-header--nav-body.open {
-    display: block;
-  }
+.p-header--nav-body.open {
+  display: block;
 }
 
 .p-main {
@@ -739,7 +741,7 @@ body {
   padding-top: 1rem;
   padding: 0 10rem;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
   .container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -752,7 +754,7 @@ body {
   font-size: 1.2rem;
   padding: 1rem;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
   .item {
     width: 10rem;
     margin-bottom: 2rem;

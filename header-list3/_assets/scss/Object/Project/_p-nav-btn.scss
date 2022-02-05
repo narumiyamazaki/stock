@@ -1,9 +1,8 @@
 @use '../../Foundation/mixin';
 
 .p-nav-btn {
-    display:none;
-    @include mixin.mq(tb){
-        display: block;
+    @include mixin.mq(pc){
+        display: none;
     }
     > a {
         display: block;
