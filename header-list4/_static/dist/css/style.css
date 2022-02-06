@@ -565,11 +565,16 @@ body {
 .p-main-menu {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 1025px) {
+  .p-main-menu {
+    flex-direction: row;
+  }
 }
 .p-main-menu > li > a {
   background: #0bd;
   color: #fff;
-  width: 14rem;
   margin-right: 1rem;
   font-size: 1.5rem;
   text-align: center;
@@ -581,14 +586,9 @@ body {
 .p-main-menu > li > a > :hover {
   background: #0090aa;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .p-main-menu > li > a {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .p-main-menu {
-    flex-direction: column;
+    width: 140px;
   }
 }
 
@@ -617,7 +617,7 @@ body {
   width: 14rem;
   justify-content: center;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
   .p-sub-menu--service > li > a {
     flex-direction: column;
     position: static;
@@ -628,7 +628,7 @@ body {
 .p-sub-menu--service.is-open {
   display: block;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
   .p-sub-menu--service.is-open {
     position: static;
   }
@@ -639,18 +639,15 @@ body {
   height: 70px;
   background-color: bisque;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
   .p-header--logo {
     width: 35%;
   }
 }
 
-.p-nav-btn {
-  display: none;
-}
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .p-nav-btn {
-    display: block;
+    display: none;
   }
 }
 .p-nav-btn > a {
@@ -706,14 +703,19 @@ body {
   transform: rotate(-135deg);
 }
 
-@media screen and (max-width: 1024px) {
+.p-header--nav-body {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+@media screen and (min-width: 1025px) {
   .p-header--nav-body {
-    display: none;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    right: 0;
-    background-color: #fff;
+    display: block;
+    position: relative;
+    top: 0;
   }
 }
 
@@ -883,7 +885,7 @@ body {
   padding-top: 1rem;
   padding: 0 10rem;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
   .container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -896,7 +898,7 @@ body {
   font-size: 1.2rem;
   padding: 1rem;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
   .item {
     width: 10rem;
     margin-bottom: 2rem;
