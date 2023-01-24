@@ -1,0 +1,13 @@
+@use '../../Foundation/mixin';
+@use '../../Foundation/vars' as va;
+
+.p-header__logo{
+    //
+    width: calc(132/va.$sp-design-width*100vw);
+    height: 70px;
+    background-color:bisque;
+    @include mixin.mq(pc){
+        //20vw
+        width: calc(288/va.$pc-design-width*100vw);
+    }
+}

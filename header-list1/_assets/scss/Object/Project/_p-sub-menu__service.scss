@@ -1,6 +1,6 @@
 @use '../../Foundation/mixin';
 
-.p-sub-menu--service {
+.p-sub-menu__service {
     display: none;
     position: absolute;
     >li > a {
@@ -18,7 +18,7 @@
     }
 }
 
-.p-sub-menu--service.open{
+.p-sub-menu__service.open{
     display: block;
     position:static;
     @include mixin.mq(pc){
