@@ -2,7 +2,7 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8">
-        <title>クリックしたらサブメニュー表示のヘッダー</title>
+        <title>ー</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS -->
         <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
@@ -12,7 +12,6 @@
     <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/b8a7fea4d4.js"></script>
     </head>
-
 	<body>
         <header class="l-header">
             <!--ロゴ-->
@@ -23,17 +22,17 @@
                 </p>
                 <nav class="p-header__nav-body">
                     <ul class="p-main-menu">
-                        <li class="p-nav--home"><a href="#">ホーム</a></li>
+                        <li class="p-nav__home"><a href="#">ホーム</a></li>
                         <li class="p-nav__service">
                             <a href="#">サービス</a>
                             <ul class="p-sub-menu__service">
-                                <li><a href="#">サービス A</a></li>
-                                <li><a href="#">サービス B</a></li>
-                                <li><a href="#">サービス C</a></li>
+                                <li class="p-sub-menu__service__items"><a href="#">サービス A</a></li>
+                                <li class="p-sub-menu__service__items"><a href="#">サービス B</a></li>
+                                <li class="p-sub-menu__service__items"><a href="#">サービス C</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">会社概要</a></li>
-                        <li class="p-nav--contact"><a href="#">お問い合わせ</a></li>
+                        <li class="p-nav__company-info"><a href="#">会社概要</a></li>
+                        <li class="p-nav__contact"><a href="#">お問い合わせ</a></li>
                     </ul>
                 </nav>
             </div>
