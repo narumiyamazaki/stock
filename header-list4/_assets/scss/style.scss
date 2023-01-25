@@ -2,7 +2,7 @@
 
 @use './foundation/_base.scss';
 //extendやmixinは下層ファイルでも読み込むのでforwardにする
-@forward './foundation/_extend';
+@forward './Foundation/extend';
 @use './Foundation/mixin';
 @use './Layout/indexLayout';
 @use './object/Project/indexProject';

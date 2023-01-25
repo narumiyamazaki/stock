@@ -1,0 +1,16 @@
+.p-sidebar__body{
+    position:fixed;
+    background-color: bisque;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    transform: translateX(250px); /* right0から250px移動した位置 サイドバーの幅で画面外に移動させている*/
+    transition: all .5s; /* 移動する速さ */
+}
+
+.p-sidebar__body.is-show{
+    transform: translateX(0); /* right0まで-250px移動 */
+    width:30%;
+    height: 100%;
+    margin:0 auto;
+}

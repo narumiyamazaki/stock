@@ -1,5 +1,5 @@
 @use './p-main-menu';
-@use './_p-nav--service';
+@use './p-nav--service';
 @use './p-sub-menu--service';
 @use './p-header--logo';
 @use './p-nav-btn';
@@ -9,11 +9,11 @@
 @use './p-nav-menu--item';
 @use './p-main';
 @use './p-background-color';
-@use './p-sidebar-body';
-@use './p-sidebar-menu';
+@use './p-sidebar__body';
+@use './p-sidebar__menu';
 @use './p-sidebar-menu--item';
-@use './p-sidebar-menu--home';
-@use './p-sidebar-menu--menu';
+@use './p-sidebar__menu--home';
+@use './p-sidebar__menu--menu';
 @use './p-sidebar-menu--about';
 @use './p-sidebar-menu--contact';
 @use './p-sidebar-btn';

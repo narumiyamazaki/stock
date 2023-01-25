@@ -6,4 +6,12 @@
         content: "\f078";
         margin-left: .5rem;  
     }
+    /*ホバーにする場合はclickイベントのコードを削除し、こちらのコメントアウトを外す。
+    &:hover > ul {
+        @include mixin.mq(pc){
+            display: block;
+            position:absolute;
+        }
+    }
+    */
 }

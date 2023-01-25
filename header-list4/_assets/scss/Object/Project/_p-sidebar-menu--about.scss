@@ -1,5 +1,5 @@
 @use '../../Foundation/extend';
 
 .p-sidebar-menu--about{
-    @extend %p-sidebar-menu--home;
+    @extend %p-sidebar__menu--home;
 }

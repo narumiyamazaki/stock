@@ -10,8 +10,9 @@
         color: #fff;
         width:100%;
         margin-right: calc(10/va.$sp-design-width*100vw);
-        font-size: calc(14/va.$sp-design-width*100vw);;
+        font-size: calc(14/va.$sp-design-width*100vw);
         text-align: center;
+        //headerの高さ
         height: 70px;
         //aタグがインライン要素なので高さを揃えるためにflexに
         display: flex;
@@ -21,7 +22,8 @@
             background: #0090aa;
         }
         @include mixin.mq(pc){
-            width: 140px;
+            font-size: calc(16/va.$pc-design-width*100vw);
+            width: calc(140/va.$pc-design-width*100vw);
             flex-direction: row;
         }  
     }
