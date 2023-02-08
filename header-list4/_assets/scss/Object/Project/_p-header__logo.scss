@@ -1,0 +1,10 @@
+@use '../../Foundation/mixin';
+
+.p-header__logo{
+    width: 20%;
+    height: 70px;
+    background-color:bisque;
+    @include mixin.mq(tb){
+        width:35%;
+    }
+}
