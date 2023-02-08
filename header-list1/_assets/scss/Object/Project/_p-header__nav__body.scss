@@ -1,6 +1,6 @@
 @use '../../Foundation/mixin';
 
-.p-header__nav-body{
+.p-header__nav__body{
     display: none;
     position:absolute;
     //headerの高さ分下げている
@@ -16,6 +16,6 @@
 }
 
 //ハンバーガーメニューのボタンを押したとき
-.p-header__nav-body.open{
+.p-header__nav__body.open{
         display: block;
     }

@@ -1,6 +1,6 @@
 @use '../../Foundation/mixin';
 
-.p-nav-btn {
+.p-nav__btn {
     @include mixin.mq(pc){
         display: none;
     }

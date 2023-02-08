@@ -1,10 +1,10 @@
 /*ハンバーガーメニューのクリックイベント*/
-$('.p-nav-btn').on('click', function () {
-    $('.p-header__nav-body').toggleClass('open');
-    $('.p-nav-btn > a').toggleClass('open');
+$('.p-nav__btn').on('click', function () {
+    $('.p-header__nav__body').toggleClass('open');
+    $('.p-nav__btn > a').toggleClass('open');
 });
 
 /*サブメニューのクリックイベント*/
-$('.p-nav__service').on('click', function () {
-    $('.p-sub-menu__service').toggleClass('open');
+$('.p-nav__item__has-sub-item').on('click', function () {
+    $(this).find('.p-sub-menu__items').toggleClass('open');
 });

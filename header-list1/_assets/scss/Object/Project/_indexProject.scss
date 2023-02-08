@@ -1,7 +1,9 @@
-@use './p-main-menu';
-@use './_p-nav__service';
-@use './p-sub-menu__service';
+@use './p-header__nav__items';
+@use './p-nav__item__has-sub-item';
+@use './p-sub-menu__items';
 @use './p-header__logo';
-@use './p-nav-btn';
-@use './p-header__nav-body';
-@use './p-main';
+@use './p-nav__btn';
+@use './p-header__nav__body';
+@use './p-nav__item__link';
+@use './p-sub-menu__item';
+@use './p-nav__sub-item__icon';

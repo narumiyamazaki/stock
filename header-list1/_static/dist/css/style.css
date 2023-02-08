@@ -562,79 +562,37 @@ body {
   background-color: #fff;
 }
 
-.p-main-menu {
+.p-header__nav__items {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.p-main-menu > li > a {
-  background: #0bd;
-  color: #fff;
-  width: 100%;
-  margin-right: 1rem;
-  font-size: 1.5rem;
-  text-align: center;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.p-main-menu > li > a > :hover {
-  background: #0090aa;
-}
-@media screen and (min-width: 1025px) {
-  .p-main-menu > li > a {
-    width: 140px;
-    flex-direction: row;
-  }
-}
 @media screen and (min-width: 768px) {
-  .p-main-menu {
+  .p-header__nav__items {
     flex-direction: column;
   }
 }
 @media screen and (min-width: 1025px) {
-  .p-main-menu {
+  .p-header__nav__items {
     flex-direction: row;
   }
 }
 
-.p-nav__service {
+.p-nav__item__has-sub-item {
   position: relative;
 }
-.p-nav__service > a::after {
-  font-family: "Font Awesome 5 Pro";
-  font-weight: 900;
-  content: "\f078";
-  margin-left: 0.5rem;
-}
 
-.p-sub-menu__service {
+.p-sub-menu__items {
   display: none;
   position: absolute;
 }
-.p-sub-menu__service > li > a {
-  margin: 1px;
-  background: #f5f5f5;
-  font-size: 2rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  position: static;
-  width: 100%;
-}
-@media screen and (min-width: 1025px) {
-  .p-sub-menu__service > li > a {
-    width: 14rem;
-  }
-}
 
-.p-sub-menu__service.open {
+.p-sub-menu__items.open {
   display: block;
   position: static;
 }
 @media screen and (min-width: 1025px) {
-  .p-sub-menu__service.open {
+  .p-sub-menu__items.open {
     position: absolute;
   }
 }
@@ -651,17 +609,17 @@ body {
 }
 
 @media screen and (min-width: 1025px) {
-  .p-nav-btn {
+  .p-nav__btn {
     display: none;
   }
 }
-.p-nav-btn > a {
+.p-nav__btn > a {
   display: block;
   position: relative;
   width: 50px;
   height: 50px;
 }
-.p-nav-btn > a::before {
+.p-nav__btn > a::before {
   position: absolute;
   top: 15px;
   left: 14px;
@@ -671,13 +629,13 @@ body {
   background-color: #000;
   transition: 0.2s;
 }
-.p-nav-btn > a > span {
+.p-nav__btn > a > span {
   display: block;
   overflow: hidden;
   width: 1px;
   height: 1px;
 }
-.p-nav-btn > a > span::after {
+.p-nav__btn > a > span::after {
   position: absolute;
   top: 24px;
   left: 14px;
@@ -687,7 +645,7 @@ body {
   background-color: #000;
   transition: 0.2s;
 }
-.p-nav-btn > a::after {
+.p-nav__btn > a::after {
   position: absolute;
   bottom: 15px;
   left: 14px;
@@ -696,19 +654,19 @@ body {
   height: 2px;
   background-color: #000;
 }
-.p-nav-btn > a.open::before {
+.p-nav__btn > a.open::before {
   top: 24px;
   transform: rotate(-45deg);
 }
-.p-nav-btn > a.open::after {
+.p-nav__btn > a.open::after {
   display: none;
 }
-.p-nav-btn > a.open > span::after {
+.p-nav__btn > a.open > span::after {
   bottom: 24px;
   transform: rotate(-135deg);
 }
 
-.p-header__nav-body {
+.p-header__nav__body {
   display: none;
   position: absolute;
   top: 70px;
@@ -717,20 +675,72 @@ body {
   background-color: #fff;
 }
 @media screen and (min-width: 1025px) {
-  .p-header__nav-body {
+  .p-header__nav__body {
     display: block;
     position: static;
   }
 }
 
-.p-header__nav-body.open {
+.p-header__nav__body.open {
   display: block;
 }
 
-.p-main {
-  background-color: azure;
-  height: 100rem;
-  position: relative;
+.p-nav__item__link {
+  background: #0bd;
+  color: #fff;
+  width: 100%;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*
+  > :hover{
+      background: #0090aa;
+  }
+  */
+}
+@media screen and (min-width: 1025px) {
+  .p-nav__item__link {
+    width: 140px;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-nav__item__link {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-nav__item__link {
+    flex-direction: row;
+  }
+}
+
+.p-sub-menu__item {
+  background: #9900ab;
+  color: #fff;
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 1025px) {
+  .p-sub-menu__item {
+    width: 14rem;
+  }
+}
+
+.p-nav__sub-item__icon::after {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  content: "\f078";
+  margin-left: 1rem;
 }
 
 .background {
