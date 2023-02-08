@@ -550,6 +550,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.p-sidebar-menu--contact, .p-sidebar-menu--about, .p-sidebar__menu--menu, .p-sidebar__menu--home {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
 .l-header {
   display: flex;
   align-items: center;
@@ -769,7 +774,7 @@ body {
   opacity: 0.8;
 }
 
-.p-sidebar-body {
+.p-sidebar__body {
   position: fixed;
   background-color: bisque;
   top: 0;
@@ -781,7 +786,7 @@ body {
   /* 移動する速さ */
 }
 
-.p-sidebar-body.is-show {
+.p-sidebar__body.is-show {
   transform: translateX(0);
   /* right0まで-250px移動 */
   width: 30%;
@@ -789,7 +794,7 @@ body {
   margin: 0 auto;
 }
 
-.p-sidebar-menu {
+.p-sidebar__menu {
   margin-left: 30%;
   margin-top: 30%;
 }
@@ -799,19 +804,14 @@ body {
   margin-bottom: 3%;
 }
 
-.p-sidebar-menu--contact, .p-sidebar-menu--about, .p-sidebar-menu--menu, .p-sidebar-menu--home {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.p-sidebar-menu--menu > li {
+.p-sidebar__menu--menu > li {
   font-size: 1.3rem;
 }
-.p-sidebar-menu--menu > li:first-child {
+.p-sidebar__menu--menu > li:first-child {
   margin-top: 3%;
 }
 
-.p-sidebar-btn {
+.p-sidebar__btn {
   position: relative;
   left: 70%;
   /*
@@ -839,13 +839,13 @@ body {
   }
   */
 }
-.p-sidebar-btn > a {
+.p-sidebar__btn > a {
   display: block;
   position: relative;
   width: 50px;
   height: 50px;
 }
-.p-sidebar-btn > a::before {
+.p-sidebar__btn > a::before {
   position: absolute;
   top: 33px;
   left: 14px;
@@ -857,7 +857,7 @@ body {
   transform: rotate(45deg);
   display: none;
 }
-.p-sidebar-btn > a::after {
+.p-sidebar__btn > a::after {
   position: absolute;
   bottom: 15px;
   left: 14px;
@@ -868,10 +868,10 @@ body {
   transform: rotate(-45deg);
   display: none;
 }
-.p-sidebar-btn > a.is-open::before {
+.p-sidebar__btn > a.is-open::before {
   display: block;
 }
-.p-sidebar-btn > a.is-open::after {
+.p-sidebar__btn > a.is-open::after {
   display: block;
 }
 
