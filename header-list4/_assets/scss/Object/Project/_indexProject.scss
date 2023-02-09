@@ -3,12 +3,14 @@
 @use './p-header__logo';
 @use './p-nav__btn';
 @use './p-header__nav-body';
+@use './p-nav__item__link';
 @use './p-nav__sub-menu__items';
 @use './p-nav__item__has-sub-menu';
 @use './p-nav__sub-menu__item';
 @use './p-main';
 @use './p-background-color';
+@use './p-sidebar__item__link';
 @use './p-sidebar__body';
 @use './p-sidebar__menus';
 @use './p-sidebar-menu__item';
-@use './p-sidebar-btn';
+@use './p-sidebar__btn';

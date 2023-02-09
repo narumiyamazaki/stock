@@ -7,22 +7,4 @@
     @include mixin.mq(pc){
         flex-direction: row;
     }
-    > li > a {
-        background: #0bd;
-        color: #fff;
-        margin-right: 1rem;
-        font-size: 1.5rem;
-        text-align: center;
-        height: 70px;
-        //aタグがインライン要素なので高さを揃えるためにflexに
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        > :hover{
-            background: #0090aa;
-        }
-        @include mixin.mq(pc){
-            width: 140px;
-        }  
-    }
 }

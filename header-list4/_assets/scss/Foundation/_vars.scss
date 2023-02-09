@@ -2,7 +2,7 @@
 
 //サイトの基本設定
 $pc-design-width:1440;
-$tb-design-width:1023;
+$tb-design-width:1024;
 $sp-design-width:767;
 
 //フォント
@@ -12,5 +12,5 @@ $font-base:'M PLUS 1p', sans-serif,'Hiragino Kaku Gothic ProN', 'ヒラギノ角
 $breakpoints: (
     'sp': 'screen and (max-width: 414px)',
     'tb': 'screen and (max-width: 768px)',
-    'pc': 'screen and (max-width: 1024px)',
+    'pc': 'screen and (min-width: 1024px)',
   ) !default;

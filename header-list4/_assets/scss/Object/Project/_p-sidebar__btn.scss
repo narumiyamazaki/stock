@@ -1,6 +1,9 @@
+@use '../../Foundation/mixin';
+@use '../../Foundation/vars' as va;
+
 .p-sidebar__btn{
     position:relative;
-    left:70%;
+    left: calc(200/va.$sp-design-width*100vw);
     > a {
         display: block;
         position: relative;

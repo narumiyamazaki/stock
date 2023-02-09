@@ -1,4 +1,7 @@
-.p-sidebar-menu--item{
-    margin-left:10%;
-    margin-bottom:3%;
+@use '../../Foundation/mixin';
+@use '../../Foundation/vars' as va;
+
+.p-sidebar-menu__item{
+    margin-left:calc(30/va.$sp-design-width*100vw);
+    margin-left:calc(8/va.$sp-design-width*100vw);
 }

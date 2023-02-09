@@ -1,4 +1,11 @@
+@use '../../Foundation/mixin';
+@use '../../Foundation/vars' as va;
+
 .p-sidebar__menus{
-    margin-left:30%;
-    margin-top:30%;
+    margin-left:calc(80/va.$sp-design-width*100vw);
+    margin-top:calc(80/va.$sp-design-width*100vw);
+    height:calc(200/va.$sp-design-width*100vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
