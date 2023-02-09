@@ -1,7 +1,7 @@
 @use '../../Foundation/vars' as va;
 @use '../../Foundation/mixin';
 
-.footer_right_English{
+.p-footer__right__English{
     font-family: va.$english;
     text-transform: uppercase;
 }

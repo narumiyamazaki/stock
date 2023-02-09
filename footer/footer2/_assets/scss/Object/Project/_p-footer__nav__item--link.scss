@@ -1,7 +1,7 @@
 @use '../../Foundation/vars' as va;
 @use '../../Foundation/mixin';
 
-.footer_nav_item--link{
+.p-footer__nav__item--link{
     @include mixin.footer_nav_item_text--sp();
     /*大文字の英語の場合のみ
     text-transform: uppercase;

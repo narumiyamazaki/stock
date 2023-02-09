@@ -1,7 +1,7 @@
 @use '../../Foundation/vars' as va;
 @use '../../Foundation/mixin';
 
-.footer_sns-link_wrapper{
+.p-footer__sns-link__wrapper{
     display: flex;
     margin-bottom: calc(40/va.$sp-design-width*100vw);;
     @include mixin.mq(pc){

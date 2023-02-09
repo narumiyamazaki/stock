@@ -1,0 +1,18 @@
+@use '../Foundation/vars' as va;
+@use '../Foundation/mixin';
+
+.l-footer{
+    background-color: va.$main-color;
+    padding: calc(80/va.$sp-design-width*100vw) 0;
+    @include mixin.mq(pc){
+    padding: calc(80/va.$pc-design-width*100vw) 0;
+    }
+}
+
+/*サイドバーとフッターが重なってしまうとロゴが見えたりしてしまうので
+ハンバーガーメニューをクリックしたときにサイドバーの下にもぐらせる
+footer.is-action{
+    position: relative;
+    z-index: -1;
+}
+*/

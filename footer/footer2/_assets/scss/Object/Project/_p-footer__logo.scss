@@ -1,7 +1,7 @@
 @use '../../Foundation/vars' as va;
 @use '../../Foundation/mixin';
 
-.footer_logo{
+.p-footer__logo{
     margin-bottom: calc(60/va.$sp-design-width*100vw);
     @include mixin.mq(pc){
         display: block;
@@ -11,6 +11,6 @@
         //position: relative;
         //left:20px;
         //
-        //margin-bottom: 80px;
+        margin-bottom: 80px;
     }
 }

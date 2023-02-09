@@ -2,7 +2,7 @@
 @use '../../Foundation/mixin';
 
 
-.footer_nav_items{
+.p-footer__nav__items{
     text-align: center;
     @include mixin.mq(pc){
         width:calc(500/va.$pc-design-width*100vw);
