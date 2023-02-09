@@ -1,0 +1,9 @@
+@use '../../Foundation/mixin';
+@use '../../Foundation/vars' as va;
+
+.p-section__news__card__wrapper{
+    /*カードの大きさ*/
+    @include mixin.mq(pc){
+        width: calc(360/va.$pc-design-width*100vw);
+    }
+}

@@ -1,0 +1,97 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.CMS-NEWS-THUMBNAIL{
+ 
+    //width:100%;
+    height: max(calc(500/va.$sp-design-width*100vw));
+    margin-bottom: calc(40/va.$sp-design-width*100vw);
+    background-size: contain;
+    @include mixin.mq(pc){
+        margin-bottom: calc(30/va.$pc-design-width*100vw);
+        height: max(calc(245/va.$pc-design-width*100vw));
+        background-size: contain;
+    }
+}
+
+//section_news_card_wrapper
+.CMS-NEWS-ITEM{
+    /*インビューイベントのための記述
+    opacity: 0; /* 最初は非表示 */
+    //transform: translateY(30px); /* 下に30pxの位置から */
+    //transition: opacity .5s, transform .5s; /* 透過率と縦方向の移動を0.5秒 */
+    display: flex;
+    flex-direction: column;
+
+    @include mixin.mq(pc){
+        width: calc(360/va.$pc-design-width*100vw);
+
+    }
+}
+
+.CMS-NEWS-INDEX{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include mixin.mq(pc){
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+.CMS-NEWS-MORE-READ{
+    display: none;
+}
+
+
+//.section_news_card_date
+.CMS-NEWS-TIME{
+    font-family: va.$sans;
+    color: va.$text-color;
+    font-weight: 500;
+    font-size: max(calc(14/va.$sp-design-width*100vw),14px);
+    line-height: calc(32/14);
+    letter-spacing: calc(80/1000*1em);
+    order:1;
+    @include mixin.mq(pc){
+        font-size:max(calc(14/va.$pc-design-width*100vw),14px);
+        //margin-bottom: max(calc(20/va.$pc-design-width*100vw),20px);
+        //line-height: calc(32/14);
+    }
+}
+
+//section_news_card_text
+.CMS-NEWS-LINK{
+    font-family: va.$sans;
+    color: va.$text-color;
+    font-weight: 500;
+    font-size: max(calc(14/va.$sp-design-width*100vw),14px);
+    line-height: calc(28/14);
+    //はみ出た文字を省略
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    //white-space: nowrap;
+    letter-spacing: calc(80/1000*1em);
+    margin-bottom: max(calc(40/va.$sp-design-width*100vw),40px);
+    height: max(calc(80/va.$sp-design-width*100vw),80px);
+    @include mixin.mq(pc){
+        font-size:max(calc(14/va.$pc-design-width*100vw),14px);
+        margin-bottom: max(calc(20/va.$pc-design-width*100vw),20px);
+        line-height: calc(28/14);
+        height: max(calc(80/va.$pc-design-width*100vw),80px);
+        //複数行の省略
+        //overflow: hidden;
+        white-space: normal;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+    }
+}
+
+.CMS-NEWS-LINK-CONTENT{
+    display: flex;
+    flex-direction: column;
+}
