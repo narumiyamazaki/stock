@@ -1,0 +1,16 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.section_top_img{
+    background-image: url(../img/logo-top.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: max(calc(450/va.$sp-design-width*100vw),450px);
+    background-size: contain;
+    margin-bottom:calc(80/va.$sp-design-width*100vw);
+    @include mixin.mq(pc){
+    width: max(calc(740/va.$pc-design-width*100vw),40px);
+    height: max(calc(200/va.$pc-design-width*100vw),200px);
+    margin-bottom:calc(0/va.$sp-design-width*100vw);
+    }
+}

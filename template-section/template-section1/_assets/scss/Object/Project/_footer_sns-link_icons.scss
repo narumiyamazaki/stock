@@ -1,0 +1,9 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.footer_sns-link_icons{
+    display: flex;
+    @include mixin.mq(pc){
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,26 @@
+//section
+@use './article';
+@use './article_heading2';
+@use './section_top';
+@use './section_top_img';
+@use './section_text';
+@use './section_bottom_img';
+@use './section_bottom';
+
+//footer
+@use './footer';
+@use './footer_button_scroll-top';
+@use './footer_button_allow';
+@use './footer_contents_container';
+@use './footer_contents_wrapper';
+@use './footer_sns-link_wrapper';
+@use './footer_logo';
+@use './footer_sns_text';
+@use './footer_sns-link--Facebook';
+@use './footer_sns-link--Instagram';
+@use './footer_nav_items';
+@use './footer_nav_wrapper';
+@use './footer_nav_item--link';
+@use './footer_right';
+@use './footer_right_English';
+@use './footer_sns-link_icons';

@@ -1,0 +1,12 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.section_text{
+    //font-family:va.
+    font-size:max(calc(16/va.$sp-design-width*100vw),14px);
+    @include mixin.mq(pc){
+        width: 50%;
+        font-size:max(calc(16/va.$pc-design-width*100vw),16px);
+        padding: 0 max(calc(40/va.$pc-design-width*100vw),40px);
+    }
+}
