@@ -1,0 +1,13 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.footer_nav_item--link{
+    @include mixin.footer_nav_item_text--sp();
+    /*大文字の英語の場合のみ
+    text-transform: uppercase;
+    font-family: va.$english;
+    */
+    @include mixin.mq(pc){
+        @include mixin.footer_nav_item_text--pc();
+    }
+}

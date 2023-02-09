@@ -1,0 +1,14 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.footer_sns-link_wrapper{
+    display: flex;
+    margin-bottom: calc(40/va.$sp-design-width*100vw);;
+    @include mixin.mq(pc){
+        position: relative;
+        //right: calc(40/va.$pc-design-width*100vw);
+        margin-bottom:0;
+        flex-direction: column;
+        align-items: center;
+    }
+}
