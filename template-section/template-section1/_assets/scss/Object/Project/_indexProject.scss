@@ -1,9 +1,9 @@
 //section
-@use './article';
-@use './article_heading2';
-@use './section_top';
-@use './section_top_img';
-@use './section_text';
+@use './p-article';
+@use './p-article__heading2';
+@use './p-section__top';
+@use './p-section__top__img';
+@use './p-section__text';
 @use './section_bottom_img';
 @use './section_bottom';
 

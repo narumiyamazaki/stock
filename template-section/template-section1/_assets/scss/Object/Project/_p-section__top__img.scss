@@ -1,7 +1,7 @@
 @use '../../Foundation/vars' as va;
 @use '../../Foundation/mixin';
 
-.section_top_img{
+.p-section__top__img{
     background-image: url(../img/logo-top.jpg);
     background-repeat: no-repeat;
     width: 100%;

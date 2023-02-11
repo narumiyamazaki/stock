@@ -1,7 +1,7 @@
 @use '../../Foundation/vars' as va;
 @use '../../Foundation/mixin';
 
-.article{
+.p-article{
     background-color: #FFC048;
     padding:max(calc(80/va.$sp-design-width*100vw),) max(calc(32/va.$sp-design-width*100vw),);
     @include mixin.mq(pc){

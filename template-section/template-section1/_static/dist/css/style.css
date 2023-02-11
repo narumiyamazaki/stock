@@ -570,40 +570,40 @@ body {
   height: 100vh;
 }
 
-.article {
+.p-article {
   background-color: #FFC048;
   padding: 10.4302477184vw 4.1720990874vw;
 }
 @media screen and (min-width: 1025px) {
-  .article {
+  .p-article {
     padding: 5.8565153734vw 0;
   }
 }
 
-.article_heading2 {
+.p-article__heading2 {
   font-size: max(2.0860495437vw, 14px);
   color: azure;
   text-align: center;
   margin-bottom: max(5.2151238592vw, 40px);
 }
 @media screen and (min-width: 1025px) {
-  .article_heading2 {
+  .p-article__heading2 {
     font-size: max(1.1713030747vw, 16px);
     margin-bottom: max(2.9282576867vw, 40px);
   }
 }
 
-.section_top {
+.p-section__top {
   margin-bottom: max(10.4302477184vw, 80px);
 }
 @media screen and (min-width: 1025px) {
-  .section_top {
+  .p-section__top {
     display: flex;
     margin-bottom: max(5.8565153734vw, 80px);
   }
 }
 
-.section_top_img {
+.p-section__top__img {
   background-image: url(../img/logo-top.jpg);
   background-repeat: no-repeat;
   width: 100%;
@@ -612,25 +612,25 @@ body {
   margin-bottom: 10.4302477184vw;
 }
 @media screen and (min-width: 1025px) {
-  .section_top_img {
+  .p-section__top__img {
     width: max(54.1727672035vw, 40px);
     height: max(14.6412884334vw, 200px);
     margin-bottom: 0vw;
   }
 }
 
-.section_text {
+.p-section__text {
   font-size: max(2.0860495437vw, 14px);
 }
 @media screen and (min-width: 1025px) {
-  .section_text {
+  .p-section__text {
     width: 50%;
     font-size: max(1.1713030747vw, 16px);
     padding: 0 max(2.9282576867vw, 40px);
   }
 }
 
-.section_bottom_img {
+.p-section__bottom__img {
   background-image: url(../img/logo-top.jpg);
   background-repeat: no-repeat;
   width: 100%;
@@ -639,7 +639,7 @@ body {
   margin-bottom: 10.4302477184vw;
 }
 @media screen and (min-width: 1025px) {
-  .section_bottom_img {
+  .p-section__bottom__img {
     width: max(54.1727672035vw, 40px);
     height: max(14.6412884334vw, 200px);
     margin-bottom: 0vw;
@@ -647,11 +647,11 @@ body {
   }
 }
 
-.section_bottom {
+.p-section__bottom {
   margin-bottom: max(10.4302477184vw, 80px);
 }
 @media screen and (min-width: 1025px) {
-  .section_bottom {
+  .p-section__bottom {
     display: flex;
     margin-bottom: 0;
   }
