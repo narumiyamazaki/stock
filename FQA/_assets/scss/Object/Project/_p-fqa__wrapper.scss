@@ -1,0 +1,13 @@
+@use '../../Foundation/mixin';
+@use '../../Foundation/vars' as va;
+
+.p-fqa__wrapper{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding:max(calc(16/va.$sp-design-width*100vw),16px) 0;
+    width: 100%;
+    @include mixin.mq(pc){
+        padding:max(calc(24/va.$pc-design-width*100vw),16px) 0;
+        width: calc(800/va.$pc-design-width*100vw);
+    }
+}

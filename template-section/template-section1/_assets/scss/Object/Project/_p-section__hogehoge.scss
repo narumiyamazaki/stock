@@ -1,0 +1,13 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-section__hogehoge{
+    background-color: #8a8a8a;
+    padding:calc(20/va.$sp-design-width*100vw);
+    @include mixin.mq(pc){
+        display: flex;
+        width:calc(1000/va.$pc-design-width*100vw);
+        margin:0 auto;
+        justify-content: space-between;
+    }
+}
