@@ -3,6 +3,7 @@ const target = document.querySelectorAll(".c-cross");
 const sectionAnswer = document.querySelector(".p-fqa__answer");
 
 //とりあえず親要素を取得する。
+//親要素の取得も失敗しているので、clickイベントと同様for分を使わなければならないのではないか？
 const parent = target.parentNode;
 console.log(parent);
 
@@ -11,6 +12,13 @@ console.log(parent);
 //const nextSibling = parent.nextElementSibling;
 
 //console.log(nextSibling);
+
+document.querySelectorAll(".c-cross").forEach(function(element){
+  element.addEventListener('click',function(){
+      this.classList.toggle("is-active");
+      //nextSibling.classList.toggle("is-active");
+  });
+});
 
 document.querySelectorAll(".c-cross").forEach(function(element){
   element.addEventListener('click',function(){
