@@ -9,11 +9,26 @@
     //基本隠しておき、クリックイベント時に出現
     height: 0;
     overflow: hidden;
+    transition: all .5s linear;
+    padding: 0 max(calc(40/va.$sp-design-width*100vw),40px);
+        @include mixin.mq(pc){
+        padding: 0 max(calc(40/va.$pc-design-width*100vw),40px);
+    }
+    /*
     &.is-active{
         height: 100%;
-        padding:max(calc(20/va.$sp-design-width*100vw),20px) max(calc(40/va.$sp-design-width*100vw),40px);
-            @include mixin.mq(pc){
-            padding:max(calc(20/va.$pc-design-width*100vw),20px) max(calc(40/va.$pc-design-width*100vw),40px);
+        padding-top: max(calc(20/va.$sp-design-width*100vw),20px);
+        padding-bottom: max(calc(20/va.$sp-design-width*100vw),20px);
+        @include mixin.mq(pc){
+        padding-top: max(calc(20/va.$pc-design-width*100vw),20px);
+        padding-bottom: max(calc(20/va.$pc-design-width*100vw),20px);
+        }
+    */
+    &.is-active{
+        height: calc(50/va.$sp-design-width*100vw);
+    @include mixin.mq(pc){
+        height: calc(100/va.$pc-design-width*100vw);
         }
     }
 }
+//

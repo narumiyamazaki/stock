@@ -603,14 +603,30 @@ body {
   background-color: #fff;
   height: 0;
   overflow: hidden;
+  transition: all 0.5s linear;
+  padding: 0 max(5.2151238592vw, 40px);
+  /*
+  &.is-active{
+      height: 100%;
+      padding-top: max(calc(20/va.$sp-design-width*100vw),20px);
+      padding-bottom: max(calc(20/va.$sp-design-width*100vw),20px);
+      @include mixin.mq(pc){
+      padding-top: max(calc(20/va.$pc-design-width*100vw),20px);
+      padding-bottom: max(calc(20/va.$pc-design-width*100vw),20px);
+      }
+  */
+}
+@media screen and (min-width: 1025px) {
+  .p-fqa__answer {
+    padding: 0 max(2.9282576867vw, 40px);
+  }
 }
 .p-fqa__answer.is-active {
-  height: 100%;
-  padding: max(2.6075619296vw, 20px) max(5.2151238592vw, 40px);
+  height: 6.518904824vw;
 }
 @media screen and (min-width: 1025px) {
   .p-fqa__answer.is-active {
-    padding: max(1.4641288433vw, 20px) max(2.9282576867vw, 40px);
+    height: 7.3206442167vw;
   }
 }
 
