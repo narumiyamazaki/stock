@@ -1,79 +1,43 @@
-/*ハンバーガーメニューのクリックイベント*/
-$('.nav-btn').on('click', function () {
-    $('.p-header--nav-body').toggleClass('is-open');
-    $('.nav-btn > a').toggleClass('is-open');
-    //薄い背景部分
-    //$('.p-background-color').toggleClass('is-show');
-    $('.sidebar_wrapper').toggleClass('is-show');
-    $('.sidebar_btn').children('a').toggleClass('is-open');
-    $('.header_logo').toggleClass('is-action');
-    $('.footer').toggleClass('is-action');
-    $('.footer_button_scroll-top').toggleClass('is-action');
-    $('.lawer_sec').toggleClass('is-action');
+//crossを押したときに、Aを表示させる
+const target = document.querySelectorAll(".c-cross");
+const sectionAnswer = document.querySelector(".p-fqa__answer");
+
+//とりあえず親要素を取得する。
+const parent = target.parentNode;
+console.log(parent);
+
+//parentの親要素を取得する
+
+//const nextSibling = parent.nextElementSibling;
+
+//console.log(nextSibling);
+
+document.querySelectorAll(".c-cross").forEach(function(element){
+  element.addEventListener('click',function(){
+      this.classList.toggle("is-active");
+      //nextSibling.classList.toggle("is-active");
+  });
 });
 
+//親要素までさかのぼって、そこから兄弟要素に行く方法は？
 
-/*ハンバーガーメニューのクリックイベント
-$('.sidebar_btn').on('click', function () {
-    $('.p-header--nav-body').toggleClass('is-open');
-    $('.nav-btn > a').toggleClass('is-open');
-    //薄い背景部分
-    //$('.p-background-color').toggleClass('is-show');
-    $('.sidebar_wrapper').toggleClass('is-show');
-    $('.sidebar_btn').children('a').toggleClass('is-open');
+
+
+/*
+参考コード
+document.querySelectorAll('.cards').forEach(function(cards){
+
+  cards.addEventListener('click',function(){
+      console.log(cards);
+
+  });
 });
 */
 
-/*トップに戻る*/
-$(function () {
-    var pagetop = $('#js-pagetop');
-    pagetop.hide();
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 500) {
-        pagetop.fadeIn();
-      } else {
-        pagetop.fadeOut();
-      }
-    });
-    pagetop.click(function () {
-      $('body, html').animate({
-          scrollTop: 0
-      }, 500);
-      return false;
-    });
+/*
+target.addEventListener("click", () => {
+    target.forEach((element) => {
+      element.classList.toggle("is-active");
   });
-
-  /*slider
-  $('.slick01').slick({
-    autoplay: true, //「オプション名: 値」の形式で書く
-    centerMode: true,
-    centerPadding: '20%',
-    arrows: false,
-    //オートプレイ
-    infinite: true,
-    autoplaySpeed: 0,
-    speed: 9000,
-    cssEase: "linear",
-    responsive: [
-        {
-          breakpoint: 400, // 399px以下のサイズに適用
-          settings: {
-          slidesToShow: 1,
-          },
-        },
-      ],
-  });
- */
-
-  $(function () {
-    $(".fade").on("inview", function () {
-      $(this).addClass("fade-in");
-    });
-  });
-  
-
-  $(function () {
-    $(".CMS-NEWS-ITEM").on("inview", function () {
-      $(this).addClass("fade-in");
-    });
-  });
+})
+*/

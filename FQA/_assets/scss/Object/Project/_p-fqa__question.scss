@@ -1,5 +1,12 @@
+@use '../../Foundation/mixin';
+@use '../../Foundation/vars' as va;
+
 .p-fqa__question{
     display:flex;
     align-items: center;
     position: relative;
+    padding:max(calc(20/va.$sp-design-width*100vw),20px) max(calc(40/va.$sp-design-width*100vw),40px);
+    @include mixin.mq(pc){
+        padding:max(calc(20/va.$pc-design-width*100vw),20px) max(calc(40/va.$pc-design-width*100vw),40px);
+    }
 }
