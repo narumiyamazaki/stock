@@ -1,0 +1,17 @@
+//section
+@use './p-article';
+@use './p-article__heading2';
+@use './p-section__top';
+@use './p-section__top__img';
+@use './p-section__text';
+@use './section_bottom_img';
+@use './section_bottom';
+
+//section-hogehoge
+@use './p-section__hogehoge';
+@use './p-section__hogehoge__image';
+@use './p-section__hogehoge__heading3';
+@use './p-section__hogehoge__text__left';
+@use './p-section__hogehoge__text__right';
+@use './p-section__hogehoge__list-items';
+@use './p-section__hogehoge__lies-item';

@@ -1,0 +1,14 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-article__heading2{
+    //font-familiy:va.
+    font-size:max(calc(16/va.$sp-design-width*100vw),14px);
+    color: va.$main-color;
+    text-align: center;
+    margin-bottom:max(calc(40/va.$sp-design-width*100vw),40px);
+    @include mixin.mq(pc){
+        font-size:max(calc(32/va.$pc-design-width*100vw),32px);
+        margin-bottom:max(calc(40/va.$pc-design-width*100vw),40px);
+    }
+}

@@ -1,0 +1,10 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-section__hogehoge__lies-item{
+    //font-family: va.$base-font;
+    font-size:calc(16/va.$sp-design-width*100vw);
+    @include mixin.mq(pc){
+        font-size:calc(20/va.$pc-design-width*100vw);
+    }
+}

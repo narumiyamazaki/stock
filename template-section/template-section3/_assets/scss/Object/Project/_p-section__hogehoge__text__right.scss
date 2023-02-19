@@ -1,0 +1,14 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-section__hogehoge__text__right{
+    background-color: #fff;
+    border-radius: calc(20/va.$sp-design-width*100vw);
+    //margin-bottom:max(calc(40/va.$pc-design-width*100vw),40px);
+    padding:calc(40/va.$sp-design-width*100vw);
+    @include mixin.mq(pc){
+        width:calc(450/va.$pc-design-width*100vw);
+        border-radius: calc(20/va.$pc-design-width*100vw);
+        padding:calc(40/va.$pc-design-width*100vw);
+    }
+}
