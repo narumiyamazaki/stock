@@ -1,0 +1,39 @@
+@use '../../Foundation/mixin';
+@use '../../Foundation/vars' as va;
+
+.slick-slider{
+    margin-bottom: max(calc(80/va.$sp-design-width*100vw),80px);
+    @include mixin.mq(pc){
+        //font-size:max(calc(14/va.$pc-design-width*100vw),14px);
+        margin-bottom: max(calc(100/va.$pc-design-width*100vw),100px);
+    }
+}
+
+.slick-slider img{
+        //画像の横幅？
+        height: 15vw;
+        max-height: 600px;
+        min-height: 400px;
+        width: 450px;
+        object-fit: contain;
+    @include mixin.mq(pc){
+        height: 20vw;
+        max-height: 600px;
+        min-height: 450px;
+        object-fit: cover;
+    }
+}
+
+.slick-slider .slick-slide{
+    //画像と画像の間隔をあける
+    margin-left: 2vw;
+    margin-right: 2vw;
+    min-width: 200px;
+    max-width: 400px;
+    @include mixin.mq(pc){
+        min-width: 400px;
+        max-width: 450px;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+}
