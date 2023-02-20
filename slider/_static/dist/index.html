@@ -12,13 +12,16 @@
         <!-- slickのCSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+        <!-- swiperのCSS-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
         <link href="./css/style.css" rel="stylesheet">
         </head>
 	<body>
         <main>
+            <!--slickスライダー-->
             <section class="p-section1">
                 <h2 class="p-section__heading2">右から左に流れるスライダー・点は無し</h2>
-                <ul class="slick01 slick-slider">
+                <ul class="slick01 slick-slider js-slider">
                     <li><img alt="" src="./img/img01.jpeg" /></li>
                     <li><img alt="" src="./img/img02.jpeg" /></li>
                     <li><img alt="" src="./img/img03.jpeg" /></li>
@@ -31,11 +34,59 @@
                     <li><img alt="" src="./img/img10.jpeg" /></li>
                 </ul>
             </section>
+            <!--swiperスライダー-->
+            <section class="p-section2">
+                <h2 class="p-section2__heading2">Swiperを使ってみるオート編</h2>
+                <div class="swiper-container">
+                    <div class="swiper sample-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./img/img01.jpeg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/img02.jpeg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/img03.jpeg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/img04.jpeg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/img05.jpeg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/img06.jpeg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/img07.jpeg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/img08.jpeg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/img09.jpeg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/img10.jpeg" alt=""></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <!--ボタンが必要であれば
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    -->
+                </div>
+            </section>
+            <section class="p-section3">
+                <h2 class="p-section2__heading2">Swiperを使ってみるオート編</h2>
+                    <div class="swiper swiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./img/img01.jpeg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/img02.jpeg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/img03.jpeg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/img04.jpeg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/img05.jpeg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/img06.jpeg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/img07.jpeg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/img08.jpeg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/img09.jpeg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/img10.jpeg" alt=""></div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+            </section>
         </main>
         <!-- jQuery -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
         <!-- slickのJavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!-- swiperのJavaScript-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script src="./js/common.js"></script>
+        <script src="./js/swiperCommon.js" ></script>
     </body>
 </html>

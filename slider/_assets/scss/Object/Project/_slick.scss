@@ -37,3 +37,9 @@
         margin-right: 2vw;
     }
 }
+
+ul.video_slider li.slick-current,
+ul.video_slider li.is-active-next {
+	opacity: 1;
+	transition: .4s;
+}
