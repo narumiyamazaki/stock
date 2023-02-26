@@ -25,3 +25,71 @@
      }
     }
   }
+
+  //以下削除するコード
+
+  .p-section__bounce{
+    height:200vh;
+    background-color: #e3e3e3;
+    font-size:50px;
+    text-align:center;
+  }
+  
+  .p-bouce__wrapper{
+    display:flex;
+    justify-content:space-between;
+    padding: 0 80px;
+  }
+  
+  .p-bounce1{
+    font-size:150px;
+    width:45vw;
+    opacity:0;
+  }
+  
+  .p-bounce1__box{
+    width:100vw;
+    height:100px;
+    background-color: #e0b76a;
+  }
+  
+  .p-bounce2__box{
+    width:100vw;
+    height:100px;
+    background-color: #ae83ce;
+  }
+  
+  .p-bounce3__box{
+    width:100vw;
+    height:100px;
+    background-color: #0eaa1e;
+  }
+  
+  .p-bounce1.is-animation {
+      animation: bounce 2.5s .3s forwards;
+  }
+  
+  .p-bounce2{
+    font-size:150px;
+    width:40vw;
+  }
+  
+  .p-bounce2.is-animation__once{
+      animation: bounce 2.5s 1s;
+  }
+  
+  //アニメーション
+  @keyframes bounce{
+    0% {
+      opacity:0;
+      transform: scale(.2);
+    }
+    50% {
+      opacity:1;
+      transform: scale(1.2);
+    }
+    100% {
+      opacity:1;
+      transform: scale(1);
+    }
+  }

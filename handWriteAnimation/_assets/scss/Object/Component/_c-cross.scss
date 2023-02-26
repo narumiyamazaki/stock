@@ -1,0 +1,38 @@
+@use '../../Foundation/mixin';
+@use '../../Foundation/vars' as va;
+
+.c-cross{
+    width:calc(20/va.$sp-design-width*100vw);
+    height:1px;
+    position: relative;
+    background-color: #000;
+    display: block;
+    margin-left:auto;
+    @include mixin.mq(pc){
+        width: calc(20/va.$pc-design-width*100vw);
+    }
+    &::after{
+        visibility: visible;
+        content: '';
+        position: absolute;
+        left:50%;
+        top: calc(-10/va.$sp-design-width*100vw);
+        width:1px;
+        height: calc(20/va.$sp-design-width*100vw);
+        transition: all .6s linear;
+        background-color: #000;
+        opacity: 1;
+        @include mixin.mq(pc){
+            height: calc(20/va.$pc-design-width*100vw);
+            top: calc(-10/va.$pc-design-width*100vw);;
+        }
+    }
+    &.is-active::after{
+        top: calc(-20/va.$sp-design-width*100vw);
+        visibility: hidden;
+        opacity: 0;
+        @include mixin.mq(pc){
+            top: calc(-25/va.$pc-design-width*100vw);
+        }
+    }
+}
