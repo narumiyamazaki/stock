@@ -757,12 +757,18 @@ ul.video_slider li.is-active-next {
   height: 100vh;
   width: 100vw;
   background-color: #f7a3b2;
+  text-align: center;
+  font-size: 80px;
+  color: #fefefe;
 }
 
 .p-box1 {
   width: 100vw;
   height: 100px;
-  background-color: #384894;
+  background-color: #2366F7;
+  text-align: center;
+  font-size: 40px;
+  color: #000;
 }
 
 .c-fqa__q {

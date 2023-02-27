@@ -78,7 +78,7 @@ function myIntersectOnce(entries, myObserverOnce) {
     if (entry.isIntersecting) {
       myTargetOnce.classList.remove('fade__once');
       myTargetOnce.classList.add('is-animation__once');
-      //stroke2.play();//SVGアニメーションの実行
+      stroke2.play();//SVGアニメーションの実行
       //監視をやめる
       myObserverOnce.unobserve(entry.target);
     }
