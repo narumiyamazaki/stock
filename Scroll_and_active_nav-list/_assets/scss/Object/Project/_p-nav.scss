@@ -1,0 +1,8 @@
+@use '../../Foundation/mixin';
+@use '../../Foundation/vars' as va;
+
+.p-nav{
+    position: fixed;
+    right: max(calc(60/va.$pc-design-width*100vw),60px);
+    top: max(calc(80/va.$pc-design-width*100vw),80px);    
+}

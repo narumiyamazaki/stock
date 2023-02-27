@@ -1,34 +1,4 @@
-//section
-@use './p-article';
-@use './p-article__heading2';
-@use './p-section__top';
-@use './p-section__top__img';
-@use './p-section__text';
-@use './section_bottom_img';
-@use './section_bottom';
-
-//section-hogehoge
-@use './p-section__hogehoge';
-@use './p-section__hogehoge__image';
-@use './p-section__hogehoge__heading3';
-@use './p-section__hogehoge-reverse';
-@use './p-section__hogehoge-reberse__text__wrapper';
-@use './p-section__hogehoge__text';
-
-//footer
-@use './footer';
-@use './footer_button_scroll-top';
-@use './footer_button_allow';
-@use './footer_contents_container';
-@use './footer_contents_wrapper';
-@use './footer_sns-link_wrapper';
-@use './footer_logo';
-@use './footer_sns_text';
-@use './footer_sns-link--Facebook';
-@use './footer_sns-link--Instagram';
-@use './footer_nav_items';
-@use './footer_nav_wrapper';
-@use './footer_nav_item--link';
-@use './footer_right';
-@use './footer_right_English';
-@use './footer_sns-link_icons';
+@use './p-mv';
+@use './p-nav__wrapper';
+@use './p-nav__heading2';
+@use './p-nav';

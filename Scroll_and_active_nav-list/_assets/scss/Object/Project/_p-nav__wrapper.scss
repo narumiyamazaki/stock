@@ -1,0 +1,6 @@
+@use '../../Foundation/mixin';
+@use '../../Foundation/vars' as va;
+
+.p-nav__wrapper{
+    padding:max(calc(80/va.$pc-design-width*100vw),80px) max(calc(120/va.$pc-design-width*100vw),120px);
+}
