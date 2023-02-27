@@ -1,0 +1,10 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.footer_contents_wrapper{
+    padding-top: calc(100/va.$sp-design-width*100vw);
+    @include mixin.mq(pc){
+        width: 100vw;
+        padding-top: calc(150/va.$pc-design-width*100vw);
+    }
+}
