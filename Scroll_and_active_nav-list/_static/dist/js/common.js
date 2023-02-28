@@ -1,4 +1,6 @@
-const myTarget = document.querySelector('.section--takenoko'); // ...手順(2)の部分
+const myTarget = document.querySelectorAll('.is-target'); // ...手順(2)の部分
+
+//配列として変数に入れれないか？
 const navTakenoko = document.querySelector('.p-nav__item__link--takenoko');
 
 // IntersectionObserverのオプション設定　...手順(3)の部分
