@@ -1,0 +1,9 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-nav__title{
+    text-align: center;
+    font-size:max(calc(16/va.$pc-design-width*100vw),16px);
+    display: block;
+    margin-bottom:max(calc(24/va.$pc-design-width*100vw),24px);
+}

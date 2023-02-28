@@ -1,0 +1,6 @@
+@use '../../Foundation/mixin';
+@use '../../Foundation/vars' as va;
+
+.p-section__content__wrapper{
+    @include mixin.section__template();
+}

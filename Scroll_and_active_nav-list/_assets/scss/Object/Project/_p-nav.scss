@@ -3,6 +3,6 @@
 
 .p-nav{
     position: fixed;
-    right: max(calc(60/va.$pc-design-width*100vw),60px);
+    left: max(calc(20/va.$pc-design-width*100vw),20px);
     top: max(calc(80/va.$pc-design-width*100vw),80px);    
 }

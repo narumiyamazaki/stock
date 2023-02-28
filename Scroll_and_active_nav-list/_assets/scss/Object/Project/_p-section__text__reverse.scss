@@ -1,0 +1,9 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-section__text__reverse{
+    font-size:max(calc(16/va.$pc-design-width*100vw),16px);
+    order:1;
+    max-width: 320px;
+    margin: auto 0;
+}

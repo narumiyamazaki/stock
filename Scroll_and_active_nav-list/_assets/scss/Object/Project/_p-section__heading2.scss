@@ -1,0 +1,8 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-section__heading2{
+    font-size:max(calc(40/va.$pc-design-width*100vw),40px);
+    text-align: center;
+    margin-bottom:max(calc(80/va.$pc-design-width*100vw),80px);
+}

@@ -1,0 +1,9 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+
+.p-section__img{
+    width:max(350/va.$pc-design-width*100vw);
+    height:max(350/va.$pc-design-width*100vw);
+    object-fit: cover;
+}
