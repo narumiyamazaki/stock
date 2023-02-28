@@ -123,4 +123,7 @@ $breakpoint: (
   line-height: 1.5;
   height:max(calc(30/va.$pc-design-width*100vw),30px);
   display: block;
+  &.is-active{
+    color:red;
+  }
 }

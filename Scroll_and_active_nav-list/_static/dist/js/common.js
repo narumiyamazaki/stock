@@ -1,4 +1,5 @@
-const myTarget = document.querySelector('.fade'); // ...手順(2)の部分
+const myTarget = document.querySelector('.section--takenoko'); // ...手順(2)の部分
+const navTakenoko = document.querySelector('.p-nav__item__link--takenoko');
 
 // IntersectionObserverのオプション設定　...手順(3)の部分
 let myOptions = {
@@ -16,11 +17,9 @@ let myOptions = {
 function myIntersect(entries, myObserver) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      myTarget.classList.remove('fade');
-      myTarget.classList.add('is-animation');
+      navTakenoko.classList.add('is-active');
     } else {
-      myTarget.classList.remove('is-animation');
-      myTarget.classList.add('fade');
+      navTakenoko.classList.remove('is-active');
     }
   });
 }
