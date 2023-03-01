@@ -633,6 +633,20 @@ body {
   max-width: 320px;
   margin: auto 0;
 }
+.p-section__text:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.p-section__bottom-text {
+  font-size: max(1.1713030747vw, 16px);
+  max-width: 700px;
+  margin: auto 0;
+  /*
+  &:not(:last-child){
+      margin-bottom: 24px;
+  }
+  */
+}
 
 .p-section__text__reverse {
   font-size: max(1.1713030747vw, 16px);

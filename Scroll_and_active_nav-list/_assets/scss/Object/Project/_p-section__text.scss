@@ -5,4 +5,7 @@
     font-size:max(calc(16/va.$pc-design-width*100vw),16px);
     max-width: 320px;
     margin: auto 0;
+    &:not(:last-child){
+        margin-bottom: 24px;
+    }
 }
