@@ -24,18 +24,6 @@ let myOptions = {
       myObserver.observe(myTarget[n]);
     }
 
-/* 条件を満たした実行される関数
-function myIntersect(entries, myObserver) {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      navTakenoko.classList.add('is-active');
-    } else {
-      navTakenoko.classList.remove('is-active');
-    }
-  });
-}
-*/
-
 function myIntersect(entries) {
     if(entries[0].isIntersecting) {
       navTakenoko.classList.toggle("is-active");
