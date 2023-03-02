@@ -127,7 +127,7 @@ $breakpoint: (
   line-height: 1.5;
   height:max(calc(30/va.$pc-design-width*100vw),30px);
   display: block;
-  transition: all .5s linear;
+  transition: all .2s linear;
   &.is-active{
     font-weight: 700;
     color:#f0f0f0

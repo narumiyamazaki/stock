@@ -664,7 +664,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .p-section__text {
-    max-width: 500px;
+    max-width: 550px;
   }
 }
 
@@ -690,7 +690,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .p-section__text__reverse {
-    max-width: 500px;
+    max-width: 550px;
   }
 }
 
@@ -715,7 +715,7 @@ body {
   line-height: 1.5;
   height: max(2.196193265vw, 30px);
   display: block;
-  transition: all 0.5s linear;
+  transition: all 0.2s linear;
 }
 .p-nav__item__link--takenoko.is-active {
   font-weight: 700;
@@ -728,7 +728,7 @@ body {
   line-height: 1.5;
   height: max(2.196193265vw, 30px);
   display: block;
-  transition: all 0.5s linear;
+  transition: all 0.2s linear;
 }
 .p-nav__item__link--asari.is-active {
   font-weight: 700;
@@ -741,7 +741,7 @@ body {
   line-height: 1.5;
   height: max(2.196193265vw, 30px);
   display: block;
-  transition: all 0.5s linear;
+  transition: all 0.2s linear;
 }
 .p-nav__item__link--nanohana.is-active {
   font-weight: 700;
@@ -754,7 +754,7 @@ body {
   line-height: 1.5;
   height: max(2.196193265vw, 30px);
   display: block;
-  transition: all 0.5s linear;
+  transition: all 0.2s linear;
 }
 .p-nav__item__link--sansai.is-active {
   font-weight: 700;
@@ -767,7 +767,7 @@ body {
   line-height: 1.5;
   height: max(2.196193265vw, 30px);
   display: block;
-  transition: all 0.5s linear;
+  transition: all 0.2s linear;
 }
 .p-nav__item__link--sakuranbo.is-active {
   font-weight: 700;
