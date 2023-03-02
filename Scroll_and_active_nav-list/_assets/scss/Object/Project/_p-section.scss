@@ -2,7 +2,7 @@
 @use '../../Foundation/vars' as va;
 
 .p-section{
-    background-color: #cbf73a;
+    background-color: #FFA4A3;
     padding:max(calc(80/va.$pc-design-width*100vw),80px) max(calc(120/va.$pc-design-width*100vw),120px);
     width:100vw;
 }

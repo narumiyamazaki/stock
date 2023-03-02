@@ -2,8 +2,16 @@
 @use '../../Foundation/mixin';
 
 .p-section__text__reverse{
-    font-size:max(calc(16/va.$pc-design-width*100vw),16px);
+    font-family: 'Shippori Mincho B1', serif;
+    font-size:max(calc(18/va.$pc-design-width*100vw),16px);
     order:1;
     max-width: 320px;
-    margin: auto 0;
+    font-family: 'Shippori Mincho B1', serif;
+    //font-weight: 400;
+    //color: #f0f0f0;
+    margin:auto 0;
+    margin-right: max(calc(-40/va.$pc-design-width*100vw),-40px);
+    @media screen and (min-width:1200px) {
+        max-width: 500px;
+    }
 }

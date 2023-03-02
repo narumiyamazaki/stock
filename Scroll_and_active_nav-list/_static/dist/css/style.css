@@ -581,6 +581,15 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  font-family: "Shippori Mincho B1", serif;
+}
+
+.p-section__heading2__reverse {
+  font-size: max(2.9282576867vw, 40px);
+  text-align: center;
+  margin-bottom: max(5.8565153734vw, 80px);
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 700;
 }
 
 .p-nav {
@@ -594,16 +603,17 @@ body {
   font-size: max(1.1713030747vw, 16px);
   display: block;
   margin-bottom: max(1.756954612vw, 24px);
+  font-family: "Shippori Mincho B1", serif;
 }
 
 .p-section {
-  background-color: #cbf73a;
+  background-color: #FFA4A3;
   padding: max(5.8565153734vw, 80px) max(8.78477306vw, 120px);
   width: 100vw;
 }
 
 .p-section__reverse {
-  background-color: #FC656D;
+  background-color: #FFBFBF;
   padding: max(5.8565153734vw, 80px) max(8.78477306vw, 120px);
   width: 100vw;
 }
@@ -612,6 +622,9 @@ body {
   font-size: max(2.9282576867vw, 40px);
   text-align: center;
   margin-bottom: max(5.8565153734vw, 80px);
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 700;
+  margin-right: max(-2.9282576867vw, -40px);
 }
 
 .p-section__content__wrapper {
@@ -620,6 +633,11 @@ body {
   margin: 0 auto;
   justify-content: space-between;
 }
+@media screen and (min-width: 1200px) {
+  .p-section__content__wrapper {
+    width: 69.5461200586vw;
+  }
+}
 
 .p-section__content-reverse__wrapper {
   display: flex;
@@ -627,14 +645,27 @@ body {
   margin: 0 auto;
   justify-content: space-between;
 }
+@media screen and (min-width: 1200px) {
+  .p-section__content-reverse__wrapper {
+    width: 69.5461200586vw;
+  }
+}
 
 .p-section__text {
   font-size: max(1.1713030747vw, 16px);
   max-width: 320px;
   margin: auto 0;
+  font-family: "Shippori Mincho B1", serif;
+  /*
+  &:not(:last-child){
+      margin-bottom: 24px;
+  }
+  */
 }
-.p-section__text:not(:last-child) {
-  margin-bottom: 24px;
+@media screen and (min-width: 1200px) {
+  .p-section__text {
+    max-width: 500px;
+  }
 }
 
 .p-section__bottom-text {
@@ -649,66 +680,98 @@ body {
 }
 
 .p-section__text__reverse {
-  font-size: max(1.1713030747vw, 16px);
+  font-family: "Shippori Mincho B1", serif;
+  font-size: max(1.317715959vw, 16px);
   order: 1;
   max-width: 320px;
+  font-family: "Shippori Mincho B1", serif;
   margin: auto 0;
+  margin-right: max(-2.9282576867vw, -40px);
+}
+@media screen and (min-width: 1200px) {
+  .p-section__text__reverse {
+    max-width: 500px;
+  }
 }
 
 .p-section__img {
   width: 25.6222547584vw;
   height: 25.6222547584vw;
   object-fit: cover;
+  border-radius: 40%;
+  margin-right: max(-2.9282576867vw, -40px);
+}
+
+.p-section__img__reverse {
+  width: 25.6222547584vw;
+  height: 25.6222547584vw;
+  object-fit: cover;
+  border-radius: 40%;
 }
 
 .p-nav__item__link--takenoko {
+  font-family: "Shippori Mincho B1", serif;
   font-size: max(1.1713030747vw, 16px);
   line-height: 1.5;
   height: max(2.196193265vw, 30px);
   display: block;
+  transition: all 0.5s linear;
 }
 .p-nav__item__link--takenoko.is-active {
-  color: red;
+  font-weight: 700;
+  color: #f0f0f0;
 }
 
 .p-nav__item__link--asari {
+  font-family: "Shippori Mincho B1", serif;
   font-size: max(1.1713030747vw, 16px);
   line-height: 1.5;
   height: max(2.196193265vw, 30px);
   display: block;
+  transition: all 0.5s linear;
 }
 .p-nav__item__link--asari.is-active {
-  color: red;
+  font-weight: 700;
+  color: #f0f0f0;
 }
 
 .p-nav__item__link--nanohana {
+  font-family: "Shippori Mincho B1", serif;
   font-size: max(1.1713030747vw, 16px);
   line-height: 1.5;
   height: max(2.196193265vw, 30px);
   display: block;
+  transition: all 0.5s linear;
 }
 .p-nav__item__link--nanohana.is-active {
-  color: red;
+  font-weight: 700;
+  color: #f0f0f0;
 }
 
 .p-nav__item__link--sansai {
+  font-family: "Shippori Mincho B1", serif;
   font-size: max(1.1713030747vw, 16px);
   line-height: 1.5;
   height: max(2.196193265vw, 30px);
   display: block;
+  transition: all 0.5s linear;
 }
 .p-nav__item__link--sansai.is-active {
-  color: red;
+  font-weight: 700;
+  color: #f0f0f0;
 }
 
 .p-nav__item__link--sakuranbo {
+  font-family: "Shippori Mincho B1", serif;
   font-size: max(1.1713030747vw, 16px);
   line-height: 1.5;
   height: max(2.196193265vw, 30px);
   display: block;
+  transition: all 0.5s linear;
 }
 .p-nav__item__link--sakuranbo.is-active {
-  color: red;
+  font-weight: 700;
+  color: #f0f0f0;
 }
 
 .p-nav__items {

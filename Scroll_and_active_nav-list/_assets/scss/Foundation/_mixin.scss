@@ -116,14 +116,20 @@ $breakpoint: (
     width:calc(800/va.$pc-design-width*100vw);
     margin:0 auto;
     justify-content: space-between;
+    @media screen and (min-width:1200px) {
+      width:calc(950/va.$pc-design-width*100vw);
+  }
 }
 
 @mixin p-nav__item__link{
+  font-family: 'Shippori Mincho B1', serif;
   font-size:max(calc(16/va.$pc-design-width*100vw),16px);
   line-height: 1.5;
   height:max(calc(30/va.$pc-design-width*100vw),30px);
   display: block;
+  transition: all .5s linear;
   &.is-active{
-    color:red;
+    font-weight: 700;
+    color:#f0f0f0
   }
 }

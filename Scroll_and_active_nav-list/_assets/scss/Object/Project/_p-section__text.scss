@@ -5,7 +5,13 @@
     font-size:max(calc(16/va.$pc-design-width*100vw),16px);
     max-width: 320px;
     margin: auto 0;
+    font-family: 'Shippori Mincho B1', serif;
+    @media screen and (min-width:1200px) {
+        max-width: 500px;
+    }
+    /*
     &:not(:last-child){
         margin-bottom: 24px;
     }
+    */
 }

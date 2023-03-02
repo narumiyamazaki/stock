@@ -1,11 +1,11 @@
 @use '../../Foundation/vars' as va;
 @use '../../Foundation/mixin';
 
-.p-section__heading2{
+.p-section__heading2__reverse{
     font-size:max(calc(40/va.$pc-design-width*100vw),40px);
     text-align: center;
     margin-bottom:max(calc(80/va.$pc-design-width*100vw),80px);
     font-family: 'Shippori Mincho B1', serif;
     font-weight: 700;
-    margin-right: max(calc(-40/va.$pc-design-width*100vw),-40px);
+    //color: #f0f0f0;
 }
