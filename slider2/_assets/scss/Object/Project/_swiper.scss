@@ -1,0 +1,40 @@
+.swiper1{
+    width:40%;
+}
+.swiper1 img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+//Swiper 左右にボタンがあるタイプのスライダー
+
+//overflow:hiddenが.swiperのデフォルトで使われているため、範囲外は見えなくなってしまう。
+//それを防ぐ意味でoverflow:visibleにしている。
+.swiper2{
+    width:80%;
+    overflow: visible;
+}
+.swiper2 img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.swiper2{
+    .swiper-slide {
+        &:not(.swiper-slide-visible) {
+        pointer-events: none;
+        opacity: 0;
+     }
+    }
+  }
+
+  .swiper-pagination-current {
+    font-size: 40px;
+  }
+  
+  /* スライド総数 */
+  .swiper-pagination-total {
+    font-size: 40px;
+  }
