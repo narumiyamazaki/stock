@@ -10,7 +10,7 @@ const initSwiper = () => {
         
         pagination: {                       //ページネーション（ドット）
             el: '.swiper-pagination',       //ページネーションがあるとループ時いちいち止まる
-            type: 'fraction',
+            type: 'custom',
         },
         
 
@@ -52,13 +52,33 @@ window.addEventListener('load', function(){
 //デフォルトで付与されているスラッシュの除去
 
 
-const myBeforeTarget = document.querySelector('.swiper-pagination-current');
+//ページネーションカスタマイズの要素を取得
+const paginationParent = document.querySelector('.swiper-pagination');
 
-console.log(myBeforeTarget);
+//親要素のdivタグ作成
+let newPaginationInner = document.createElement('div');
 
-//直後の兄弟要素を取得
+//親要素のdivタグにクラスを追加
+newPaginationInner.setAttribute("class","swiper-pagination__inner");
 
-const myTarget = myBeforeTarget.nextElementSibling;
+//ページネーションカスタマイズの子要素に追加
+paginationParent.insertBefore(newPaginationInner, null);
 
-//削除?
-myTarget.remove();
+//ページネーションカスタマイズの子要素に
+
+
+//現在表示しているスライドの数字を表示
+//currentの画像の要素を取得
+const newPaginationCurrent = document.getElementsByClassName('swiper-slide-duplicate-active');
+//newPaginationCurrent.dataset.swiperSlideIndex;
+
+console.log(newPaginationCurrent[0]);
+
+//let newPaginationCurrent = document.createTextNode(swiper1.realIndex + 1);
+
+//
+
+//スライドの番号を取得して、それを表示させるみたいな事？
+
+//console.log(swiper);
+
