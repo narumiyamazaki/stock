@@ -1,5 +1,5 @@
 const linkToSource = document.querySelectorAll('.p-link').forEach{
-  
+
 }
 
 
@@ -15,7 +15,7 @@ linkToSource.addEventListener('click',function(event){
 
 /*
 //addEventListenerのコールバック関数
-function serchLink(){
+function serchLink(){/
   if( this === linkToSource[0]){
     linkTarget.classList.add('is-active');
   }
