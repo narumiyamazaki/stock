@@ -1,0 +1,6 @@
+.p-link{
+    font-size: 40px;
+    &:not(:last-child){
+        margin-right:40px;
+    }
+}
