@@ -1,0 +1,6 @@
+@use '../../Foundation/extend';
+@use '../../Foundation/mixin';
+
+.p-items__link4{
+    @include mixin.nav-items();
+}

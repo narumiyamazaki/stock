@@ -1,0 +1,6 @@
+.p-link-items{
+    display: none;
+    &.is-active{
+        display: block;
+    }
+}

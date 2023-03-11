@@ -1,1 +1,10 @@
 @use './p-link';
+
+//遷移先
+@use './p-items__link1';
+@use './p-items__link2';
+@use './p-items__link3';
+@use './p-items__link4';
+@use './p-items__link5';
+@use './p-link-items';
+@use './p-items';

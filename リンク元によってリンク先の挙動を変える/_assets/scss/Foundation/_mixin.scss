@@ -110,11 +110,7 @@ $breakpoint: (
   //font-weight: 500;
 }
 
-/*
-@mixin footer_nav_item_text--pc($fontFamily:va.$serif,$fontColor:#fff){
-  font-size: max(calc(18/va.$pc-design-width*100vw),18px);
-  //line-height: calc(23/16);
-  //letter-spacing: calc(100/1000*1em);
-  //font-weight: 500;
+@mixin nav_items($fontFamily:va.$serif){
+  font-size: max(calc(40/va.$pc-design-width*100vw),40px);
+  padding:max(calc(40/va.$pc-design-width*100vw),40px);
 }
-*/
