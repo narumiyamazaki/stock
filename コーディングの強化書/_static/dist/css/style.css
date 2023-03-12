@@ -554,6 +554,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 50px;
 }
 @media screen and (min-width: 1025px) {
   .l-header {
@@ -583,16 +584,12 @@ footer.is-action{
     z-index: -1;
 }
 */
-.p-header__nav__items {
-  padding: 0 max(2.6075619296vw, 20px);
-}
 @media screen and (min-width: 1025px) {
   .p-header__nav__items {
     width: max(37.875vw, 606px);
     margin-right: max(1.5625vw, 25px);
     display: flex;
     justify-content: center;
-    flex-direction: column;
   }
 }
 
@@ -612,8 +609,8 @@ footer.is-action{
 }
 
 .p-header__logo {
-  width: 13.6897001304vw;
-  height: 2.998696219vw;
+  width: max(13.6897001304vw, 105px);
+  height: max(2.998696219vw, 23px);
   margin-left: max(2.6075619296vw, 20px);
 }
 @media screen and (min-width: 1025px) {
@@ -691,6 +688,9 @@ footer.is-action{
   top: 50px;
   left: 0;
   right: 0;
+  background-color: #fff;
+  height: 100vh;
+  z-index: 1;
 }
 @media screen and (min-width: 1025px) {
   .p-header__nav__body {
@@ -703,6 +703,16 @@ footer.is-action{
   display: block;
 }
 
+.p-nav__item {
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 1025px) {
+  .p-nav__item {
+    flex-direction: column;
+  }
+}
+
 .p-nav__item__link--home {
   color: #333333;
   font-family: "Noto Sans JP", sans-serif;
@@ -711,13 +721,17 @@ footer.is-action{
   position: relative;
   border-top: 1px solid #E7E7E7;
   border-bottom: 1px solid #E7E7E7;
+  width: 100vw;
+  display: block;
+  padding: max(2.6075619296vw, 20px);
 }
 .p-nav__item__link--home::before {
   content: "";
   position: absolute;
   width: max(0.6518904824vw, 5px);
   height: max(7.4315514993vw, 57px);
-  left: max(2.6075619296vw, 20px);
+  left: 0;
+  top: 0;
   background-color: #37952F;
 }
 
@@ -774,7 +788,9 @@ footer.is-action{
 }
 
 .p-mv__img {
-  background-image: url(../img/mv_illust.jpg);
+  background-image: url(../img/mv_illust.png);
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 43.6766623207vw;
   height: 62.5814863103vw;
 }

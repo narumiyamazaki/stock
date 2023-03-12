@@ -7,7 +7,9 @@
     top: 50px;
     left: 0;
     right: 0;
-    //background-color: #fff;
+    background-color: #fff;
+    height:100vh;
+    z-index:1;
     @include mixin.mq(pc){
         display:block;
         position: static;
