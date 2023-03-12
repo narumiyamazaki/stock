@@ -1,0 +1,10 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-main{
+    padding:0 max(calc(20/va.$sp-design-width*100vw), 20px);
+    max-width: 400px;;
+    @include mixin.mq(pc){
+        flex-direction: row;
+    }
+}

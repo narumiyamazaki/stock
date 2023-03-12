@@ -1,0 +1,21 @@
+@use '../../../scss/Foundation/mixin';
+@use '../../Foundation/vars' as va;
+
+.p-nav__item__link--home{
+    color: va.$font-color;
+    font-family: va.$font-Japanese;
+    //margin-right: 1rem;
+    font-size: max(calc(16/va.$sp-design-width*100vw),16px);
+    height: max(calc(57/va.$sp-design-width*100vw),57px);
+    position:relative;
+    border-top: 1px solid #E7E7E7;
+    border-bottom: 1px solid #E7E7E7;
+    &::before{
+        content:'';
+        position:absolute;
+        width:max(calc(5/va.$sp-design-width*100vw),5px);
+        height:max(calc(57/va.$sp-design-width*100vw),57px);
+        left:max(calc(20/va.$sp-design-width*100vw),20px);
+        background-color: #37952F;
+    }
+}

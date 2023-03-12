@@ -1,0 +1,16 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-footer__right{
+    color:#fff;
+    font-family: va.$font-Japanese;
+    font-size:max(calc(14/va.$sp-design-width*100vw),14px);
+    font-weight: 700;
+    //letter-spacing: calc(40/1000*1em);
+    line-height: calc(30/14);
+    text-align: center;
+    margin:0 auto;
+    @include mixin.mq(pc){
+        font-size:max(calc(14/va.$pc-design-width*100vw),14px);
+    }
+}

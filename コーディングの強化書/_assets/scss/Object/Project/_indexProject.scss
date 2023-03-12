@@ -1,0 +1,27 @@
+@use './p-header__nav__items';
+@use './p-sub-menu__items';
+@use './p-header__logo';
+@use './p-nav__btn';
+@use './p-header__nav__body';
+@use './p-nav__item__link--home';
+@use './p-nav__item__link';
+@use './p-sub-menu__item';
+@use './p-nav__sub-item__icon';
+
+//mv
+@use './p-mv__wrapper';
+@use './p-mv';
+@use './p-mv__img';
+
+//service
+@use './p-article__service__link';
+@use './p-article__service__heading2';
+
+//pick up
+@use './p-article__pick-up__heading2';
+
+//footer
+@use './p-footer__contents__wrapper';
+@use './p-footer__nav__items';
+@use './p-footer__nav__item--link';
+@use './p-footer__right';

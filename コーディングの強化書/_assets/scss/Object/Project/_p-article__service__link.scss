@@ -1,0 +1,21 @@
+@use '../../Foundation/mixin';
+@use '../../Foundation/vars' as va;
+
+.p-article__service__link{
+    font-family: va.$font-Japanese;
+    color: #fff;
+    background-color: #37952F;
+    width: 300px;
+    font-size: max(calc(16/1440*100vw),16px);
+    letter-spacing: calc(100/1000*1em);
+    font-weight: 500;
+    display: inline-block;
+    text-align: center;
+    line-height: calc(23/16);
+    padding: max(calc(40/1440*100vw),40px) 0;
+    text-decoration: none;
+      &:hover{
+      background-color: #FFF;
+      color: #37952F;
+      }
+    }

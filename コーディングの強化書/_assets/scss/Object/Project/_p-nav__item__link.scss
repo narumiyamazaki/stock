@@ -1,0 +1,13 @@
+@use '../../../scss/Foundation/mixin';
+@use '../../Foundation/vars' as va;
+
+.p-nav__item__link{
+    color: va.$font-color;
+    font-family: va.$font-Japanese;
+    //margin-right: 1rem;
+    font-size: max(calc(16/va.$sp-design-width*100vw),16px);
+    height: max(calc(57/va.$sp-design-width*100vw),57px);
+    //aタグがインライン要素なので高さを揃えるためにflexに
+    border-top: 1px solid #E7E7E7;
+    border-bottom: 1px solid #E7E7E7;
+}

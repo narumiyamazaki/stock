@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>クリックしたらサブメニュー表示のヘッダー</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+        <link href="./css/style.css" rel="stylesheet">
+    <!--jQuery-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    </head>
+	<body>
+        <header class="l-header">
+            <!--ロゴ-->
+            <img class="p-header__logo" src="./img/logo.jpg">
+            <div class="p-header__nav__wrapper">
+                <p class="p-nav__btn">
+                    <a href="javascript:void(0)"><span>メニューを開く</span></a>
+                </p>
+                <nav class="p-header__nav__body">
+                    <ul class="p-header__nav__items">
+                        <li class="p-nav__item"><a class="p-nav__item__link--home" href="#">HOME</a></li>
+                        <li class="p-nav__item"><a class="p-nav__item__link" href="#">事業内容</a></li>
+                        <li class="p-nav__item"><a class="p-nav__item__link" href="#">商品紹介</a></li>
+                        <li class="p-nav__item"><a class="p-nav__item__link" href="#">会社概要</a></li>
+                        <li class="p-nav__item"><a class="p-nav__item__link" href="#">採用情報</a></li>
+                        <li class="p-nav__item"><a class="p-nav__item__link" href="#">お問合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="p-main">
+            <div class="p-mv__wrapper">
+                <div class="p-mv">
+                    <h2 class="p-mv__heading2"><span class="u_display__change">キャッチコピーの</span>文章がはいりますキャッチコピーの文章が入ります</span></h2>
+                    <div class="p-mv__img"></div> 
+                </div>
+            </div>
+            <article class="p-article__service">
+                <h2 class="p-article__service__heading2">service</h2>
+                <div class="p-section__service__container">
+                    <div class="p-section__service__card__wrapper">
+                        <div class="p-section__service__card__thumbnail"></div>
+                        <h3 class="p-section__service__card__heading3">サービス名</h3>
+                        <p class="p-section__service__card__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                        <a class="p-article__service__link" href="#">詳しく見る</a>
+                    </div>
+                    <div class="p-section__service__card__wrapper">
+                        <div class="p-section__service__card__thumbnail"></div>
+                        <h3 class="p-section__service__card__heading3">サービス名</h3>
+                        <p class="p-section__service__card__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                        <a class="p-article__service__link" href="#">詳しく見る</a>
+                    </div>
+                    <div class="p-section__service__card__wrapper">
+                        <div class="p-section__service__card__thumbnail"></div>
+                        <h3 class="p-section__service__card__heading3">サービス名</h3>
+                        <p class="p-section__service__card__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                        <a class="p-article__service__link" href="#">詳しく見る</a>
+                    </div>
+                </div>
+                <a class="p-article__service__link__business" href="#">事業内容</a>
+            </article>
+            <article class="p-article__pick-up">
+                <h2 class="p-article__pick-up__heading2">pick&copy;up</h2>
+                <div class="p-article__pick-up__container">
+                    <div class="p-section__pick-up__card__wrapper">
+                        <div class="p-section__pick-up__card__thumbnail"></div>
+                        <h3 class="p-section__pick-up__card__heading3"><span class="c-arrow"></span>商品タイトル</h3>
+                    </div>
+                    <div class="p-section__pick-up__card__wrapper">
+                        <div class="p-section__pick-up__card__thumbnail"></div>
+                        <h3 class="p-section__pick-up__card__heading3"><span class="c-arrow"></span>商品タイトル</h3>
+                    </div>
+                    <div class="p-section__pick-up__card__wrapper">
+                        <div class="p-section__pick-up__card__thumbnail"></div>
+                        <h3 class="p-section__pick-up__card__heading3"><span class="c-arrow"></span>商品タイトル商品タイトル商品タイトル商品タイトル商品タイトル</h3>
+                    </div>
+                    <div class="p-section__pick-up__card__wrapper">
+                        <div class="p-section__pick-up__card__thumbnail"></div>
+                        <h3 class="p-section__pick-up__card__heading3"><span class="c-arrow"></span>商品タイトル</h3>
+                    </div>
+                </div>
+                <a class="p-article__pick-up__link" href="#">詳しく見る</a>
+            </article>
+            <footer class="l-footer">
+                <div class="p-footer__contents__wrapper">
+                    <div class="p-footer__nav__wrapper">
+                        <ul class="p-footer__nav__items">
+                            <li class="p-footer__nav__item"><a class="p-footer__nav__item--link">サイトポリシー</a></li>
+                            <li class="p-footer__nav__item"><a class="p-footer__nav__item--link">プライバシーポリシー</a></li>
+                            <li class="p-footer__nav__item"><a class="p-footer__nav__item--link">サイトマップ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="p-footer__right">&copy;sample&nbsp;All&nbsp;Rights&nbsp;Reserved.</span></div>
+            </footer>
+        </main>
+    <script src="js/on.click.js"></script>
+	</body>
+</html>
