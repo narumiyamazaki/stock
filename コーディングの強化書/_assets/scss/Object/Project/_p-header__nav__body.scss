@@ -1,3 +1,4 @@
+@use '../../Foundation/vars' as va;
 @use '../../Foundation/mixin';
 
 .p-header__nav__body{
@@ -8,12 +9,14 @@
     left: 0;
     right: 0;
     background-color: #fff;
-    height:100vh;
+    height:calc(100vh - 50px);
     z-index:1;
     @include mixin.mq(pc){
         display:block;
         position: static;
-        
+        height: 100%;
+        width: max(calc(606/va.$pc-design-width*100vw), 420px);
+        margin-right: calc(25/va.$pc-design-width*100vw);
     }
 }
 

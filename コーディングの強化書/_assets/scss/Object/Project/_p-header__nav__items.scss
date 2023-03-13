@@ -3,9 +3,7 @@
 
 .p-header__nav__items {
     @include mixin.mq(pc){
-        width: max(calc(606/va.$pc-design-width*100vw),606px);
-        margin-right:max(calc(25/va.$pc-design-width*100vw),25px);
         display: flex;
-        justify-content: center;  
+        justify-content: space-between;  
     }
 }

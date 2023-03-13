@@ -2,9 +2,8 @@
 @use '../../Foundation/mixin';
 
 .p-nav__item{
-    display: flex;
-    align-items: center;
+    border-bottom: 1px solid #e3e3e3;
     @include mixin.mq(pc){
-        flex-direction: column;
+        border-bottom: none;
     }
 }

@@ -6,13 +6,16 @@
     align-items: center;
     justify-content: space-between;
     height: 50px;
+    border-bottom: 1px solid #E7E7E7;
+    //headerを固定する場合
+    //position:fixedがないとheight100vhで画面いっぱいにならない
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
     @include mixin.mq(pc){
-        //headerを固定する場合
-        position:fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: #fff;    
+        height: 100px;
     }
 }

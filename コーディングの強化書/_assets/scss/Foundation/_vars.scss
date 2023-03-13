@@ -14,7 +14,7 @@ $font-color: #333333;
 
 // メディアクエリのブレイクポイント用変数
 $breakpoints: (
-    'sp': 'screen and (max-width: 414px)',
+    'sp': 'screen and (max-width: 767px)',
     'tb': 'screen and (max-width: 768px)',
-    'pc': 'screen and (max-width: 1024px)',
+    'pc': 'screen and (min-width: 1024px)',
   ) !default;
