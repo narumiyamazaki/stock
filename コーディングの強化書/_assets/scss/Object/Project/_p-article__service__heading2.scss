@@ -10,6 +10,8 @@
     //ext-align: center;
     margin-bottom: max(calc(20/va.$pc-design-width*100vw),20px);
     letter-spacing: calc(200/1000*1em);
+    text-align: center;
+    text-transform: uppercase;
     @include mixin.mq(pc){
         font-size:max(calc(48/va.$pc-design-width*100vw),48px);
         margin-bottom: max(calc(40/va.$pc-design-width*100vw),40px);

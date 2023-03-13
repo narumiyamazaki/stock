@@ -22,6 +22,9 @@
 //service
 @use './p-article__service__link';
 @use './p-article__service__heading2';
+@use './p-section__service__card__thumbnail';
+@use './p-section__service__card__heading3';
+@use './p-section__service__text__wrapper';
 
 //pick up
 @use './p-article__pick-up__heading2';

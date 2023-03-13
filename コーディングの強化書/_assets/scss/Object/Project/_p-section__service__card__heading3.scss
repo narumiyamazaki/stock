@@ -1,0 +1,17 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-section__service__card__heading3{
+    font-family: va.$font-Japanese;
+    font-size:calc(20/va.$sp-design-width*100vw);
+    color: va.$font-color;
+    line-height: calc( 72/20 );
+    //letter-spacing: calc(/1000 * 1em);
+    font-weight: 700;
+    margin:0;
+    @include mixin.mq(pc){
+    font-size:max(calc(20/va.$pc-design-width*100vw),16px);
+    //line-height: calc( / );
+    //letter-spacing: calc(/1000 * 1em);
+    }
+}

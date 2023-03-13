@@ -4,8 +4,8 @@
 .p-conents{
     max-width: 400px;
     margin:0 auto;
+    padding:0 calc(20/va.$sp-design-width*100vw);
     @include mixin.mq(pc){
-        padding:0 calc(20/va.$pc-design-width*100vw);
         max-width: none;
     }
 }

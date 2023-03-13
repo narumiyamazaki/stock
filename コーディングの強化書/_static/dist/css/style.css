@@ -617,9 +617,9 @@ footer.is-action{
 }
 
 .p-header__logo {
-  width: max(13.6897001304vw, 105px);
-  height: max(2.998696219vw, 23px);
-  margin-left: max(2.6075619296vw, 20px);
+  width: max(28vw, 105px);
+  height: max(6.1333333333vw, 23px);
+  margin-left: max(5.3333333333vw, 20px);
 }
 @media screen and (min-width: 1025px) {
   .p-header__logo {
@@ -717,7 +717,7 @@ footer.is-action{
 .p-nav__item__link--current {
   color: #333333;
   font-family: "Noto Sans JP", sans-serif;
-  font-size: max(2.0860495437vw, 16px);
+  font-size: max(4.2666666667vw, 16px);
   font-weight: 700;
   line-height: 1.125;
   position: relative;
@@ -748,7 +748,7 @@ footer.is-action{
 .p-nav__item__link {
   color: #333333;
   font-family: "Noto Sans JP", sans-serif;
-  font-size: max(2.0860495437vw, 16px);
+  font-size: max(4.2666666667vw, 16px);
   font-weight: 700;
   line-height: 1.125;
   padding: max(1.25vw, 20px) 0 max(1.25vw, 20px) max(1.25vw, 20px);
@@ -780,10 +780,10 @@ footer.is-action{
 .p-conents {
   max-width: 400px;
   margin: 0 auto;
+  padding: 0 5.3333333333vw;
 }
 @media screen and (min-width: 1025px) {
   .p-conents {
-    padding: 0 1.25vw;
     max-width: none;
   }
 }
@@ -805,7 +805,7 @@ footer.is-action{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 max(2.6075619296vw, 20px);
+  padding: 0 max(5.3333333333vw, 20px);
 }
 @media screen and (min-width: 1025px) {
   .p-mv {
@@ -815,7 +815,7 @@ footer.is-action{
     padding: 0;
     width: 68vw;
     margin: 0 auto;
-    padding: 2.6075619296vw 0;
+    padding: 5.3333333333vw 0;
   }
 }
 
@@ -823,10 +823,10 @@ footer.is-action{
   font-family: "Noto Sans JP", sans-serif;
   color: #fff;
   font-weight: 700;
-  font-size: max(2.6075619296vw, 16px);
+  font-size: max(5.3333333333vw, 16px);
   order: 1;
   line-height: 2;
-  margin: 3.3898305085vw 0 4.6936114733vw;
+  margin: 6.9333333333vw 0 9.6vw;
 }
 @media screen and (min-width: 1025px) {
   .p-mv__heading2 {
@@ -842,9 +842,9 @@ footer.is-action{
   background-image: url(../img/mv_illust.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 43.6766623207vw;
-  height: 37.9400260756vw;
-  margin-top: 2.6075619296vw;
+  width: 89.3333333333vw;
+  height: 77.6vw;
+  margin-top: 5.3333333333vw;
 }
 @media screen and (min-width: 1025px) {
   .p-mv__img {
@@ -877,10 +877,12 @@ footer.is-action{
   color: #333;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
-  font-size: max(3.6505867014vw, 28px);
+  font-size: max(7.4666666667vw, 28px);
   line-height: 2.5714285714;
   margin-bottom: max(1.25vw, 20px);
   letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
 }
 @media screen and (min-width: 1025px) {
   .p-article__service__heading2 {
@@ -890,11 +892,47 @@ footer.is-action{
   }
 }
 
+.p-section__service__card__thumbnail {
+  background: url(../img/dmy_thumb01.jpg) no-repeat;
+  width: min(89.0666666667vw, 400px);
+  height: min(42.6666666667vw, 192px);
+  background-size: contain;
+}
+@media screen and (min-width: 1025px) {
+  .p-section__service__card__thumbnail {
+    width: 21.75vw;
+    height: 10vw;
+  }
+}
+
+.p-section__service__card__heading3 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 5.3333333333vw;
+  color: #333333;
+  line-height: 3.6;
+  font-weight: 700;
+  margin: 0;
+}
+@media screen and (min-width: 1025px) {
+  .p-section__service__card__heading3 {
+    font-size: max(1.25vw, 16px);
+  }
+}
+
+.p-section__service__text__wrapper {
+  padding: 4.2666666667vw 5.6vw 5.3333333333vw 5.6vw;
+}
+@media screen and (min-width: 1025px) {
+  .p-section__service__text__wrapper {
+    padding: 1vw 1.3125vw 1.25vw 1.3125vw;
+  }
+}
+
 .p-article__pick-up__heading2 {
   color: #333;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
-  font-size: max(3.6505867014vw, 28px);
+  font-size: max(7.4666666667vw, 28px);
   line-height: 2.5714285714;
   margin-bottom: max(1.25vw, 20px);
   letter-spacing: 0.2em;
@@ -923,7 +961,7 @@ footer.is-action{
 }
 
 .p-footer__nav__item--link {
-  font-size: max(1.8252933507vw, 14px);
+  font-size: max(3.7333333333vw, 14px);
   line-height: 2.1428571429;
   font-weight: 700;
   display: inline-block;
@@ -942,7 +980,7 @@ footer.is-action{
 .p-footer__right {
   color: #fff;
   font-family: "Noto Sans JP", sans-serif;
-  font-size: max(1.8252933507vw, 14px);
+  font-size: max(3.7333333333vw, 14px);
   font-weight: 700;
   line-height: 2.1428571429;
   text-align: center;
