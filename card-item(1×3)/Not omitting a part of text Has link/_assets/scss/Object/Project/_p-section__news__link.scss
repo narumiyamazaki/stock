@@ -1,0 +1,21 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-section__news__link{
+    //font-family: $fontFamily;
+    color: #fefefe;
+    background-color: #7ba87c;
+    //width: 300px;
+    font-size: max(calc(16/1440*100vw),16px);
+    letter-spacing: calc(100/1000*1em);
+    font-weight: 500;
+    display: block;
+    text-align: center;
+    line-height: calc(23/16);
+    padding: max(calc(40/1440*100vw),40px) 0;
+    text-decoration: none;
+        &:hover{
+        background-color: #a389ff;
+        color: #000;
+        }
+}

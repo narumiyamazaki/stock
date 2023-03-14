@@ -1,0 +1,16 @@
+@use '../../Foundation/mixin';
+@use '../../Foundation/vars' as va;
+
+.p-section__news__card__date{
+    font-family: va.$sans;
+    color: va.$text-color;
+    font-weight: 500;
+    font-size: max(calc(14/va.$sp-design-width*100vw),14px);
+    line-height: calc(32/14);
+    letter-spacing: calc(80/1000*1em);
+    @include mixin.mq(pc){
+        font-size:max(calc(14/va.$pc-design-width*100vw),14px);
+        //margin-bottom: max(calc(20/va.$pc-design-width*100vw),20px);
+        //line-height: calc(32/14);
+    }
+}

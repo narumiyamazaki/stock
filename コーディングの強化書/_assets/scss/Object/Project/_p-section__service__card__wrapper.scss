@@ -4,5 +4,7 @@
 .p-section__service__card__wrapper{
     @include mixin.mq(pc){
         width:calc(348/va.$pc-design-width*100vw);
+        display: flex;
+        flex-direction: column;
     }
 }

@@ -1,0 +1,21 @@
+@use '../../Foundation/mixin';
+@use '../../Foundation/vars' as va;
+
+.p-section__news__card__heading3{
+    font-family: va.$serif;
+    color: va.$text-color;
+    font-weight: 500;
+    font-size: max(calc(16/va.$sp-design-width*100vw),16px);
+    line-height: calc(27/18);
+    //はみ出た文字を省略
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    letter-spacing: calc(40/1000*1em);
+    margin-bottom: calc(40/va.$sp-design-width*100vw);
+    @include mixin.mq(pc){
+        font-size:max(calc(18/va.$pc-design-width*100vw),18px);
+        margin-bottom: calc(20/va.$pc-design-width*100vw);
+        line-height: calc(26/18);
+    }
+}

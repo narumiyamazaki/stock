@@ -1,0 +1,12 @@
+@use '../../Foundation/mixin';
+@use '../../Foundation/vars' as va;
+
+.p-article__news__link{
+    @include mixin.button_sub-color--sp;
+    margin-bottom: calc(120/va.$sp-design-width*100vw);
+    @include mixin.mq(pc){
+        @include mixin.button_sub-color--pc;
+        margin-left:auto;
+        margin-right:auto;
+    } 
+}

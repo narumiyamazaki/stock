@@ -550,526 +550,148 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-a {
-  text-decoration: none;
-}
-
-ul {
-  margin: 0;
-}
-
-.l-header {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 50px;
-  border-bottom: 1px solid #E7E7E7;
-  position: fixed;
-  z-index: 1;
+  position: relative;
+  z-index: 100;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff;
+  height: 100vh;
+}
+
+.p-article__news {
+  background-color: #F3E1D5;
+  padding: 10.4302477184vw 5% 8.78477306vw;
 }
 @media screen and (min-width: 1025px) {
-  .l-header {
-    height: 100px;
+  .p-article__news {
+    padding: 0 8.4187408492vw 5.8565153734vw;
   }
 }
 
-.l-footer {
-  background-color: #707070;
+.p-article__news__heading2 {
+  color: #2B0603;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 500;
+  font-size: max(2.6075619296vw, 20px);
+  line-height: 1.4285714286;
+  margin-bottom: max(2.9282576867vw, 40px);
+  letter-spacing: 0.45em;
+  text-align: center;
 }
 @media screen and (min-width: 1025px) {
-  .l-footer {
-    display: flex;
-    justify-content: space-between;
+  .p-article__news__heading2 {
+    font-size: max(2.0497803807vw, 28px);
+    margin-bottom: max(5.8565153734vw, 80px);
+    padding-top: 10.980966325vw;
   }
 }
 
-/*サイドバーとフッターが重なってしまうとロゴが見えたりしてしまうので
-ハンバーガーメニューをクリックしたときにサイドバーの下にもぐらせる
-footer.is-action{
-    position: relative;
-    z-index: -1;
-}
-*/
-@media screen and (min-width: 1025px) {
-  .p-header__nav__items {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.p-sub-menu__items {
-  display: none;
-  position: absolute;
-}
-
-.p-sub-menu__items.open {
-  display: block;
-  position: static;
-}
-@media screen and (min-width: 1025px) {
-  .p-sub-menu__items.open {
-    position: absolute;
-  }
-}
-
-.p-header__logo {
-  width: max(28vw, 105px);
-  height: max(6.1333333333vw, 23px);
-  max-height: 50px;
-  margin-left: max(5.3333333333vw, 20px);
-}
-@media screen and (min-width: 1025px) {
-  .p-header__logo {
-    width: 13.125vw;
-    height: 2.8125vw;
-    margin-left: max(3.125vw, 50px);
-    max-height: none;
-  }
-}
-
-.p-nav__btn {
-  background-color: #37952F;
-}
-@media screen and (min-width: 1025px) {
-  .p-nav__btn {
-    display: none;
-  }
-}
-.p-nav__btn > a {
-  display: block;
-  position: relative;
-  width: 50px;
-  height: 50px;
-}
-.p-nav__btn > a::before {
-  position: absolute;
-  top: 15px;
-  left: 14px;
-  content: "";
-  width: 23px;
-  height: 2px;
-  background-color: #fff;
-  transition: 0.2s;
-}
-.p-nav__btn > a > span {
-  display: block;
-  overflow: hidden;
-  width: 1px;
-  height: 1px;
-}
-.p-nav__btn > a > span::after {
-  position: absolute;
-  top: 24px;
-  left: 14px;
-  content: "";
-  width: 23px;
-  height: 2px;
-  background-color: #fff;
-  transition: 0.2s;
-}
-.p-nav__btn > a::after {
-  position: absolute;
-  bottom: 15px;
-  left: 14px;
-  content: "";
-  width: 23px;
-  height: 2px;
-  background-color: #fff;
-}
-.p-nav__btn > a.open::before {
-  top: 24px;
-  transform: rotate(-45deg);
-}
-.p-nav__btn > a.open::after {
-  display: none;
-}
-.p-nav__btn > a.open > span::after {
-  bottom: 24px;
-  transform: rotate(-135deg);
-}
-
-.p-header__nav__body {
-  display: none;
-  position: absolute;
-  top: 50px;
-  left: 0;
-  right: 0;
-  background-color: #fff;
-  height: calc(100vh - 50px);
-  z-index: 1;
-}
-@media screen and (min-width: 1025px) {
-  .p-header__nav__body {
-    display: block;
-    position: static;
-    height: 100%;
-    width: max(37.875vw, 420px);
-    margin-right: 1.5625vw;
-  }
-}
-
-.p-header__nav__body.open {
-  display: block;
-}
-
-.p-nav__item__link--current {
-  color: #333333;
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: max(4.2666666667vw, 16px);
-  font-weight: 700;
-  line-height: 1.125;
-  position: relative;
-  border-left: 5px solid #37952F;
-  padding: max(1.25vw, 20px) 0 max(1.25vw, 20px) max(0.9375vw, 15px);
-  display: block;
-  /*
-  &::before{
-      content:'';
-      position:absolute;
-      width:max(calc(5/va.$sp-design-width*100vw),5px);
-      height:max(calc(57/va.$sp-design-width*100vw),57px);
-      left:0;
-      top:0;
-      background-color: #37952F;
-  }
-  */
-}
-.p-nav__item__link--current:hover {
-  color: #37952F;
-}
-@media screen and (min-width: 1025px) {
-  .p-nav__item__link--current {
-    border-left: none;
-    font-size: max(1.125vw, 16px);
-    padding: 0;
-    border-bottom: 3px solid #37952F;
-  }
-}
-
-.p-nav__item__link {
-  color: #333333;
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: max(4.2666666667vw, 16px);
-  font-weight: 700;
-  line-height: 1.125;
-  padding: max(1.25vw, 20px) 0 max(1.25vw, 20px) max(1.25vw, 20px);
-  display: block;
-}
-.p-nav__item__link:hover {
-  color: #37952F;
-}
-@media screen and (min-width: 1025px) {
-  .p-nav__item__link {
-    font-size: max(1.125vw, 16px);
-    padding: 0;
-  }
-}
-
-.p-nav__item {
-  border-bottom: 1px solid #e3e3e3;
-}
-@media screen and (min-width: 1025px) {
-  .p-nav__item {
-    border-bottom: none;
-  }
-}
-
-.p-nav__sub-item__icon::after {
-  font-family: "Font Awesome 5 Pro";
-  font-weight: 900;
-  content: "\f078";
-  margin-left: 1rem;
-}
-
-.p-contents {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 0 5.3333333333vw;
-}
-@media screen and (min-width: 1025px) {
-  .p-contents {
-    max-width: none;
-    width: 68vw;
-    padding: 0;
-  }
-}
-
-.p-main {
-  margin: 50px auto 0;
-}
-@media screen and (min-width: 1025px) {
-  .p-main {
-    margin-top: 100px;
-  }
-}
-
-.p-mv__wrapper {
-  background-color: #37952F;
-}
-
-.p-mv {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 max(5.3333333333vw, 20px);
-}
-@media screen and (min-width: 1025px) {
-  .p-mv {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    width: 68vw;
-    margin: 0 auto;
-    padding: 5.3333333333vw 0;
-  }
-}
-
-.p-mv__heading2 {
-  font-family: "Noto Sans JP", sans-serif;
-  color: #fff;
-  font-weight: 700;
-  font-size: max(5.3333333333vw, 16px);
-  order: 1;
-  line-height: 2;
-  margin: 6.9333333333vw 0 9.6vw;
-}
-@media screen and (min-width: 1025px) {
-  .p-mv__heading2 {
-    line-height: 2;
-    font-size: 2.25vw;
-    order: 0;
-    margin-left: 5.75vw;
-    max-width: 320px;
-  }
-}
-
-.p-mv__img {
-  background-image: url(../img/mv_illust.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 89.3333333333vw;
-  height: 77.6vw;
-  margin-top: 5.3333333333vw;
-}
-@media screen and (min-width: 1025px) {
-  .p-mv__img {
-    width: 27.5vw;
-    height: 23.875vw;
-    margin-top: 0;
-  }
-}
-
-.p-article__service__link {
-  font-family: "Noto Sans JP", sans-serif;
-  color: #fff;
-  background-color: #37952F;
+.p-section__news__link {
+  color: #fefefe;
+  background-color: #7ba87c;
   font-size: max(1.1111111111vw, 16px);
   letter-spacing: 0.1em;
-  font-weight: 700;
+  font-weight: 500;
   display: block;
   text-align: center;
   line-height: 1.4375;
-  padding: 3.4666666667vw 0;
+  padding: max(2.7777777778vw, 40px) 0;
   text-decoration: none;
 }
-.p-article__service__link:hover {
-  background-color: #FFF;
-  color: #37952F;
-  border: 1px solid #37952F;
+.p-section__news__link:hover {
+  background-color: #a389ff;
+  color: #000;
+}
+
+.p-section__news {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10.4302477184vw;
 }
 @media screen and (min-width: 1025px) {
-  .p-article__service__link {
-    padding: 0.8125vw 0;
+  .p-section__news {
+    flex-direction: row;
+    width: 83.4553440703vw;
+    justify-content: space-between;
+    margin-bottom: 7.3206442167vw;
+  }
+}
+
+.p-section__news__card__wrapper {
+  /*カードの大きさ*/
+}
+@media screen and (min-width: 1025px) {
+  .p-section__news__card__wrapper {
+    width: 26.3543191801vw;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.p-section__news__card__thumbnail {
+  background-image: url(../img/news_card_thumbnail.png);
+  height: 65.1890482399vw;
+  margin-bottom: 5.2151238592vw;
+  background-size: contain;
+}
+@media screen and (min-width: 1025px) {
+  .p-section__news__card__thumbnail {
+    margin-bottom: 2.196193265vw;
+    height: 17.9355783309vw;
+    background-size: cover;
+  }
+}
+
+.p-section__news__card__heading3 {
+  font-family: "Noto Serif JP", serif;
+  color: #2B0603;
+  font-weight: 500;
+  font-size: max(2.0860495437vw, 16px);
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  margin-bottom: 5.2151238592vw;
+}
+@media screen and (min-width: 1025px) {
+  .p-section__news__card__heading3 {
+    font-size: max(1.317715959vw, 18px);
+    margin-bottom: 1.4641288433vw;
+    line-height: 1.4444444444;
+  }
+}
+
+.p-section__news__card__text {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #2B0603;
+  font-weight: 500;
+  font-size: max(1.8252933507vw, 14px);
+  line-height: 2;
+  letter-spacing: 0.08em;
+  margin-bottom: 5.2151238592vw;
+}
+@media screen and (min-width: 1025px) {
+  .p-section__news__card__text {
+    font-size: max(1.0248901903vw, 14px);
+    margin-bottom: 1.4641288433vw;
+    line-height: 2;
     margin-top: auto;
   }
 }
 
-.p-article__service__heading2 {
-  color: #333;
-  font-family: "Oswald", sans-serif;
-  font-weight: 500;
-  font-size: max(7.4666666667vw, 28px);
-  line-height: 2.5714285714;
-  margin-bottom: max(1.25vw, 20px);
-  letter-spacing: 0.2em;
-  text-align: center;
-  text-transform: uppercase;
-}
-@media screen and (min-width: 1025px) {
-  .p-article__service__heading2 {
-    font-size: max(3vw, 48px);
-    margin-bottom: max(2.5vw, 40px);
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 1025px) {
-  .p-section__service__card__wrapper {
-    width: 21.75vw;
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.p-section__service__card__thumbnail {
-  background: url(../img/dmy_thumb01.jpg) no-repeat;
-  height: min(42.6666666667vw, 192px);
-  background-size: contain;
-}
-@media screen and (min-width: 1025px) {
-  .p-section__service__card__thumbnail {
-    height: 10vw;
-  }
-}
-
-.p-section__service__card__heading3 {
+.p-section__news__card__date {
   font-family: "Noto Sans JP", sans-serif;
-  font-size: min(5.3333333333vw, 32px);
-  color: #333333;
-  font-weight: 700;
-  margin: 0;
-}
-@media screen and (min-width: 1025px) {
-  .p-section__service__card__heading3 {
-    font-size: max(1.25vw, 16px);
-  }
-}
-
-.p-section__service__text__wrapper {
-  padding: 4.2666666667vw 5.6vw 5.3333333333vw 5.6vw;
-}
-@media screen and (min-width: 1025px) {
-  .p-section__service__text__wrapper {
-    padding: 1vw 1.3125vw 1.25vw 1.3125vw;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-}
-
-.p-section__service__card__text {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: min(4.2666666667vw, 32px);
-  color: #333333;
-  line-height: 1.875;
-  margin-bottom: 8.5333333333vw;
+  color: #2B0603;
   font-weight: 500;
+  font-size: max(1.8252933507vw, 14px);
+  line-height: 2.2857142857;
+  letter-spacing: 0.08em;
 }
 @media screen and (min-width: 1025px) {
-  .p-section__service__card__text {
-    font-size: max(1vw, 16px);
-    margin-bottom: 2vw;
-    margin-top: 0;
+  .p-section__news__card__date {
+    font-size: max(1.0248901903vw, 14px);
   }
-}
-
-@media screen and (min-width: 1025px) {
-  .p-section__service__container {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.p-article__pick-up__heading2 {
-  color: #333;
-  font-family: "Oswald", sans-serif;
-  font-weight: 500;
-  font-size: max(7.4666666667vw, 28px);
-  line-height: 2.5714285714;
-  margin-bottom: max(1.25vw, 20px);
-  letter-spacing: 0.2em;
-}
-@media screen and (min-width: 1025px) {
-  .p-article__pick-up__heading2 {
-    font-size: max(3vw, 48px);
-    margin-bottom: max(2.5vw, 40px);
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 1025px) {
-  .p-footer__contents__wrapper {
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 1025px) {
-  .p-footer__nav__items {
-    width: 40.5vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-.p-footer__nav__item--link {
-  font-size: max(3.7333333333vw, 14px);
-  line-height: 2.1428571429;
-  font-weight: 700;
-  display: inline-block;
-  /*大文字の英語の場合のみ
-  text-transform: uppercase;
-  font-family: va.$english;
-  */
-}
-@media screen and (min-width: 1025px) {
-  .p-footer__nav__item--link {
-    font-size: max(1.125vw, 18px);
-    line-height: 3;
-  }
-}
-
-.p-footer__right {
-  color: #fff;
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: max(3.7333333333vw, 14px);
-  font-weight: 700;
-  line-height: 2.1428571429;
-  text-align: center;
-  margin: 0 auto;
-}
-@media screen and (min-width: 1025px) {
-  .p-footer__right {
-    font-size: max(0.875vw, 14px);
-  }
-}
-
-.background {
-  background-color: black;
-  width: 680px;
-  height: 235px;
-}
-
-.container {
-  padding-top: 1rem;
-  padding: 0 10rem;
-}
-@media screen and (min-width: 768px) {
-  .container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-  }
-}
-
-.item {
-  background-color: aqua;
-  font-size: 1.2rem;
-  padding: 1rem;
-}
-@media screen and (min-width: 768px) {
-  .item {
-    width: 10rem;
-    margin-bottom: 2rem;
-  }
-}
-
-.u_display__change {
-  display: block;
 }
 /*# sourceMappingURL=style.css.map */
