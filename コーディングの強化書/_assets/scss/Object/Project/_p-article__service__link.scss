@@ -5,17 +5,24 @@
     font-family: va.$font-Japanese;
     color: #fff;
     background-color: #37952F;
-    width: 300px;
+    //width: calc(292/va.$sp-design-width*100vw);
+    //height:calc(47/va.$sp-design-width*100vw);
     font-size: max(calc(16/1440*100vw),16px);
     letter-spacing: calc(100/1000*1em);
-    font-weight: 500;
-    display: inline-block;
+    font-weight: 700;
+    display: block;
     text-align: center;
-    line-height: calc(23/16);
-    padding: max(calc(40/1440*100vw),40px) 0;
+    line-height: calc(23/16);;
+    padding:calc(13/va.$sp-design-width*100vw) 0;
     text-decoration: none;
       &:hover{
       background-color: #FFF;
       color: #37952F;
+      border: 1px solid #37952F;
+      }
+      @include mixin.mq(pc){
+        //width: calc(306/va.$pc-design-width*100vw);
+        padding:calc(13/va.$pc-design-width*100vw) 0;
+        margin-top:auto;
       }
     }

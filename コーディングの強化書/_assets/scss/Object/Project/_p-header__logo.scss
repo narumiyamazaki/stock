@@ -4,11 +4,13 @@
 .p-header__logo{
     width: max(calc(105/va.$sp-design-width*100vw),105px);
     height: max(calc(23/va.$sp-design-width*100vw),23px);
+    max-height: 50px;
     margin-left:max(calc(20/va.$sp-design-width*100vw),20px);
     @include mixin.mq(pc){
         //20vw
         width: calc(210/va.$pc-design-width*100vw);
         height: calc(45/va.$pc-design-width*100vw);
-        margin-left:max(calc(50/va.$pc-design-width*100vw),50px);   
+        margin-left:max(calc(50/va.$pc-design-width*100vw),50px);
+        max-height: none;
     }
 }

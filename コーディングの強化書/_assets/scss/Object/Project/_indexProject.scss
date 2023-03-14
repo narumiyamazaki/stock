@@ -10,7 +10,7 @@
 @use './p-nav__sub-item__icon';
 
 //main・mv
-@use './p-conents';
+@use './p-contents';
 @use './p-main';
 @use './p-mv__wrapper';
 @use './p-mv';
@@ -18,13 +18,15 @@
 @use './p-mv__img';
 
 
-
 //service
 @use './p-article__service__link';
 @use './p-article__service__heading2';
+@use './p-section__service__card__wrapper';
 @use './p-section__service__card__thumbnail';
 @use './p-section__service__card__heading3';
 @use './p-section__service__text__wrapper';
+@use './p-section__service__card__text';
+@use './p-section__service__container';
 
 //pick up
 @use './p-article__pick-up__heading2';

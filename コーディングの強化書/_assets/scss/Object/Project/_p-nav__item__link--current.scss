@@ -13,6 +13,9 @@
     //border-bottom: 1px solid #E7E7E7;
     padding:max(calc(20/va.$pc-design-width*100vw),20px) 0 max(calc(20/va.$pc-design-width*100vw),20px) max(calc(15/va.$pc-design-width*100vw),15px);
     display: block;
+    &:hover{
+        color: #37952F;
+    }
     @include mixin.mq(pc){
         border-left:none;
         font-size: max(calc(18/va.$pc-design-width*100vw),16px);
