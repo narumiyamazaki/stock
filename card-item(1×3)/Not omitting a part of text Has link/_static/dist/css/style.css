@@ -590,6 +590,26 @@ body {
   }
 }
 
+.p-article__news__link {
+  color: #fefefe;
+  background-color: #f0a319;
+  width: 300px;
+  margin: 0 auto;
+  font-size: max(1.1111111111vw, 16px);
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  line-height: 1.4375;
+  padding: max(2.7777777778vw, 40px) 0;
+  text-decoration: none;
+  margin-top: auto;
+}
+.p-article__news__link:hover {
+  background-color: #a389ff;
+  color: #000;
+}
+
 .p-section__news__link {
   color: #fefefe;
   background-color: #7ba87c;
@@ -601,6 +621,7 @@ body {
   line-height: 1.4375;
   padding: max(2.7777777778vw, 40px) 0;
   text-decoration: none;
+  margin-top: auto;
 }
 .p-section__news__link:hover {
   background-color: #a389ff;
@@ -660,6 +681,16 @@ body {
     font-size: max(1.317715959vw, 18px);
     margin-bottom: 1.4641288433vw;
     line-height: 1.4444444444;
+    /*
+    //1行の場合
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
   }
 }
 
@@ -677,7 +708,6 @@ body {
     font-size: max(1.0248901903vw, 14px);
     margin-bottom: 1.4641288433vw;
     line-height: 2;
-    margin-top: auto;
   }
 }
 

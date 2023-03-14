@@ -13,5 +13,23 @@
         font-size:max(calc(18/va.$pc-design-width*100vw),18px);
         margin-bottom: calc(20/va.$pc-design-width*100vw);
         line-height: calc(26/18);
+
+        //現実的には最大何行になるか決めておき、それ以上は省略することになりそう
+        //そうしないと本文の高さがそろわない
+        //ということはこちらのスニペットでもそうしておくべきか
+
+        /*
+        //1行の場合
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        */
+
+        //複数行の場合 -webkit-line-clamp: 2;の数字の部分を変える
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+
     }
 }
