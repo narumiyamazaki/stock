@@ -1,13 +1,13 @@
 @use '../../Foundation/mixin';
 @use '../../Foundation/vars' as va;
 
-.p-section__news{
+.p-section__news__container{
     display: flex;
     flex-direction: column;
     margin-bottom: calc(80/va.$sp-design-width*100vw);
     @include mixin.mq(pc){
         flex-direction: row;
-        width: calc(1140/va.$pc-design-width*100vw);
+        //width: calc(1140/va.$pc-design-width*100vw);
         justify-content: space-between;
         margin-bottom: calc(100/va.$pc-design-width*100vw);
         //width: 100%;

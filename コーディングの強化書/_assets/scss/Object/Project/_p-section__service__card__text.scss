@@ -10,7 +10,8 @@
     //letter-spacing: calc(/1000 * 1em);
     font-weight: 500;
     @include mixin.mq(tb){
-        font-size:max(calc(16/va.$tb-design-width*100vw),16px);    
+        font-size:max(calc(16/va.$tb-design-width*100vw),16px);
+        margin-bottom:calc(32/va.$tb-design-width*100vw); 
     }
     @include mixin.mq(pc){
     font-size:max(calc(16/va.$pc-design-width*100vw),16px);

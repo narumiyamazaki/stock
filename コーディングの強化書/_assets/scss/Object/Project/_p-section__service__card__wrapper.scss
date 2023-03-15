@@ -8,9 +8,14 @@
     }
     @include mixin.mq(tb){
         margin-bottom: 0;
-        width:calc(348/va.$tb-design-width*100vw);
+        width:calc((100% - (20px * 2)) / 3 );
         display: flex;
         flex-direction: column;
+        margin-right:20px;
+        &:last-child{
+            margin-right:0;
+        }
+        
     }    
     @include mixin.mq(pc){
         width:calc(348/va.$pc-design-width*100vw);

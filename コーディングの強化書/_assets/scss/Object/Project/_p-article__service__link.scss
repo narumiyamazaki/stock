@@ -21,6 +21,9 @@
       color: #37952F;
       border: 1px solid #37952F;
       }
+      @include mixin.mq(tb){
+        padding:calc(13/va.$tb-design-width*100vw) 0;
+      }
       @include mixin.mq(pc){
         //width: calc(306/va.$pc-design-width*100vw);
         padding:calc(13/va.$pc-design-width*100vw) 0;
