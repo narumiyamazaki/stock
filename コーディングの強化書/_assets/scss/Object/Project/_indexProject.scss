@@ -19,6 +19,7 @@
 
 
 //service
+@use './p-article__service';
 @use './p-article__service__link';
 @use './p-article__service__heading2';
 @use './p-section__service__card__wrapper';
@@ -27,6 +28,7 @@
 @use './p-section__service__text__wrapper';
 @use './p-section__service__card__text';
 @use './p-section__service__container';
+@use './p-article__service__link__business';
 
 //pick up
 @use './p-article__pick-up__heading2';

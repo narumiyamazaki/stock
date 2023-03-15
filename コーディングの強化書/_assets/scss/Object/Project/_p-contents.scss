@@ -2,11 +2,9 @@
 @use '../../Foundation/mixin';
 
 .p-contents{
-    max-width: 400px;
     margin:0 auto;
     padding:0 calc(20/va.$sp-design-width*100vw);
     @include mixin.mq(pc){
-        max-width: none;
         width:max(1088/va.$pc-design-width*100vw);
         padding:0;
     }

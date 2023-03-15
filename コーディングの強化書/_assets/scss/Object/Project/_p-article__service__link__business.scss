@@ -1,0 +1,29 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-article__service__link__business{
+    font-family: va.$font-Japanese;
+    color: va.$font-color;
+    background-color: #fff;
+    //width: calc(292/va.$sp-design-width*100vw);
+    //height:calc(47/va.$sp-design-width*100vw);
+    font-size: max(calc(20/1440*100vw),16px);
+    letter-spacing: calc(200/1000*1em);
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    line-height: calc(30/20);;
+    padding:calc(13/va.$sp-design-width*100vw) 0;
+    border:#37952F 1px solid;
+    text-decoration: none;
+      &:hover{
+      background-color: #37952F;
+      color: #fff;
+      //border: 1px solid #37952F;
+      }
+      @include mixin.mq(pc){
+        width: calc(400/va.$pc-design-width*100vw);
+        padding:calc(20/va.$pc-design-width*100vw) 0;
+        margin:calc(40/va.$pc-design-width*100vw) auto 0;
+      }
+}

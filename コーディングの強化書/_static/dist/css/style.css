@@ -786,13 +786,11 @@ footer.is-action{
 }
 
 .p-contents {
-  max-width: 400px;
   margin: 0 auto;
   padding: 0 5.3333333333vw;
 }
 @media screen and (min-width: 1025px) {
   .p-contents {
-    max-width: none;
     width: 68vw;
     padding: 0;
   }
@@ -864,6 +862,22 @@ footer.is-action{
   }
 }
 
+.p-article__service {
+  max-width: 400px;
+  margin: 0 auto 12vw;
+}
+@media screen and (min-width: 768px) {
+  .p-article__service {
+    max-width: none;
+    margin-bottom: 7.8201368524vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-article__service {
+    margin-bottom: 5vw;
+  }
+}
+
 .p-article__service__link {
   font-family: "Noto Sans JP", sans-serif;
   color: #fff;
@@ -876,6 +890,7 @@ footer.is-action{
   line-height: 1.4375;
   padding: 3.4666666667vw 0;
   text-decoration: none;
+  margin-top: auto;
 }
 .p-article__service__link:hover {
   background-color: #FFF;
@@ -893,7 +908,7 @@ footer.is-action{
   color: #333;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
-  font-size: max(7.4666666667vw, 28px);
+  font-size: min(8.5333333333vw, 60px);
   line-height: 2.5714285714;
   margin-bottom: max(1.25vw, 20px);
   letter-spacing: 0.2em;
@@ -908,18 +923,37 @@ footer.is-action{
   }
 }
 
+.p-section__service__card__wrapper {
+  margin-bottom: 5.3333333333vw;
+}
+.p-section__service__card__wrapper:last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .p-section__service__card__wrapper {
+    margin-bottom: 0;
+    width: 34.0175953079vw;
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media screen and (min-width: 1025px) {
   .p-section__service__card__wrapper {
     width: 21.75vw;
-    display: flex;
-    flex-direction: column;
   }
 }
 
 .p-section__service__card__thumbnail {
   background: url(../img/dmy_thumb01.jpg) no-repeat;
+  width: min(89.0666666667vw, 400px);
   height: min(42.6666666667vw, 192px);
   background-size: contain;
+}
+@media screen and (min-width: 768px) {
+  .p-section__service__card__thumbnail {
+    width: 100%;
+    height: min(15.6402737048vw, 192px);
+  }
 }
 @media screen and (min-width: 1025px) {
   .p-section__service__card__thumbnail {
@@ -934,6 +968,11 @@ footer.is-action{
   font-weight: 700;
   margin: 0;
 }
+@media screen and (min-width: 768px) {
+  .p-section__service__card__heading3 {
+    font-size: min(1.9550342131vw, 32px);
+  }
+}
 @media screen and (min-width: 1025px) {
   .p-section__service__card__heading3 {
     font-size: max(1.25vw, 16px);
@@ -943,12 +982,14 @@ footer.is-action{
 .p-section__service__text__wrapper {
   padding: 4.2666666667vw 5.6vw 5.3333333333vw 5.6vw;
 }
+@media screen and (min-width: 768px) {
+  .p-section__service__text__wrapper {
+    padding: 1.5640273705vw 2.0527859238vw 1.9550342131vw 2.0527859238vw;
+  }
+}
 @media screen and (min-width: 1025px) {
   .p-section__service__text__wrapper {
     padding: 1vw 1.3125vw 1.25vw 1.3125vw;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
   }
 }
 
@@ -960,6 +1001,11 @@ footer.is-action{
   margin-bottom: 8.5333333333vw;
   font-weight: 500;
 }
+@media screen and (min-width: 768px) {
+  .p-section__service__card__text {
+    font-size: max(1.5640273705vw, 16px);
+  }
+}
 @media screen and (min-width: 1025px) {
   .p-section__service__card__text {
     font-size: max(1vw, 16px);
@@ -968,10 +1014,39 @@ footer.is-action{
   }
 }
 
-@media screen and (min-width: 1025px) {
-  .p-section__service__container {
+.p-section__service__card__container {
+  margin-bottom: 21.3333333333vw;
+}
+@media screen and (min-width: 768px) {
+  .p-section__service__card__container {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+.p-article__service__link__business {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #333333;
+  background-color: #fff;
+  font-size: max(1.3888888889vw, 16px);
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  line-height: 1.5;
+  padding: 3.4666666667vw 0;
+  border: #37952F 1px solid;
+  text-decoration: none;
+}
+.p-article__service__link__business:hover {
+  background-color: #37952F;
+  color: #fff;
+}
+@media screen and (min-width: 1025px) {
+  .p-article__service__link__business {
+    width: 25vw;
+    padding: 1.25vw 0;
+    margin: 2.5vw auto 0;
   }
 }
 
@@ -979,10 +1054,11 @@ footer.is-action{
   color: #333;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
-  font-size: max(7.4666666667vw, 28px);
+  font-size: min(8.5333333333vw, 60px);
   line-height: 2.5714285714;
   margin-bottom: max(1.25vw, 20px);
   letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 @media screen and (min-width: 1025px) {
   .p-article__pick-up__heading2 {
