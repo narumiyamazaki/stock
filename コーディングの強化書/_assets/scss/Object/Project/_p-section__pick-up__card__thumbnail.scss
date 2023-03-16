@@ -5,9 +5,9 @@
     background: url(../img/rectangle.png) no-repeat;
     //width:max(calc(/va.sp-design-width*100vw),);
     width: 100%;
-    height:max(calc(103/va.$sp-design-width*100vw),);
+    height:min(calc(103/va.$sp-design-width*100vw),164px);
     @include mixin.mq(pc){
     //width:max(calc(/va.$pc-design-width*100vw),);
-    height:max(calc(160/va.$pc-design-width*100vw),);
+    height:max(calc(164/va.$pc-design-width*100vw),);
     }
 }

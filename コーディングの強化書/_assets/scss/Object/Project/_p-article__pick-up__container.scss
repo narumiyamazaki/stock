@@ -7,4 +7,8 @@
     //折り返し自動設定vwでは上手く出来ない感じ
     //minmaxで使える単位にvwがなさそう
     grid-template-columns: repeat(auto-fill, minmax(160px , 1fr));
+    @include mixin.mq(pc){
+        grid-template-columns: repeat(auto-fill, minmax(256px , 1fr));
+        gap:calc(20/va.$pc-design-width*100vw);
+    }
 }
