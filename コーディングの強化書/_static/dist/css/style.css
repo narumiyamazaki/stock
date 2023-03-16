@@ -954,7 +954,6 @@ footer.is-action{
 
 .p-section__service__card__thumbnail {
   background: url(../img/dmy_thumb01.jpg) no-repeat;
-  width: min(89.0666666667vw, 400px);
   height: min(42.6666666667vw, 192px);
   background-size: contain;
 }
@@ -1068,6 +1067,7 @@ footer.is-action{
   line-height: 2.5714285714;
   margin-bottom: max(1.25vw, 20px);
   letter-spacing: 0.2em;
+  text-align: center;
   text-transform: uppercase;
 }
 @media screen and (min-width: 1025px) {
@@ -1076,6 +1076,23 @@ footer.is-action{
     margin-bottom: max(2.5vw, 40px);
     text-align: center;
   }
+}
+
+.p-section__pick-up__card__thumbnail {
+  background: url(../img/rectangle.png) no-repeat;
+  width: 100%;
+  height: 27.4666666667vw;
+}
+@media screen and (min-width: 1025px) {
+  .p-section__pick-up__card__thumbnail {
+    height: 10vw;
+  }
+}
+
+.p-article__pick-up__container {
+  display: grid;
+  gap: 4vw;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
 }
 
 @media screen and (min-width: 1025px) {

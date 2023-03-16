@@ -3,7 +3,7 @@
 
 .p-section__service__card__thumbnail{
     background: url(../img/dmy_thumb01.jpg) no-repeat;
-    width:min(calc(334/va.$sp-design-width*100vw),400px);
+    //width:min(calc(334/va.$sp-design-width*100vw),400px);
     height:min((160/va.$sp-design-width*100vw), 192px);
     background-size:contain;
     @include mixin.mq(tb){

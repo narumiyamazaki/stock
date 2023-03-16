@@ -3,7 +3,7 @@
 
 .p-section__news__card__thumbnail{
     background-image: url(../img/news_card_thumbnail.png);
-    //width:100%;
+    width:100%;
     height: max(calc(500/va.$sp-design-width*100vw));
     margin-bottom: calc(40/va.$sp-design-width*100vw);
     background-size: contain;

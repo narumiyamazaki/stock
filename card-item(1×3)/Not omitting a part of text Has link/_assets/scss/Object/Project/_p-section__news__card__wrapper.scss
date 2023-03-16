@@ -5,9 +5,9 @@
     /*カードの大きさ*/
     @include mixin.mq(pc){
         //カード間のマージンを20とする
-        width: calc(1080px - (20px * 2) / 3);
+        width: calc((100% - (20px * 2)) / 3);
         margin-right:calc(20/va.$pc-design-width*100vw);
-        &:not(:last-child){
+        &:last-child{
             margin-right:0;
         }
         //下のリンクを下ぞろえにするためにflexboxにしている
