@@ -7,16 +7,18 @@
     color: va.$font-color;
     line-height: calc( 30/16 );
     margin-bottom:calc(32/va.$sp-design-width*100vw);
+    padding: 0 calc(20/va.$sp-design-width*100vw);
     //letter-spacing: calc(/1000 * 1em);
     font-weight: 500;
     @include mixin.mq(tb){
         font-size:max(calc(16/va.$tb-design-width*100vw),16px);
-        margin-bottom:calc(32/va.$tb-design-width*100vw); 
+        margin-bottom:calc(32/va.$tb-design-width*100vw);
+        padding: 0 calc(20/va.$tb-design-width*100vw); 
     }
     @include mixin.mq(pc){
     font-size:max(calc(16/va.$pc-design-width*100vw),16px);
     margin-bottom:calc(32/va.$pc-design-width*100vw);
-    margin-top:0;
+    padding: 0 calc(20/va.$pc-design-width*100vw);
     //line-height: calc( / );
     //letter-spacing: calc(/1000 * 1em);
     }

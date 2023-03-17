@@ -807,6 +807,17 @@ footer.is-action{
 
 .p-mv__wrapper {
   background-color: #37952F;
+  margin-bottom: 13.3333333333vw;
+}
+@media screen and (min-width: 768px) {
+  .p-mv__wrapper {
+    margin-bottom: 4.8875855327vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-mv__wrapper {
+    margin-bottom: 5vw;
+  }
 }
 
 .p-mv {
@@ -890,7 +901,7 @@ footer.is-action{
   line-height: 1.4375;
   padding: 3.4666666667vw 0;
   text-decoration: none;
-  margin-top: auto;
+  margin: auto auto 5.3333333333vw;
 }
 .p-article__service__link:hover {
   background-color: #FFF;
@@ -900,6 +911,7 @@ footer.is-action{
 @media screen and (min-width: 768px) {
   .p-article__service__link {
     padding: 1.2707722385vw 0;
+    width: 87.9310344828%;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -956,16 +968,19 @@ footer.is-action{
   background: url(../img/dmy_thumb01.jpg) no-repeat;
   height: min(42.6666666667vw, 192px);
   background-size: contain;
+  margin-bottom: 4.2666666667vw;
 }
 @media screen and (min-width: 768px) {
   .p-section__service__card__thumbnail {
     width: 100%;
     height: min(15.6402737048vw, 192px);
+    margin-bottom: 1.5640273705vw;
   }
 }
 @media screen and (min-width: 1025px) {
   .p-section__service__card__thumbnail {
     height: 10vw;
+    margin-bottom: 1vw;
   }
 }
 
@@ -975,15 +990,21 @@ footer.is-action{
   color: #333333;
   font-weight: 700;
   margin: 0;
+  padding-left: 5.3333333333vw;
+  margin-bottom: 4.2666666667vw;
 }
 @media screen and (min-width: 768px) {
   .p-section__service__card__heading3 {
     font-size: min(1.9550342131vw, 32px);
+    padding-left: 1.9550342131vw;
+    margin-bottom: 4.2666666667vw;
   }
 }
 @media screen and (min-width: 1025px) {
   .p-section__service__card__heading3 {
     font-size: max(1.25vw, 16px);
+    padding-left: 1.25vw;
+    margin-bottom: 1vw;
   }
 }
 
@@ -1007,24 +1028,26 @@ footer.is-action{
   color: #333333;
   line-height: 1.875;
   margin-bottom: 8.5333333333vw;
+  padding: 0 5.3333333333vw;
   font-weight: 500;
 }
 @media screen and (min-width: 768px) {
   .p-section__service__card__text {
     font-size: max(1.5640273705vw, 16px);
     margin-bottom: 3.128054741vw;
+    padding: 0 1.9550342131vw;
   }
 }
 @media screen and (min-width: 1025px) {
   .p-section__service__card__text {
     font-size: max(1vw, 16px);
     margin-bottom: 2vw;
-    margin-top: 0;
+    padding: 0 1.25vw;
   }
 }
 
 .p-section__service__card__container {
-  margin-bottom: 21.3333333333vw;
+  margin-bottom: 5.3333333333vw;
 }
 @media screen and (min-width: 768px) {
   .p-section__service__card__container {

@@ -12,10 +12,10 @@
     font-weight: 700;
     display: block;
     text-align: center;
-    line-height: calc(23/16);;
+    line-height: calc(23/16);
     padding:calc(13/va.$sp-design-width*100vw) 0;
     text-decoration: none;
-    margin-top: auto;
+    margin: auto auto calc(20/va.$sp-design-width*100vw);
       &:hover{
       background-color: #FFF;
       color: #37952F;
@@ -23,6 +23,7 @@
       }
       @include mixin.mq(tb){
         padding:calc(13/va.$tb-design-width*100vw) 0;
+        width:calc(306px/348px * 100%);
       }
       @include mixin.mq(pc){
         //width: calc(306/va.$pc-design-width*100vw);

@@ -2,7 +2,7 @@
 @use '../../Foundation/mixin';
 
 .p-section__service__card__container{
-    margin-bottom:calc(80/va.$sp-design-width*100vw);
+    margin-bottom:calc(20/va.$sp-design-width*100vw);
     @include mixin.mq(tb){
         display: flex;
         justify-content: space-between;
