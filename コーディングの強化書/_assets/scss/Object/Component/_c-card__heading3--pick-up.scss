@@ -1,0 +1,19 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.c-card__heading3--pick-up{
+    font-family: va.$font-Japanese;
+    font-size:min(calc(14/va.$sp-design-width*100vw),14px);
+    color: va.$font-color;
+    line-height: calc( 30/18 );
+    //letter-spacing: calc(/1000 * 1em);
+    font-weight: 700;
+    @include mixin.mq(tb){
+        font-size:min(calc(16/va.$tb-design-width*100vw),16px);
+    }
+    @include mixin.mq(pc){
+    font-size:max(calc(18/va.$pc-design-width*100vw),18px);
+    //line-height: calc( / );
+    //letter-spacing: calc(/1000 * 1em);
+    }
+}

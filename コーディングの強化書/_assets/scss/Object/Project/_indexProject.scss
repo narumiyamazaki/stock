@@ -19,21 +19,15 @@
 
 
 //service
-@use './p-article__service';
-@use './p-article__service__link';
+@use './p-article--service';
 @use './p-article__service__heading2';
-@use './p-section__service__card__wrapper';
-@use './p-section__service__card__thumbnail';
-@use './p-section__service__card__heading3';
-@use './p-section__service__text__wrapper';
-@use './p-section__service__card__text';
-@use './p-section__service__card__container';
-@use './p-article__service__link__business';
+@use './p-service__card__wrapper';
+@use './p-servise__card__text__wrapper';
+@use './p-service__card__container';
 
 //pick up
 @use './p-article__pick-up__heading2';
-@use './p-section__pick-up__card__thumbnail';
-@use './p-article__pick-up__container';
+@use './p-pick-up__card__container';
 
 
 //footer

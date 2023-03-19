@@ -1,0 +1,34 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.c-card__heading3--service{
+    font-family: va.$font-Japanese;
+    font-size:min(calc(20/va.$sp-design-width*100vw),20px);
+    color: va.$font-color;
+    //line-height: calc( 72/20 );
+    //letter-spacing: calc(/1000 * 1em);
+    font-weight: 700;
+    margin:0;
+    margin-bottom:calc(16/va.$sp-design-width*100vw);
+    //はみ出た文字を省略
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    //複数行の時はこちら
+    /*
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    */
+    @include mixin.mq(tb){
+        font-size:min(calc(20/va.$tb-design-width*100vw),32px);
+        margin-bottom:calc(16/va.$sp-design-width*100vw);
+    }
+    @include mixin.mq(pc){
+    font-size:max(calc(20/va.$pc-design-width*100vw),16px);
+    margin-bottom:calc(16/va.$pc-design-width*100vw);
+    //line-height: calc( / );
+    //letter-spacing: calc(/1000 * 1em);
+    }
+}
