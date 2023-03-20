@@ -1,7 +1,9 @@
 @use '../../Foundation/mixin';
 
-.p-nav__sub-item__icon{
+.c-icon--has-sub-menu{
+    position: relative;
     &::after {
+        position:absolute;
         //display: contents;
         font-family: "Font Awesome 5 Pro";
         font-weight: 900;

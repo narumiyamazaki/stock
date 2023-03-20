@@ -4,11 +4,12 @@
     display: none;
     position:absolute;
     //headerの高さ分下げている
-    top: 70px;
+    //top: 70px;
     left: 0;
     right: 0;
-    background-color: #fff;
+    height:100vh;
     @include mixin.mq(pc){
+        height:100%;
         display:block;
         position: static;
         

@@ -597,17 +597,6 @@ body {
   }
 }
 
-.p-header__logo {
-  width: 17.2099087353vw;
-  height: 70px;
-  background-color: bisque;
-}
-@media screen and (min-width: 1025px) {
-  .p-header__logo {
-    width: 20vw;
-  }
-}
-
 @media screen and (min-width: 1025px) {
   .p-nav__btn {
     display: none;
@@ -669,13 +658,13 @@ body {
 .p-header__nav__body {
   display: none;
   position: absolute;
-  top: 70px;
   left: 0;
   right: 0;
-  background-color: #fff;
+  height: 100vh;
 }
 @media screen and (min-width: 1025px) {
   .p-header__nav__body {
+    height: 100%;
     display: block;
     position: static;
   }
@@ -683,40 +672,6 @@ body {
 
 .p-header__nav__body.open {
   display: block;
-}
-
-.p-nav__item__link {
-  background: #0bd;
-  color: #fff;
-  width: 100%;
-  margin-right: 1rem;
-  font-size: 1.5rem;
-  text-align: center;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /*
-  > :hover{
-      background: #0090aa;
-  }
-  */
-}
-@media screen and (min-width: 1025px) {
-  .p-nav__item__link {
-    width: 140px;
-    flex-direction: row;
-  }
-}
-@media screen and (min-width: 768px) {
-  .p-nav__item__link {
-    flex-direction: column;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .p-nav__item__link {
-    flex-direction: row;
-  }
 }
 
 .p-sub-menu__item {
@@ -736,40 +691,43 @@ body {
   }
 }
 
-.p-nav__sub-item__icon::after {
+.c-logo {
+  width: 17.2099087353vw;
+  height: 70px;
+  background-color: bisque;
+}
+@media screen and (min-width: 1025px) {
+  .c-logo {
+    width: 20vw;
+  }
+}
+
+.c-item__link--nav {
+  background: #0bd;
+  color: #fff;
+  width: 100%;
+  margin-right: 2.0860495437vw;
+  font-size: max(2.0860495437vw, 16px);
+  text-align: center;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*
+  > :hover{
+      background: #0090aa;
+  }
+  */
+}
+
+.c-icon--has-sub-menu {
+  position: relative;
+}
+.c-icon--has-sub-menu::after {
+  position: absolute;
   font-family: "Font Awesome 5 Pro";
   font-weight: 900;
   content: "\f078";
   margin-left: 1rem;
-}
-
-.background {
-  background-color: black;
-  width: 680px;
-  height: 235px;
-}
-
-.container {
-  padding-top: 1rem;
-  padding: 0 10rem;
-}
-@media screen and (min-width: 768px) {
-  .container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-  }
-}
-
-.item {
-  background-color: aqua;
-  font-size: 1.2rem;
-  padding: 1rem;
-}
-@media screen and (min-width: 768px) {
-  .item {
-    width: 10rem;
-    margin-bottom: 2rem;
-  }
 }
 /*# sourceMappingURL=style.css.map */

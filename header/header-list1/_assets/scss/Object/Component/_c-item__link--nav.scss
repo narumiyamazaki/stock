@@ -1,11 +1,12 @@
 @use '../../../scss/Foundation/mixin';
+@use '../../Foundation/vars' as va;
 
-.p-nav__item__link{
+.c-item__link--nav{
     background: #0bd;
     color: #fff;
     width:100%;
-    margin-right: 1rem;
-    font-size: 1.5rem;
+    margin-right:calc(16/va.$sp-design-width*100vw);
+    font-size: max(calc(16/va.$sp-design-width*100vw),16px);
     text-align: center;
     height: 70px;
     //aタグがインライン要素なので高さを揃えるためにflexに
@@ -17,14 +18,4 @@
         background: #0090aa;
     }
     */
-    @include mixin.mq(pc){
-        width: 140px;
-        flex-direction: row;
-    }  
-    @include mixin.mq(tb){
-        flex-direction: column;
-    }
-    @include mixin.mq(pc){
-        flex-direction: row;
-    }
 }
