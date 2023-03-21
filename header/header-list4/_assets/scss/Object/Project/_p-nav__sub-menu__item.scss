@@ -1,9 +1,0 @@
-@use '../../Foundation/mixin';
-@use '../../Foundation/vars' as va;
-
-.p-nav__sub-menu__item{
-    font-size:calc(16/va.$pc-design-width*100vw);
-    background-color: #f0f0f0;
-    padding:calc(10/va.$pc-design-width*100vw) calc(5/va.$pc-design-width*100vw) calc(10/va.$pc-design-width*100vw);
-    width:94%;
-}

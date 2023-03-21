@@ -1,7 +1,7 @@
 @use '../../Foundation/mixin';
 @use '../../Foundation/vars' as va;
 
-.p-header__logo{
+.c-header__logo{
     width: calc(250/va.$sp-design-width*100vw);
     height: 70px;
     background-color:bisque;

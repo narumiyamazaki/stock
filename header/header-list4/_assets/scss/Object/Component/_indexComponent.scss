@@ -1,1 +1,7 @@
-@use './c-title';
+//sidebar
+@use './c-item__link--sidebar';
+@use './c-sub-menu__item__link--sidebar';
+@use './c-item__link--nav';
+@use './c-icon--has-sub-menu';
+@use './c-header__logo';
+@use './c-sub-menu__item__link';

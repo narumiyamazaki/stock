@@ -567,14 +567,10 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-@media screen and (min-width: 768px) {
-  .p-header__nav__items {
-    flex-direction: column;
-  }
-}
 @media screen and (min-width: 1025px) {
   .p-header__nav__items {
     flex-direction: row;
+    background: #0bd;
   }
 }
 
@@ -655,40 +651,49 @@ body {
   transform: rotate(-135deg);
 }
 
-.p-header__nav__body {
+.p-nav__btn.open {
+  position: relative;
+  z-index: 999;
+}
+
+.p-header__nav__body--pc {
   display: none;
   position: absolute;
+  top: 70px;
   left: 0;
   right: 0;
   height: 100vh;
+  background-color: #9d8ebe;
 }
 @media screen and (min-width: 1025px) {
-  .p-header__nav__body {
+  .p-header__nav__body--pc {
     height: 100%;
     display: block;
     position: static;
   }
 }
 
-.p-header__nav__body.open {
-  display: block;
-}
-
-.p-sub-menu__item {
-  background: #9900ab;
-  color: #fff;
+.p-header__nav__body--sp {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  opacity: 0;
+  height: 100vh;
   width: 100%;
-  font-size: 1.5rem;
-  text-align: center;
-  height: 70px;
+  background-color: #9d8ebe;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 @media screen and (min-width: 1025px) {
-  .p-sub-menu__item {
-    width: 14rem;
+  .p-header__nav__body--sp {
+    display: none;
   }
+}
+
+.p-header__nav__body--sp.open {
+  opacity: 1;
+  z-index: 100;
 }
 
 .c-logo {
@@ -703,11 +708,9 @@ body {
 }
 
 .c-item__link--nav {
-  background: #0bd;
   color: #fff;
   width: 100%;
-  margin-right: 2.0860495437vw;
-  font-size: max(2.0860495437vw, 16px);
+  font-size: clamp(16px, 2.0860495437vw, 20px);
   text-align: center;
   height: 70px;
   display: flex;
@@ -719,15 +722,44 @@ body {
   }
   */
 }
+@media screen and (min-width: 1025px) {
+  .c-item__link--nav {
+    width: 10.4166666667vw;
+    font-size: clamp(16px, 1.1111111111vw, 20px);
+  }
+}
 
 .c-icon--has-sub-menu {
   position: relative;
 }
 .c-icon--has-sub-menu::after {
   position: absolute;
+  display: contents;
   font-family: "Font Awesome 5 Pro";
   font-weight: 900;
   content: "\f078";
-  margin-left: 1rem;
+}
+@media screen and (min-width: 1025px) {
+  .c-icon--has-sub-menu::after {
+    left: 0;
+  }
+}
+
+.p-sub-menu__item {
+  background: #9900ab;
+  color: #fff;
+  width: 100%;
+  font-size: clamp(16px, 2.0860495437vw, 20px);
+  text-align: center;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 1025px) {
+  .p-sub-menu__item {
+    width: 10.4166666667vw;
+    font-size: clamp(16px, 1.1111111111vw, 20px);
+  }
 }
 /*# sourceMappingURL=style.css.map */
