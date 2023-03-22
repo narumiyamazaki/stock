@@ -1,0 +1,9 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-form__wrapper{
+    @include mixin.mq(pc){
+        width:calc(960/va.$pc-design-width*100vw);
+        margin: 0 auto;
+    }
+}

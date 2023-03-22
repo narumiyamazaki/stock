@@ -1,0 +1,13 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.c-form__required{
+    color: #fff;
+    background-color: red;
+    display: block;
+    width:calc(45/va.$sp-design-width*100vw);
+    padding:max(calc(20/va.$sp-design-width*100vw),) 0;  
+    @include mixin.mq(pc){
+        float: right;
+    }
+}
