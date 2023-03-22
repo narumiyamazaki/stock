@@ -58,3 +58,8 @@
         transform: rotate(-135deg);
     }
 }
+
+.p-nav__btn.open{
+    position:relative;
+    z-index: 999;
+}

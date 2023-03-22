@@ -1,0 +1,9 @@
+//main・mv
+@use './p-contents';
+
+//service
+@use './p-article--service';
+@use './p-article__service__heading2';
+@use './p-service__card__wrapper';
+@use './p-servise__card__text__wrapper';
+@use './p-service__card__container';

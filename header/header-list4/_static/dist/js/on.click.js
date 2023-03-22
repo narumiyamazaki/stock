@@ -9,8 +9,13 @@ $('.p-nav__btn').on('click', function () {
 });
 
 /*サブメニューのクリックイベント*/
-$('.p-nav__item__has-sub-menu').on('click', function () {
-    $('.p-nav__sub-menu__items').toggleClass('is-open');
+$('.c-item__link--nav').on('click', function () {
+    $('.p-sub-menu__items').toggleClass('is-open');
+});
+
+/*サイドバーのサブメニュークリックイベント*/
+$('.c-item__link--sidebar').on('click', function () {
+    $('.p-sub-menu__items').toggleClass('is-open');
 });
 
 /*サイドバーを閉じるボタンのクリックイベント*/

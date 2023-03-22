@@ -1,0 +1,14 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-pick-up__card__container{
+    display: grid;
+    gap:calc(15/va.$sp-design-width*100vw);
+    //折り返し自動設定vwでは上手く出来ない感じ
+    //minmaxで使える単位にvwがなさそう
+    grid-template-columns: repeat(auto-fill, minmax(160px , 1fr));
+    @include mixin.mq(pc){
+        grid-template-columns: repeat(auto-fit, minmax(256px , 1fr));
+        gap:calc(20/va.$pc-design-width*100vw);
+    }
+}

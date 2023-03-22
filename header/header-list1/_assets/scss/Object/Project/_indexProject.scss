@@ -2,5 +2,6 @@
 @use './p-nav__item__has-sub-item';
 @use './p-sub-menu__items';
 @use './p-nav__btn';
-@use './p-header__nav__body';
-@use './p-sub-menu__item';
+@use './p-header__nav__body--pc';
+@use './_p-header__nav__body--sp';
+

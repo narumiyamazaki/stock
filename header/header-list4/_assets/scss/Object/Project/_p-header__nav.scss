@@ -1,0 +1,15 @@
+@use '../../Foundation/mixin';
+
+.p-header__nav{
+        display: none;
+        position:absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        @include mixin.mq(pc){
+            display:block;
+            position: relative;
+            top:0;
+        }
+}

@@ -1,0 +1,23 @@
+@use '../../Foundation/mixin';
+
+.p-header__nav__body{
+    display: none;
+    position:absolute;
+    //headerの高さ分下げている
+    top: 70px;
+    left: 0;
+    right: 0;
+    height:100vh;
+    background-color: #9d8ebe;
+    @include mixin.mq(pc){
+        height:100%;
+        display:block;
+        position: static;
+        
+    }
+}
+
+//ハンバーガーメニューのボタンを押したとき
+.p-header__nav__body.open{
+        display: block;
+    }

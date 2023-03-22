@@ -1,0 +1,28 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-service__card__wrapper{
+    max-width: 400px;
+    display: inline-block;
+    border: 2px solid #869A5A;
+    border-radius: 20px;
+    margin-bottom:calc(40/va.$sp-design-width*100vw);
+    &:last-child{
+        margin-bottom:0;
+    }
+    @include mixin.mq(tb){
+        margin-bottom: 0;
+        width:calc((100% - (20px * 2)) / 3 );
+        display: flex;
+        flex-direction: column;
+        margin-right:20px;
+        &:last-child{
+            margin-right:0;
+        }
+        
+    }    
+    @include mixin.mq(pc){
+        width:calc(348/va.$pc-design-width*100vw);
+        padding:calc(20/va.$pc-design-width*100vw) calc(20/va.$pc-design-width*100vw) 0;
+    }
+}
