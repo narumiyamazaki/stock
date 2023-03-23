@@ -22,15 +22,15 @@
                             </th>
                             <td>
                                 <ul class="p-form__registration--box">
-                                    <li>
-                                        <label class="p-form__registration--basicInformation">
+                                    <li class="p-form__item">
+                                        <label class="p-form__registration--basic-information">
                                             <!--required=""は必須項目かどうかを示す-->
-                                            <input type="radio" required="" class="p-form__radio--registerd" value="登録済み" name="register" data-parsley-error-message="どちらか選択してください。" data-parsley-errors-container="#error-register"><span class="p-form__registration--basicInformation--text">登録済み</span>
+                                            <input type="checkbox" required="" class="p-chackbox" value="登録済み" name="register" data-parsley-error-message="どちらか選択してください。" data-parsley-errors-container="#error-register"><span class="c-text__item">登録済み</span>
                                         </label>
                                     </li>
                                     <li>
                                         <label class="p-form__registration--basicInformation">
-                                            <input type="radio" class="p-form__radio--unregistered" value="未登録" name="register"><span class="p-form__registration--basicInformation--text">未登録</span>
+                                            <input type="checkbox" class="p-form__radio--unregistered" value="未登録" name="register"><span class="p-form__registration--basicInformation--text">未登録</span>
                                         </label>
                                     </li>
                                 </ul>
