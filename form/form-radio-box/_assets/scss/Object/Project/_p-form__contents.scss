@@ -1,0 +1,19 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-form__contents{
+    border-bottom: solid 1px #eee;
+    display: flex;
+    align-items: center;
+    & > th{
+        flex-grow: 0;
+        padding:calc(16/va.$sp-design-width*100vw) 0;
+    }
+    & > td{
+        flex-grow: 1;
+        padding:calc(16/va.$sp-design-width*100vw) 0;
+    }
+    @include mixin.mq(pc){
+        flex-direction: row;
+    }
+}

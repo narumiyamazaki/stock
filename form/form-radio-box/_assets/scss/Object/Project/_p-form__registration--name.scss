@@ -1,0 +1,6 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-form__registration--name:first-child{
+    margin-bottom:min(calc(16/va.$sp-design-width*100vw),16px);
+}

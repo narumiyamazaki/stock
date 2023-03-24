@@ -3,7 +3,21 @@
 
 //form部分
 @use './p-form__wrapper';
+@use './p-form__contents';
 @use './p-form';
 @use './p-form__items';
 @use './p-form__item';
 @use './p-chackbox';
+
+
+//名前登録部分
+@use './p-form__registration--name';
+@use './p-form__registration__family-name';
+
+//エラーメッセージ
+@use './parsley-errors-list';
+@use './parsley-custom-error-message';
+
+//プライバシーポリシー
+@use './p-form__contents--privacypolicy';
+@use './p-form__items--privacypolicy';

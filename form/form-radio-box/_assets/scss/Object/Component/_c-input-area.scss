@@ -1,0 +1,8 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.c-input-area{
+    background-color: #fff;
+    width: 50%;
+    padding:min(calc(8/va.$sp-design-width*100vw),8px) 0;
+}
