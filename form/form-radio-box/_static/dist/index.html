@@ -10,11 +10,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Noto+Sans+JP&family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
         <link href="./css/style.css" rel="stylesheet">
-        </head>
+    </head>
 	<body>    
         <div class="p-main">
             <form class="p-form__wrapper" data-parsley-validate name="entry-form"  action="" method="post" data-parsley-trigger="keyup focusout change input">
-                <table class="p-form">
+                <table class="p-form" aria-label="問い合わせフォーム">
                     <tbody>
                         <tr class="p-form__contents">
                             <th class="p-form__items">基本情報登録
@@ -25,12 +25,12 @@
                                     <li class="p-form__item">
                                         <label class="p-form__registration--basic-information">
                                             <!--required=""は必須項目かどうかを示す-->
-                                            <input type="checkbox" required="" class="p-chackbox" value="登録済み" name="register" data-parsley-error-message="どちらか選択してください。" data-parsley-errors-container="#error-register"><span class="c-text__item">登録済み</span>
+                                            <input type="checkbox" required="" aria-label="登録済みを示すボタン" class="p-chackbox" value="登録済み" name="register" data-parsley-error-message="どちらか選択してください。" data-parsley-errors-container="#error-register"><span class="c-text__item">登録済み</span>
                                         </label>
                                     </li>
                                     <li class="p-form__item">
                                         <label class="p-form__registration--basic-information">
-                                            <input type="checkbox" class="p-chackbox" value="未登録" name="register"><span class="c-text__item">未登録</span>
+                                            <input type="checkbox" class="p-chackbox" aria-label="未登録を示すボタン" value="未登録" name="register"><span class="c-text__item">未登録</span>
                                         </label>
                                     </li>
                                 </ul>
@@ -45,13 +45,13 @@
                                 <span class="c-text__item">名字</span>
                                 <div class="p-form__registration__family-name">
                                     <label class="p-form__registration--name">
-                                        <input type="text" required="" class="c-input-area" data-parsley-error-message="名前を入力してください" placeholder="（全角）[例：ほげた]" data-parsley-id="parsley-id-3">
+                                        <input type="text"  required="" class="c-input-area" aria-label="名字入力欄" data-parsley-error-message="名前を入力してください" placeholder="（全角）[例：ほげた]" data-parsley-id="parsley-id-3">
                                     </label>
                                 </div>
                                 <span class="c-text__item">名前</span>
                                 <div class="p-form__registration__first-name">
                                     <label class="p-form__registration--name">
-                                        <input type="text" required="" class="c-input-area" data-parsley-error-message="名前を入力してください" placeholder="（全角）[例：ほげた]" data-parsley-id="parsley-id-3">
+                                        <input type="text" required="" class="c-input-area" aria-label="名前入力欄" data-parsley-error-message="名前を入力してください" placeholder="（全角）[例：ほげた]" data-parsley-id="parsley-id-3">
                                     </label>
                                 </div>
                             </td>
@@ -61,9 +61,9 @@
                                 <span class="c-form__required">必須</span>
                             </th>
                             <td>
-                                <label class="p-form__registration--kanaName">
+                                <label class="p-form__registration--kana">
                                     <!--patterはカタカナのみを入力規則として認めている-->
-                                    <input type="text" pattern="[\u30A1-\u30F6]*" data-parsley-error-message="カタカナで入力してください" required="" class="c-input-area" placeholder="（全角）[例：ホゲタ ホゲタロウ]">
+                                    <input type="text" pattern="[\u30A1-\u30F6]*" aria-label="カナ入力欄" data-parsley-error-message="カタカナで入力してください" required="" class="c-input-area" placeholder="（全角）[例：ホゲタ ホゲタロウ]">
                                 </label>
                             </td>
                         </tr>
@@ -74,13 +74,13 @@
                             <td>
                                 <ul>
                                     <li class="p-form__item">
-                                        <label class="p-form__registration--mailType">
-                                            <input type="checkbox" name="mailType" class="p-chackbox" required="" data-parsley-error-message="どちらか選択してください" data-parsley-mincheck="1" data-parsley-errors-container="#error-mailType"><span class="c-text__item">PC</span>
+                                        <label class="p-form__registration--mail-type">
+                                            <input type="checkbox" name="mailType" aria-label="メールアドレスはPCか" class="p-chackbox" required="" data-parsley-error-message="どちらか選択してください" data-parsley-mincheck="1" data-parsley-errors-container="#error-mailType"><span class="c-text__item">PC</span>
                                         </label>
                                     </li>
                                     <li class="p-form__item">
-                                        <label class="p-form__registration--mailType">
-                                            <input type="checkbox" name="mailType" class="p-chackbox"><span class="c-text__item">mobile</span>
+                                        <label class="p-form__registration--mail-type">
+                                            <input type="checkbox" name="mailType" aria-label="メールアドレスは携帯か" class="p-chackbox"><span class="c-text__item">mobile</span>
                                         </label>
                                     </li>
                                 </ul>
@@ -92,8 +92,8 @@
                                 <span class="c-form__required">必須</span>
                             </th>
                             <td>
-                                <label class="p-form__registration--mailAdress">
-                                    <input type="email" required="" data-parsley-error-message="メールアドレスを入れてください" class="c-input-area" data-parsley-type="email">
+                                <label class="p-form__registration--mailadress">
+                                    <input type="email" required="" aria-label="メールアドレス入力欄" data-parsley-error-message="メールアドレスを入れてください" class="c-input-area" data-parsley-type="email">
                                 </label>
                             </td>
                         </tr>
@@ -102,8 +102,8 @@
                                 <span class="c-form__required">必須</span>
                             </th>
                             <td>
-                                <label class="p-form__registration--mailAdress">
-                                    <input type="email" required="" data-parsley-type="url" class="c-input-area">
+                                <label class="p-form__registration--mailadress">
+                                    <input type="email" required="" aria-label="メールアドレス確認欄" data-parsley-type="url" class="c-input-area">
                                 </label>
                             </td>
                         </tr>
@@ -111,7 +111,7 @@
                             <th class="p-form__items">電話番号</th>
                             <td>
                                 <label class="p-form__registration--tel">
-                                    <input type="tel" class="c-input-area">
+                                    <input type="tel" class="c-input-area" aria-label="電話番号入力欄">
                                 </label>
                             </td>
                         </tr>
@@ -122,18 +122,18 @@
                             <td>
                                 <ul>
                                     <li class="p-form__item">
-                                        <label class="p-form__registration--inquiryType">
-                                            <input type="checkbox" required="" data-parsley-error-message="1つ以上チェックを入れてください。" name="inquiryType" class="p-chackbox" data-parsley-mincheck="1" data-parsley-errors-container="#error-inquiryType" data-parsley-class-handler="#element-inquiryType" data-parsley-multiple="inquiry"><span class="c-text__item">登録会</span>
+                                        <label class="p-form__registration--inquiry-type">
+                                            <input type="checkbox" required="" aria-label="登録会" data-parsley-error-message="1つ以上チェックを入れてください。" name="inquiryType" class="p-chackbox" data-parsley-mincheck="1" data-parsley-errors-container="#error-inquiryType" data-parsley-class-handler="#element-inquiryType" data-parsley-multiple="inquiry"><span class="c-text__item">登録会</span>
                                         </label>
                                     </li>
                                     <li class="p-form__item">
-                                        <label class="p-form__registration--inquiryType">
-                                            <input type="checkbox" name="inquiryType" data-parsley-multiple="inquiry" class="p-chackbox"><span class="c-text__item">見学</span>
+                                        <label class="p-form__registration--inquiry-type">
+                                            <input type="checkbox" name="inquiryType" aria-label="見学" data-parsley-multiple="inquiry" class="p-chackbox"><span class="c-text__item">見学</span>
                                         </label>
                                     </li>
                                     <li class="p-form__item">
-                                        <label class="p-form__registration--inquiryType">
-                                            <input type="checkbox" name="inquiryType" data-parsley-multiple="inquiry" class="p-chackbox"><span class="c-text__item" >面接</span>
+                                        <label class="p-form__registration--inquiry-type">
+                                            <input type="checkbox" name="inquiryType" aria-label="面接" data-parsley-multiple="inquiry" class="p-chackbox"><span class="c-text__item" >面接</span>
                                         </label>
                                     </li>
                                     <li class="p-form__item">
@@ -179,8 +179,8 @@
                             <td>
                                 <ul>
                                     <li class="p-form__item">
-                                        <label class="p-form__registration--privacyPolicy--agree">
-                                            <input type="checkbox" required="" class="p-chackbox" id="privacyPolicy--agree" data-parsley-error-message="必ず同意してください。"><span class="c-text__item">はい</span>
+                                        <label class="p-form__registration__privacyPolicy--agree">
+                                            <input type="checkbox" aria-label="プライバシーポリシー同意欄" required="" class="p-chackbox" id="privacyPolicy--agree" data-parsley-error-message="必ず同意してください。"><span class="c-text__item">はい</span>
                                         </label>
                                     </li>
                                 </ul>
@@ -188,7 +188,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <input type="submit" value="送信" class="c-button" id="form-submit">
+                <button type="submit" aria-label="内容送信ボタン" value="送信" class="c-button" id="form-submit">
             </form>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>

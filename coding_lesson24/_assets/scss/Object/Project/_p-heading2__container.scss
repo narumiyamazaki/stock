@@ -1,0 +1,7 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-heading2__container{
+    display: flex;
+    justify-content: space-between;
+}

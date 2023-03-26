@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "markuplint": "^3.4.0"
+  },
+  "scripts": {
+    "html:lint": "markuplint index.html"
+  }
+}

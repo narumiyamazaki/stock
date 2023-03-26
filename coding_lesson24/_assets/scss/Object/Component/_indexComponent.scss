@@ -1,0 +1,18 @@
+//header
+
+@use './c-logo--top';
+@use './c-text--top-explanation';
+@use './c-img--mv';
+
+//header-nav
+@use './c-logo__header__nav--sp';
+@use './c-item__link--nav';
+@use './c-item__link--second-nav';
+@use './c-btn__text';
+
+//header-nav-pc
+@use './c-footprint';
+
+//news
+@use './c-cat__img';
+@use './c-heading2';

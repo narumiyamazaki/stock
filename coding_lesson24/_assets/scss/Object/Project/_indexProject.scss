@@ -1,0 +1,18 @@
+//header
+@use './p-header__top__wrapper';
+
+//nav
+@use './p-header__nav__items--sp';
+@use './p-nav__item';
+@use './p-nav__item--second';
+
+@use './p-nav__btn';
+@use './p-header__nav__body--sp';
+
+@use './p-header__nav__wrapper--pc';
+@use './p-header__nav__body--pc';
+@use './p-header__nav__items--pc';
+
+//news
+@use './p-heading2__container';
+@use './p-heading__news__wrapper';

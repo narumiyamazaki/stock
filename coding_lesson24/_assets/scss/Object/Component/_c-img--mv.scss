@@ -1,0 +1,13 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.c-img--mv{
+    width:100vw;
+    height:200px;
+    background: url(../img/bg_top_header.jpg) no-repeat;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    @include mixin.mq(pc){
+        background-repeat: repeat;
+    }
+}

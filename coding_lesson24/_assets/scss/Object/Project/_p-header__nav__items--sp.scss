@@ -1,0 +1,9 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-header__nav__items--sp {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-top: dotted 1px va.$textColor;
+    border-bottom: dotted 1px va.$textColor;
+}
