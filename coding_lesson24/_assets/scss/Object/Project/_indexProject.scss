@@ -14,6 +14,21 @@
 @use './p-header__nav__items--pc';
 
 //news
+@use './p-news';
 @use './p-heading2__container';
 @use './p-heading__news__wrapper';
 @use './p-news__items';
+@use './p-news__item';
+@use './p__news__tag__wrapper';
+
+//recommendition
+@use './p-recommendation';
+@use './p-recommendation__card__container';
+@use './p-recommendation__card__wrapper';
+@use './p-recommendation__new-item-tag__wrapper';
+@use './p-recommendation__card__text__wrapper';
+@use './p-card__text__price__wrapper';
+
+//common
+@use './.p-heading2__wrapper';
+@use './c-card__thumbnail--recommendation-1st';

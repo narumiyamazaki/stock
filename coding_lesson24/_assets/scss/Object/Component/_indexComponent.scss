@@ -16,3 +16,12 @@
 //news
 @use './c-cat__img';
 @use './c-heading2';
+@use './c-text--news';
+@use './c-text--datetime';
+@use './c-tag__news';
+
+//recommendation
+@use './c-card__text--recommendation';
+@use './c-card__thumbnail--recommendation-1st';
+@use './c-card__title--recommendation';
+@use './c-card__text--price';

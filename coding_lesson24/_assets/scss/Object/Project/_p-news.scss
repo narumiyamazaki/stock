@@ -1,0 +1,9 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-news{
+    margin-bottom:calc(80/va.$sp-design-width*100vw);
+    @include mixin.mq(pc){
+        margin-bottom:calc(100/va.$pc-design-width*100vw);
+    }
+}

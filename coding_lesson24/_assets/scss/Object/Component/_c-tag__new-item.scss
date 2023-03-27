@@ -1,0 +1,14 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.c-tag__new-item{
+    width:calc(80/va.$sp-design-width*100vw);
+    height:calc(83/va.$sp-design-width*100vw);
+    background-color: va.$areaColor;
+    color: va.$newColor;
+    font-family: va.$baseFont;
+    @include mixin.mq(pc){
+        width:calc(80/va.$pc-design-width*100vw);
+        height:calc(83/va.$pc-design-width*100vw);
+    }
+}

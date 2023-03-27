@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: space-between;
     padding:calc(10/va.$sp-design-width*100vw) calc(20/va.$sp-design-width*100vw) 0;
+    margin-bottom:calc(80/va.$pc-design-width*100vw);
     //ハンバーガーメニューを開いたときはheaderを固定
     &.active{
     position:fixed;
@@ -21,5 +22,6 @@
     @include mixin.mq(pc){
         display: block;
         padding:0 calc(260/va.$pc-design-width*100vw);
+        margin-bottom:calc(100/va.$pc-design-width*100vw);
     }
 }
