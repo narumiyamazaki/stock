@@ -9,6 +9,9 @@
     font-weight: 500;
     padding:calc(5/va.$sp-design-width*100vw) calc(25/va.$sp-design-width*100vw);
     background-color: va.$textColor;
+    &:hover{
+        background-color: va.$hoverColor;
+    }
     @include mixin.mq(pc){
     padding:calc(5/va.$pc-design-width*100vw) calc(25/va.$pc-design-width*100vw);
     font-size:max(calc(16/va.$pc-design-width*100vw),16px);

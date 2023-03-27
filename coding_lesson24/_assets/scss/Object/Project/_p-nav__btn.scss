@@ -16,6 +16,9 @@
         width: 70px;
         height: 70px;
         background-color: va.$textColor;
+        &:hover{
+            background-color: va.$hoverColor;
+        }
     }
     > a::before {
         position:absolute;

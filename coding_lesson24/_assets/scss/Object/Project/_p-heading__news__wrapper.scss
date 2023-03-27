@@ -5,9 +5,9 @@
     display: flex;
     width:calc(300/va.$sp-design-width*100vw);
     border-bottom: 1px solid va.$underLineColor;
-    margin-left:(12/va.$sp-design-width*100vw);
+    margin-left:calc(12/va.$sp-design-width*100vw);
     @include mixin.mq(pc){
         width:calc(1021/va.$pc-design-width*100vw);
-        margin-left:(19/va.$sp-design-width*100vw);
+        margin-left:calc(19/va.$sp-design-width*100vw);
     }
 }

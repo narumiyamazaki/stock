@@ -1,5 +1,5 @@
-@use '../../Foundation/vars' as va;
-@use '../../Foundation/mixin';
+@use '../Foundation/vars' as va;
+@use '../Foundation/mixin';
 
 .l-header {
     display: flex;
@@ -21,7 +21,7 @@
     }
     @include mixin.mq(pc){
         display: block;
-        padding:0 calc(260/va.$pc-design-width*100vw);
         margin-bottom:calc(100/va.$pc-design-width*100vw);
+        padding:0;
     }
 }

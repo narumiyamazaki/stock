@@ -7,10 +7,7 @@
 @use './p-nav__item--second';
 
 @use './p-nav__btn';
-@use './p-header__nav__body--sp';
-
 @use './p-header__nav__wrapper--pc';
-@use './p-header__nav__body--pc';
 @use './p-header__nav__items--pc';
 
 //news
@@ -19,7 +16,7 @@
 @use './p-heading__news__wrapper';
 @use './p-news__items';
 @use './p-news__item';
-@use './p__news__tag__wrapper';
+@use './p-news__tag__wrapper';
 
 //recommendition
 @use './p-recommendation';
@@ -30,5 +27,4 @@
 @use './p-card__text__price__wrapper';
 
 //common
-@use './.p-heading2__wrapper';
-@use './c-card__thumbnail--recommendation-1st';
+@use './p-heading2__wrapper';

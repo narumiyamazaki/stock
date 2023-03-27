@@ -1,4 +1,5 @@
-@use '../../../scss/Foundation/mixin';
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
 
 .p-header__nav__items--sp {
     display: flex;

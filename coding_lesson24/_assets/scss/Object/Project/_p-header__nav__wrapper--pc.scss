@@ -7,7 +7,7 @@
         display: block;
         width: 100vw;
         height: 80px;
-        background-color: $areaColor;
+        background-color: va.$areaColor;
         margin-right:calc(100/va.$pc-design-width*100vw);
     }
 }
