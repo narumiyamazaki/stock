@@ -2,10 +2,11 @@
 @use '../../Foundation/mixin';
 
 .p-nav__item{
-    &:not(:last-child){
+    width:calc(335/va.$sp-design-width*100vw);
+    &:not(:first-child){
     border-top: dotted 1px va.$textColor;
-    }
     @include mixin.mq(pc){
-        border-bottom: none;
+        border-top: none;
+        }
     }
 }

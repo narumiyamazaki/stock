@@ -8,6 +8,7 @@
 @use './c-logo__header__nav--sp';
 @use './c-item__link--nav';
 @use './c-item__link--second-nav';
+@use './c-line__nav';
 @use './c-btn__text';
 
 //header-nav-pc
@@ -19,6 +20,7 @@
 @use './c-text--news';
 @use './c-text--datetime';
 @use './c-tag__news';
+@use './c-link__news-list';
 
 //recommendation
 @use './c-card__text--recommendation';

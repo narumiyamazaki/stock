@@ -7,4 +7,5 @@
     flex-direction: column;
     border-top: dotted 1px va.$textColor;
     border-bottom: dotted 1px va.$textColor;
+    margin-bottom:min(45/va.$sp-design-width*100vw,45px);
 }

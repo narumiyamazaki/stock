@@ -2,8 +2,8 @@
 @use '../../Foundation/mixin';
 
 .p-header__top__container{
-    display: inline-block;
-    &.none{
-        display: none;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

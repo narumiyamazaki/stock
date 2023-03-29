@@ -4,7 +4,7 @@ $('.p-nav__btn').on('click', function () {
     $('.p-header__nav__wrapper--sp').toggleClass('open');
     $('.p-nav__btn > a').toggleClass('open');
     $('.l-header').toggleClass('active');
-    $('.p-header__top__container').toggleClass('none');
+    $('.p-header__top__wrapper').toggleClass('none');
     $('.c-btn__text').toggleClass('active');
 });
 

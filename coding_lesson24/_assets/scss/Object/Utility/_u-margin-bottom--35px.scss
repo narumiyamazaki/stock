@@ -2,5 +2,5 @@
 @use '../../Foundation/mixin';
 
 .u-margin-bottom--35px{
-    margin-bottom:calc(35/va.$sp-design-width*100vw);
+    margin-bottom:min(calc(35/va.$sp-design-width*100vw),35px);
 }

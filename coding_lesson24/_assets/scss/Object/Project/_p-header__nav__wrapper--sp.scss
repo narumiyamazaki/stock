@@ -1,6 +1,8 @@
+@use '../../Foundation/vars' as va;
 @use '../../Foundation/mixin';
 
 .p-header__nav__wrapper--sp{
+    display: none;
     position: fixed;
     top:0;
     z-index: -1;
@@ -8,10 +10,7 @@
     height:100vh;
     width: 100%;
     background-color: va.$areaColor;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom:calc(80/va.$sp-design-width*100vw);
+    margin-bottom: calc(80/va.$sp-design-width*100vw);
     @include mixin.mq(pc){
         display: none;
     }
@@ -19,6 +18,11 @@
 
 //ハンバーガーメニューのボタンを押したとき
 .p-header__nav__wrapper--sp.open{
+        display: flex;
+        flex-direction: column;
+        //justify-content: center;
+        align-items: center;
         opacity: 1;
         z-index: 100;
+        padding-top:calc(30/va.$sp-design-width*100vw);
     }

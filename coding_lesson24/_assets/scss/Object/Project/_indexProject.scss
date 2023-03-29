@@ -1,14 +1,17 @@
 //header
 @use './p-header__top__wrapper';
+@use './p-header__top__container';
 
 //nav
 @use './p-header__nav__items--sp';
+@use './p-header__nav__wrapper--sp';
+
 @use './p-nav__item';
-@use './p-nav__item--second';
 
 @use './p-nav__btn';
 @use './p-header__nav__wrapper--pc';
 @use './p-header__nav__items--pc';
+@use './p-header__nav__items--second';
 
 //news
 @use './p-news';
@@ -25,6 +28,9 @@
 @use './p-recommendation__new-item-tag__wrapper';
 @use './p-recommendation__card__text__wrapper';
 @use './p-card__text__price__wrapper';
+
+//main
+@use './_p-main.scss';
 
 //common
 @use './p-heading2__wrapper';

@@ -6,6 +6,7 @@
     font-size:max(calc(24/va.$sp-design-width*100vw),24px);
     color: va.$textColor;
     line-height: calc( 44/24 );
+    width:calc(300/va.$sp-design-width*100vw);
     //letter-spacing: calc(/1000 * 1em);
     font-weight: 700;
     @include mixin.mq(pc){

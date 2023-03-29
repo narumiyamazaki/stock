@@ -551,11 +551,8 @@ body {
 }
 
 .l-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.3037809648vw 2.6075619296vw 0;
-  margin-bottom: 5vw;
+  padding-top: 2.6666666667vw;
+  margin: 0 auto 5vw;
 }
 .l-header.active {
   position: fixed;
@@ -566,11 +563,6 @@ body {
   background-color: #F5EFD7;
 }
 @media screen and (min-width: 1025px) {
-  .l-header.active {
-    position: static;
-  }
-}
-@media screen and (min-width: 1025px) {
   .l-header {
     display: block;
     margin-bottom: 6.25vw;
@@ -579,7 +571,11 @@ body {
 }
 
 .p-header__top__wrapper {
-  margin-bottom: 3.9113428944vw;
+  margin: 0 auto 8vw;
+  width: 89.3333333333vw;
+}
+.p-header__top__wrapper.none {
+  display: none;
 }
 @media screen and (min-width: 1025px) {
   .p-header__top__wrapper {
@@ -587,7 +583,15 @@ body {
     justify-content: space-between;
     margin-bottom: 0;
     padding: 0 16.25vw;
+    width: 100%;
   }
+}
+
+.p-header__top__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .p-header__nav__items--sp {
@@ -596,35 +600,63 @@ body {
   flex-direction: column;
   border-top: dotted 1px #341E12;
   border-bottom: dotted 1px #341E12;
+  margin-bottom: min(12vw, 45px);
 }
 
-.p-nav__item:not(:last-child) {
-  border-top: dotted 1px #341E12;
+.p-header__nav__wrapper--sp {
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  opacity: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #F5EFD7;
+  margin-bottom: 21.3333333333vw;
 }
 @media screen and (min-width: 1025px) {
-  .p-nav__item {
-    border-bottom: none;
+  .p-header__nav__wrapper--sp {
+    display: none;
   }
 }
 
-.p-nav__item--second {
-  position: relative;
+.p-header__nav__wrapper--sp.open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 1;
+  z-index: 100;
+  padding-top: 8vw;
 }
-.p-nav__item--second:first-child::after {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 10px;
-  background-color: #341E12;
-  margin: 0 5px;
+
+.p-nav__item {
+  width: 89.3333333333vw;
+}
+.p-nav__item:not(:first-child) {
+  border-top: dotted 1px #341E12;
+}
+@media screen and (min-width: 1025px) {
+  .p-nav__item:not(:first-child) {
+    border-top: none;
+  }
 }
 
 .p-nav__btn {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-top: -6.9100391134vw;
-  margin-right: -1.3037809648vw;
+  margin-top: -6.1333333333vw;
+  margin-right: 2.6666666667vw;
+  align-self: flex-end;
+  width: 70px;
+  height: 70px;
+  background-color: #341E12;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 19px;
+}
+.p-nav__btn:hover {
+  background-color: #A88E25;
 }
 @media screen and (min-width: 1025px) {
   .p-nav__btn {
@@ -633,13 +665,6 @@ body {
 }
 .p-nav__btn > a {
   display: block;
-  position: relative;
-  width: 70px;
-  height: 70px;
-  background-color: #341E12;
-}
-.p-nav__btn > a:hover {
-  background-color: #A88E25;
 }
 .p-nav__btn > a::before {
   position: absolute;
@@ -659,7 +684,7 @@ body {
 }
 .p-nav__btn > a > span::after {
   position: absolute;
-  top: 34px;
+  top: 28px;
   left: 20px;
   content: "";
   width: 30px;
@@ -669,7 +694,7 @@ body {
 }
 .p-nav__btn > a::after {
   position: absolute;
-  bottom: 35px;
+  bottom: 32px;
   left: 20px;
   content: "";
   width: 30px;
@@ -689,8 +714,10 @@ body {
 }
 
 .p-nav__btn.open {
-  position: relative;
   z-index: 999;
+}
+.p-nav__btn.open a > span::after {
+  top: 24px;
 }
 
 .p-header__nav__wrapper--pc {
@@ -698,7 +725,9 @@ body {
 }
 @media screen and (min-width: 1025px) {
   .p-header__nav__wrapper--pc {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100vw;
     height: 80px;
     background-color: #F5EFD7;
@@ -707,14 +736,19 @@ body {
 }
 
 .p-header__nav__items--pc {
-  width: 58.125vw;
+  width: max(58.125vw, 930px);
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
 
+.p-header__nav__items--second {
+  display: flex;
+  justify-content: center;
+}
+
 .p-news {
-  margin-bottom: 10.4302477184vw;
+  margin-bottom: 21.3333333333vw;
 }
 @media screen and (min-width: 1025px) {
   .p-news {
@@ -724,8 +758,7 @@ body {
 
 .p-heading2__container {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 2.6075619296vw;
+  margin-bottom: 5.3333333333vw;
 }
 @media screen and (min-width: 1025px) {
   .p-heading2__container {
@@ -735,14 +768,13 @@ body {
 
 .p-heading__news__wrapper {
   display: flex;
-  width: 39.1134289439vw;
+  width: 80vw;
   border-bottom: 1px solid #CEB967;
-  margin-left: 1.5645371578vw;
+  margin-left: 3.2vw;
 }
 @media screen and (min-width: 1025px) {
   .p-heading__news__wrapper {
-    width: 63.8125vw;
-    margin-left: 2.4771838331vw;
+    margin-left: 1.1875vw;
   }
 }
 
@@ -751,7 +783,7 @@ body {
 }
 
 .p-news__item {
-  padding: 1.8252933507vw 0;
+  padding: 3.7333333333vw 0;
 }
 @media screen and (min-width: 1025px) {
   .p-news__item {
@@ -767,7 +799,7 @@ body {
 }
 
 .p-recommendation {
-  margin-bottom: 10.4302477184vw;
+  margin-bottom: 21.3333333333vw;
 }
 @media screen and (min-width: 1025px) {
   .p-recommendation {
@@ -787,8 +819,8 @@ body {
 
 .p-recommendation__card__wrapper {
   display: inline-block;
-  margin-bottom: 2.6075619296vw;
-  padding: 2.6075619296vw 1.9556714472vw;
+  margin-bottom: 5.3333333333vw;
+  padding: 5.3333333333vw 4vw;
   position: relative;
   overflow: hidden;
 }
@@ -822,7 +854,7 @@ body {
 }
 
 .p-servise__card__text__wrapper {
-  margin-bottom: 3.259452412vw;
+  margin-bottom: 6.6666666667vw;
 }
 @media screen and (min-width: 768px) {
   .p-servise__card__text__wrapper {
@@ -840,8 +872,21 @@ body {
   align-items: flex-end;
 }
 
+.p-main {
+  padding: 0 5.3333333333vw;
+  width: 89.3333333333vw;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1025px) {
+  .p-main {
+    max-width: 1070px;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
 .p-heading2__wrapper {
-  margin-bottom: 2.6075619296vw;
+  margin-bottom: 5.3333333333vw;
 }
 @media screen and (min-width: 1025px) {
   .p-heading2__wrapper {
@@ -851,8 +896,8 @@ body {
 
 .c-logo--top {
   object-fit: cover;
-  width: 43.6766623207vw;
-  height: 24.7718383312vw;
+  width: 89.3333333333vw;
+  height: 50.6666666667vw;
 }
 @media screen and (min-width: 1025px) {
   .c-logo--top {
@@ -863,12 +908,12 @@ body {
 
 .c-text--top-explanation {
   font-family: "Noto Sans JP", sans-serif;
-  font-size: clamp(16px, 2.0860495437vw, 18px);
+  font-size: clamp(16px, 4.2666666667vw, 18px);
   color: #341E12;
   font-weight: 400;
   border-top: 1px solid #341E12;
   border-bottom: 1px solid #341E12;
-  padding: 3.9113428944vw 0 6.518904824vw;
+  padding: 8vw 0 13.3333333333vw;
   line-height: 1.8;
 }
 @media screen and (min-width: 1025px) {
@@ -882,22 +927,23 @@ body {
 
 .c-img--mv {
   width: 100vw;
-  height: 200px;
+  height: 53.3333333333vw;
   background: url(../img/bg_top_header.jpg) no-repeat;
-  object-fit: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 1025px) {
   .c-img--mv {
     background-repeat: repeat;
+    height: 200px;
   }
 }
 
 .c-logo__header__nav--sp {
   background: url(../img/logo_small.svg) no-repeat;
-  width: 9.778357236vw;
-  height: 13.6897001304vw;
-  object-fit: cover;
+  width: 76px;
+  height: 103px;
+  background-size: cover;
 }
 
 .c-item__link--nav {
@@ -905,12 +951,12 @@ body {
   color: #341E12;
   font-weight: 400;
   width: 100%;
-  font-size: clamp(14px, 1.8252933507vw, 20px);
+  font-size: 14px;
   text-align: center;
-  height: 5.8670143416vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  line-height: 3;
 }
 @media screen and (min-width: 1025px) {
   .c-item__link--nav {
@@ -926,19 +972,29 @@ body {
   color: #341E12;
   font-weight: 400;
   width: 100%;
-  font-size: clamp(12px, 1.5645371578vw, 14px);
+  font-size: clamp(12px, 3.2vw, 14px);
 }
 .c-item__link--second-nav:hover {
   color: #A88E25;
 }
 
+.c-line__nav {
+  position: relative;
+  width: 1px;
+  height: 10px;
+  background-color: #341E12;
+  margin: 5px 10px 0;
+}
+
 .c-btn__text {
   font-family: "Noto Sans JP", sans-serif;
-  font-size: max(1.5645371578vw, 12px);
-  color: #341E12;
-  line-height: 3.5;
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 12px;
+  color: #fff;
   font-weight: 700;
   display: none;
+  text-transform: uppercase;
 }
 .c-btn__text.active {
   display: block;
@@ -957,8 +1013,8 @@ body {
 
 .c-cat__img {
   background: url(../img/ico_cat.svg) no-repeat;
-  width: 2.7379400261vw;
-  height: 5.9973924381vw;
+  width: 5.6vw;
+  height: 12.2666666667vw;
   background-size: contain;
 }
 @media screen and (min-width: 1025px) {
@@ -970,9 +1026,10 @@ body {
 
 .c-heading2 {
   font-family: "Noto Sans JP", sans-serif;
-  font-size: max(3.1290743155vw, 24px);
+  font-size: max(6.4vw, 24px);
   color: #341E12;
   line-height: 1.8333333333;
+  width: 80vw;
   font-weight: 700;
 }
 @media screen and (min-width: 1025px) {
@@ -984,7 +1041,7 @@ body {
 
 .c-text--news {
   font-family: "Noto Sans JP", sans-serif;
-  font-size: clamp(16px, 2.0860495437vw, 18px);
+  font-size: clamp(16px, 4.2666666667vw, 18px);
   color: #341E12;
   line-height: 1.5;
   font-weight: 400;
@@ -1000,7 +1057,7 @@ body {
 
 .c-text--datetime {
   font-family: "Noto Sans JP", sans-serif;
-  font-size: clamp(16px, 2.0860495437vw, 18px);
+  font-size: clamp(16px, 4.2666666667vw, 18px);
   color: #341E12;
   font-weight: 400;
   line-height: 1.5;
@@ -1012,8 +1069,8 @@ body {
 }
 
 .c-tag__news {
-  width: 11.9947848761vw;
-  height: 2.6075619296vw;
+  width: 24.5333333333vw;
+  height: 5.3333333333vw;
   background-color: #F5EFD7;
   color: #341E12;
   font-family: "Noto Sans JP", sans-serif;
@@ -1028,9 +1085,29 @@ body {
   }
 }
 
+.c-link__news-list {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: max(3.4666666667vw, 13px);
+  color: #fff;
+  line-height: 1.5384615385;
+  font-weight: 500;
+  padding: 1.3333333333vw 6.6666666667vw;
+  background-color: #341E12;
+}
+.c-link__news-list:hover {
+  background-color: #A88E25;
+}
+@media screen and (min-width: 1025px) {
+  .c-link__news-list {
+    padding: 0.3125vw 1.5625vw;
+    font-size: max(1vw, 16px);
+    line-height: 1.5;
+  }
+}
+
 .c-card__text--recommendation {
   font-family: "Noto Sans JP", sans-serif;
-  font-size: clamp(14px, 2.0860495437vw, 16px);
+  font-size: clamp(14px, 4.2666666667vw, 16px);
   color: #341E12;
   line-height: 1.5;
   font-weight: 400;
@@ -1044,9 +1121,9 @@ body {
 
 .c-card__thumbnail--recommendation-1st {
   background: url(../img/dmy_pd001.jpg) no-repeat;
-  height: min(23.7288135593vw, 192px);
+  height: min(48.5333333333vw, 192px);
   background-size: contain;
-  margin-bottom: 3.259452412vw;
+  margin-bottom: 6.6666666667vw;
 }
 @media screen and (min-width: 768px) {
   .c-card__thumbnail--recommendation-1st {
@@ -1067,7 +1144,7 @@ body {
   border-bottom: 1px dotted;
   color: #341E12;
   font-family: "Noto Sans JP", sans-serif;
-  font-size: clamp(18px, 2.3468057366vw, 20px);
+  font-size: clamp(18px, 4.8vw, 20px);
   line-height: 2.4444444444;
   font-weight: 700;
 }
@@ -1079,7 +1156,7 @@ body {
 
 .c-card__text--price {
   font-family: "Noto Sans JP", sans-serif;
-  font-size: clamp(16px, 2.0860495437vw, 18px);
+  font-size: clamp(16px, 4.2666666667vw, 18px);
   color: #341E12;
   line-height: 1.5;
   font-weight: 700;
@@ -1093,7 +1170,7 @@ body {
 
 .c-card__text--tax {
   font-family: "Noto Sans JP", sans-serif;
-  font-size: clamp(12px, 1.5645371578vw, 14px);
+  font-size: clamp(12px, 3.2vw, 14px);
   color: #341E12;
   line-height: 3.6666666667;
   font-weight: 700;
@@ -1107,14 +1184,14 @@ body {
 
 .c-link--recommendation {
   color: #341E12;
-  width: 39.7653194263vw;
+  width: 81.3333333333vw;
   font-family: "Noto Sans JP", sans-serif;
-  font-size: clamp(14px, 1.8252933507vw, 16px);
+  font-size: clamp(14px, 3.7333333333vw, 16px);
   font-weight: 700;
   display: inline-block;
   text-align: center;
   line-height: 1.7142857143;
-  padding: max(1.5645371578vw, 12px) 0;
+  padding: max(3.2vw, 12px) 0;
   text-decoration: none;
   position: relative;
   border: 1px solid "Noto Sans JP", sans-serif;
@@ -1144,9 +1221,9 @@ body {
 
 .c-card__thumbnail--recommendation-2nd {
   background: url(../img/dmy_pd002.jpg) no-repeat;
-  height: min(23.7288135593vw, 192px);
+  height: min(48.5333333333vw, 192px);
   background-size: contain;
-  margin-bottom: 3.259452412vw;
+  margin-bottom: 6.6666666667vw;
 }
 @media screen and (min-width: 768px) {
   .c-card__thumbnail--recommendation-2nd {
@@ -1163,7 +1240,7 @@ body {
 }
 
 .u-margin-bottom--35px {
-  margin-bottom: 4.5632333768vw;
+  margin-bottom: min(9.3333333333vw, 35px);
 }
 
 .u-margin-right--6px {
@@ -1171,7 +1248,7 @@ body {
 }
 
 .u-margin-bottom--20px {
-  margin-bottom: 2.6075619296vw;
+  margin-bottom: 5.3333333333vw;
 }
 @media screen and (min-width: 1025px) {
   .u-margin-bottom--20px {

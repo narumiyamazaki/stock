@@ -5,20 +5,23 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-top:calc(-53/va.$sp-design-width*100vw);
-    margin-right:calc(-10/va.$sp-design-width*100vw);
+    margin-top:calc(-23/va.$sp-design-width*100vw);
+    margin-right:calc(10/va.$sp-design-width*100vw);
+    align-self: flex-end;
+    width: 70px;
+    height: 70px;
+    background-color: va.$textColor;
+    border-radius: 50%;
+    position:fixed;
+    bottom:19px;
+    &:hover{
+        background-color: va.$hoverColor;
+    }
     @include mixin.mq(pc){
         display: none;
     }
     > a {
         display: block;
-        position: relative;
-        width: 70px;
-        height: 70px;
-        background-color: va.$textColor;
-        &:hover{
-            background-color: va.$hoverColor;
-        }
     }
     > a::before {
         position:absolute;
@@ -38,7 +41,7 @@
     }
     > a > span::after{
         position:absolute;
-        top: 34px;
+        top: 28px;
         left: 20px;
         content: "";
         width: 30px;
@@ -48,7 +51,7 @@
     }
     > a::after {
         position:absolute;
-        bottom: 35px;
+        bottom: 32px;
         left: 20px;
         content: "";
         width: 30px;
@@ -70,6 +73,8 @@
 }
 
 .p-nav__btn.open{
-    position:relative;
     z-index: 999;
+    & a > span::after{
+        top: 24px;
+    }
 }

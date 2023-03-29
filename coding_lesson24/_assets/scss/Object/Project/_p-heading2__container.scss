@@ -3,7 +3,6 @@
 
 .p-heading2__container{
     display: flex;
-    justify-content: space-between;
     margin-bottom:calc(20/va.$sp-design-width*100vw);
     @include mixin.mq(pc){
         margin-bottom:calc(40/va.$pc-design-width*100vw);

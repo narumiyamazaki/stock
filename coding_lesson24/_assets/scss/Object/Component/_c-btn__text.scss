@@ -3,12 +3,14 @@
 
 .c-btn__text{
     font-family: va.$baseFont;
-    font-size:max(calc(12/va.$sp-design-width*100vw),12px);
-    color: va.$textColor;
-    line-height: calc( 42/12 );
-    //letter-spacing: calc(/1000 * 1em);
+    //ボタンの大きさが可変ではないので、固定値に
+    font-size:12px;
+    text-align: center;
+    padding-bottom:12px;
+    color: #fff;
     font-weight: 700;
     display: none;
+    text-transform: uppercase;
     &.active{
         display: block;
     }

@@ -3,7 +3,7 @@
 
 .c-logo__header__nav--sp{
     background: url(../img/logo_small.svg) no-repeat;
-    width:calc(75/va.$sp-design-width*100vw);
-    height:calc(105/va.$sp-design-width*100vw);
-    object-fit: cover;
+    width:76px;
+    height:103px;
+    background-size: cover;
 }
