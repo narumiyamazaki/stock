@@ -9,6 +9,8 @@
     font-weight: 500;
     padding:calc(5/va.$sp-design-width*100vw) calc(25/va.$sp-design-width*100vw);
     background-color: va.$textColor;
+    align-self: center;
+    border-radius: 6px;
     &:hover{
         background-color: va.$hoverColor;
     }

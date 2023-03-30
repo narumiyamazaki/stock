@@ -2,12 +2,12 @@
 @use '../../Foundation/mixin';
 
 .p-main{
-    padding:0 calc(20/va.$sp-design-width*100vw);
+    //padding:0 calc(20/va.$sp-design-width*100vw);
     width:calc(335/va.$sp-design-width*100vw);
     margin: 0 auto;
     @include mixin.mq(pc){
         max-width: 1070px;
-        padding:0;
+        //padding:0;
         margin:0 auto;
     }
 }

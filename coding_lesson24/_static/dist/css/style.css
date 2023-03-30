@@ -759,6 +759,7 @@ body {
 .p-heading2__container {
   display: flex;
   margin-bottom: 5.3333333333vw;
+  justify-content: space-between;
 }
 @media screen and (min-width: 1025px) {
   .p-heading2__container {
@@ -768,13 +769,14 @@ body {
 
 .p-heading__news__wrapper {
   display: flex;
-  width: 80vw;
   border-bottom: 1px solid #CEB967;
   margin-left: 3.2vw;
+  width: 80vw;
+  justify-content: space-between;
 }
 @media screen and (min-width: 1025px) {
   .p-heading__news__wrapper {
-    margin-left: 1.1875vw;
+    width: 100%;
   }
 }
 
@@ -784,18 +786,13 @@ body {
 
 .p-news__item {
   padding: 3.7333333333vw 0;
+  display: grid;
+  gap: 0.5vw;
 }
 @media screen and (min-width: 1025px) {
   .p-news__item {
-    display: flex;
     padding: 1.25vw 0;
   }
-}
-
-.p-news__tag__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .p-recommendation {
@@ -873,14 +870,12 @@ body {
 }
 
 .p-main {
-  padding: 0 5.3333333333vw;
   width: 89.3333333333vw;
   margin: 0 auto;
 }
 @media screen and (min-width: 1025px) {
   .p-main {
     max-width: 1070px;
-    padding: 0;
     margin: 0 auto;
   }
 }
@@ -1029,13 +1024,13 @@ body {
   font-size: max(6.4vw, 24px);
   color: #341E12;
   line-height: 1.8333333333;
-  width: 80vw;
   font-weight: 700;
 }
 @media screen and (min-width: 1025px) {
   .c-heading2 {
     line-height: 1.25;
     font-size: max(1.875vw, 30px);
+    width: auto;
   }
 }
 
@@ -1069,19 +1064,31 @@ body {
 }
 
 .c-tag__news {
-  width: 24.5333333333vw;
-  height: 5.3333333333vw;
   background-color: #F5EFD7;
   color: #341E12;
   font-family: "Noto Sans JP", sans-serif;
-}
-.c-tag__news--latest {
-  color: #F7320E;
+  font-weight: 700;
+  padding: 0.5333333333vw 0;
+  width: 24.5333333333vw;
 }
 @media screen and (min-width: 1025px) {
   .c-tag__news {
+    padding: 0.125vw 1vw;
     width: 5.75vw;
-    height: 1.25vw;
+  }
+}
+.c-tag__news--latest {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #F7320E;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.5333333333vw 4.2666666667vw;
+  width: 24.5333333333vw;
+}
+@media screen and (min-width: 1025px) {
+  .c-tag__news--latest {
+    padding: 0.125vw 1vw;
+    width: 5.75vw;
   }
 }
 
@@ -1093,6 +1100,8 @@ body {
   font-weight: 500;
   padding: 1.3333333333vw 6.6666666667vw;
   background-color: #341E12;
+  align-self: center;
+  border-radius: 6px;
 }
 .c-link__news-list:hover {
   background-color: #A88E25;

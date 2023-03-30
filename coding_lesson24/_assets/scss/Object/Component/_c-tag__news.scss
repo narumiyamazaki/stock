@@ -2,16 +2,26 @@
 @use '../../Foundation/mixin';
 
 .c-tag__news{
-    width:calc(92/va.$sp-design-width*100vw);
-    height:calc(20/va.$sp-design-width*100vw);
     background-color: va.$areaColor;
     color: va.$textColor;
     font-family: va.$baseFont;
-    &--latest{
-        color: va.$newColor;
-    }
+    font-weight: 700;
+    padding:calc(2/va.$sp-design-width*100vw) 0;
+    width: calc(92/va.$sp-design-width*100vw);
     @include mixin.mq(pc){
-        width:calc(92/va.$pc-design-width*100vw);
-        height:calc(20/va.$pc-design-width*100vw);
+        padding:calc(2/va.$pc-design-width*100vw) calc(16/va.$pc-design-width*100vw);
+        width: calc(92/va.$pc-design-width*100vw);
+    }
+    &--latest{
+        font-family: va.$baseFont;
+        background-color: va.$newColor;
+        color: #fff;
+        font-weight: 700;
+        padding:calc(2/va.$sp-design-width*100vw) calc(16/va.$sp-design-width*100vw);
+        width: calc(92/va.$sp-design-width*100vw);
+        @include mixin.mq(pc){
+            padding:calc(2/va.$pc-design-width*100vw) calc(16/va.$pc-design-width*100vw);
+            width: calc(92/va.$pc-design-width*100vw);
+        }
     }
 }
