@@ -7,21 +7,27 @@
     font-family: va.$baseFont;
     font-weight: 700;
     padding:calc(2/va.$sp-design-width*100vw) 0;
-    width: calc(92/va.$sp-design-width*100vw);
+    width: max(calc(92/va.$sp-design-width*100vw),92px);
+    display: inline-block;
+    text-align: center;
     @include mixin.mq(pc){
-        padding:calc(2/va.$pc-design-width*100vw) calc(16/va.$pc-design-width*100vw);
-        width: calc(92/va.$pc-design-width*100vw);
+        padding:calc(2/va.$pc-design-width*100vw) 0;
+        width: max(calc(92/va.$pc-design-width*100vw),92px);
+        text-align: center;
     }
     &--latest{
         font-family: va.$baseFont;
         background-color: va.$newColor;
         color: #fff;
         font-weight: 700;
-        padding:calc(2/va.$sp-design-width*100vw) calc(16/va.$sp-design-width*100vw);
-        width: calc(92/va.$sp-design-width*100vw);
+        padding:calc(2/va.$sp-design-width*100vw) 0;
+        width: max(calc(92/va.$sp-design-width*100vw),92px);
+        display: inline-block;
+        text-align: center;
         @include mixin.mq(pc){
-            padding:calc(2/va.$pc-design-width*100vw) calc(16/va.$pc-design-width*100vw);
-            width: calc(92/va.$pc-design-width*100vw);
+            padding:calc(2/va.$pc-design-width*100vw) 0;
+            width: max(calc(92/va.$pc-design-width*100vw),92px);
+            text-align: center;
         }
     }
 }

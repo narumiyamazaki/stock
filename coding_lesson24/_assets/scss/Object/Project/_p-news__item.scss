@@ -8,8 +8,16 @@
     gap: calc(8/va.$pc-design-width*100vw);
     //タグについては幅を狭める
     @include mixin.mq(pc){
-        //display: flex;
+        display: flex;
+        align-items: center;
         //多分1列にする必要がある
-        padding:calc(20/va.$pc-design-width*100vw) 0; 
+        gap:0;
+        padding:calc(20/va.$pc-design-width*100vw) 0;
+        & > :first-child{
+            margin-right:calc(25/va.$pc-design-width*100vw);
+        }
+        & > :nth-child(2){
+            margin-right:calc(15/va.$pc-design-width*100vw);
+        }
     }
 }
