@@ -8,6 +8,7 @@
     position: relative;
     //新商品のタグはoverflow:hiddenで消える？
     overflow: hidden;
+    border: 1px solid #DDDDDD;
     &:last-child{
         margin-bottom:0;
     }

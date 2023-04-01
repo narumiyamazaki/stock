@@ -1,0 +1,16 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.c-card__thumbnail__product-cat{
+   width:calc(120/va.$sp-design-width*100vw);
+   height:calc(120/va.$sp-design-width*100vw);
+   background-size: cover;
+   @include mixin.mq(pc){
+        width:calc(120/va.$pc-design-width*100vw);
+        height:calc(120/va.$pc-design-width*100vw);
+   }
+}
+
+.cat-resin{
+    background-image: url(../img/);
+}

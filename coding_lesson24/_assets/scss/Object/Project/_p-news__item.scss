@@ -6,6 +6,7 @@
     //gridのgapを使う事でコンポーネントにマージンを持たせない 
     display: grid;
     gap: calc(8/va.$pc-design-width*100vw);
+    border-bottom: 1px dotted va.$underLineColor;
     //タグについては幅を狭める
     @include mixin.mq(pc){
         display: flex;

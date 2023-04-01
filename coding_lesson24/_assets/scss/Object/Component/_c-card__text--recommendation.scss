@@ -10,5 +10,6 @@
     @include mixin.mq(pc){
         font-size:clamp(14px,calc(14/va.$pc-design-width*100vw),16px);
         line-height: calc( 21/14 );
+        padding-top:calc(15/va.$pc-design-width*100vw);
     }
 }

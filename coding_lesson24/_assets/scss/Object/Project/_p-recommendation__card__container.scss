@@ -3,7 +3,7 @@
 
 .p-recommendation__card__container{
     display: inline-block;
-    @include mixin.mq(pc){
+    @include mixin.mq(tb){
         display: flex;
         justify-content: space-between;
     }

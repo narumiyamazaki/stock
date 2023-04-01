@@ -788,6 +788,7 @@ body {
   padding: 3.7333333333vw 0;
   display: grid;
   gap: 0.5vw;
+  border-bottom: 1px dotted #CEB967;
 }
 @media screen and (min-width: 1025px) {
   .p-news__item {
@@ -816,7 +817,7 @@ body {
 .p-recommendation__card__container {
   display: inline-block;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
   .p-recommendation__card__container {
     display: flex;
     justify-content: space-between;
@@ -829,6 +830,7 @@ body {
   padding: 5.3333333333vw 4vw;
   position: relative;
   overflow: hidden;
+  border: 1px solid #DDDDDD;
 }
 .p-recommendation__card__wrapper:last-child {
   margin-bottom: 0;
@@ -856,26 +858,54 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: rotate(-45deg);
 }
 
-.p-servise__card__text__wrapper {
+.p-recommendation__card__text__wrapper {
   margin-bottom: 6.6666666667vw;
 }
 @media screen and (min-width: 768px) {
-  .p-servise__card__text__wrapper {
+  .p-recommendation__card__text__wrapper {
     margin-bottom: 2.4437927664vw;
   }
 }
 @media screen and (min-width: 1025px) {
-  .p-servise__card__text__wrapper {
+  .p-recommendation__card__text__wrapper {
     margin-bottom: 1.5625vw;
   }
 }
 
 .p-card__text__price__wrapper {
   display: flex;
-  align-items: flex-end;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: auto;
+}
+
+.p-recommendation__card__link {
+  color: #341E12;
+  width: 100%;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: clamp(14px, 3.7333333333vw, 16px);
+  font-weight: 700;
+  display: inline-block;
+  text-align: center;
+  line-height: 1.7142857143;
+  padding: max(3.2vw, 12px) 0;
+  text-decoration: none;
+  position: relative;
+  border: 1px solid #341E12;
+  border-radius: 6px;
+}
+.p-recommendation__card__link:hover {
+  background-color: #F5EFD7;
+  border-color: #A88E25;
+}
+@media screen and (min-width: 1025px) {
+  .p-recommendation__card__link {
+    width: 19.8125vw;
+    font-size: max(0.875vw, 14px);
+    padding: max(0.75vw, 12px) 0;
+  }
 }
 
 .p-main {
@@ -884,7 +914,7 @@ body {
 }
 @media screen and (min-width: 1025px) {
   .p-main {
-    max-width: 1070px;
+    width: 67.75vw;
     margin: 0 auto;
   }
 }
@@ -896,6 +926,11 @@ body {
   .p-heading2__wrapper {
     margin-bottom: 2.5vw;
   }
+}
+
+.p-product-cat__card__wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .c-logo--top {
@@ -1049,9 +1084,11 @@ body {
   color: #341E12;
   line-height: 1.5;
   font-weight: 400;
+  text-decoration: underline #341E12;
 }
 .c-text--news:hover {
   color: #A88E25;
+  text-decoration: underline #A88E25;
 }
 @media screen and (min-width: 1025px) {
   .c-text--news {
@@ -1065,6 +1102,7 @@ body {
   color: #341E12;
   font-weight: 400;
   line-height: 1.5;
+  white-space: nowrap;
 }
 @media screen and (min-width: 1025px) {
   .c-text--datetime {
@@ -1140,24 +1178,27 @@ body {
   .c-card__text--recommendation {
     font-size: clamp(14px, 0.875vw, 16px);
     line-height: 1.5;
+    padding-top: 0.9375vw;
   }
 }
 
-.c-card__thumbnail--recommendation-1st {
-  background: url(../img/dmy_pd001.jpg) no-repeat;
-  height: min(48.5333333333vw, 192px);
+.c-card__thumbnail--recommendation {
+  width: 100%;
+  height: 48.5333333333vw;
   background-size: contain;
   margin-bottom: 6.6666666667vw;
+  object-fit: cover;
 }
 @media screen and (min-width: 768px) {
-  .c-card__thumbnail--recommendation-1st {
+  .c-card__thumbnail--recommendation {
     width: 100%;
     height: min(18.5728250244vw, 192px);
     margin-bottom: 2.4437927664vw;
   }
 }
 @media screen and (min-width: 1025px) {
-  .c-card__thumbnail--recommendation-1st {
+  .c-card__thumbnail--recommendation {
+    width: 19.875vw;
     height: 11.875vw;
     margin-bottom: 1.6875vw;
   }
@@ -1178,6 +1219,30 @@ body {
   }
 }
 
+.c-tag__new-item {
+  width: 32vw;
+  height: 6.9333333333vw;
+  background-color: #F7320E;
+  color: #fff;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 3.7333333333vw;
+  font-weight: 700;
+  position: absolute;
+  text-align: center;
+  transform: rotate(-45deg);
+  top: 5.3333333333vw;
+  left: -9.3333333333vw;
+}
+@media screen and (min-width: 1025px) {
+  .c-tag__new-item {
+    width: 7.5vw;
+    height: 1.625vw;
+    font-size: 0.875vw;
+    top: 1.25vw;
+    left: -2.1875vw;
+  }
+}
+
 .c-card__text--price {
   font-family: "Noto Sans JP", sans-serif;
   font-size: clamp(16px, 4.2666666667vw, 18px);
@@ -1187,7 +1252,7 @@ body {
 }
 @media screen and (min-width: 1025px) {
   .c-card__text--price {
-    font-size: clamp(16x, 1vw, 18px);
+    font-size: clamp(16px, 1vw, 18px);
     line-height: 2.75;
   }
 }
@@ -1197,7 +1262,7 @@ body {
   font-size: clamp(12px, 3.2vw, 14px);
   color: #341E12;
   line-height: 3.6666666667;
-  font-weight: 700;
+  font-weight: 400;
 }
 @media screen and (min-width: 1025px) {
   .c-card__text--tax {
@@ -1206,61 +1271,14 @@ body {
   }
 }
 
-.c-link--recommendation {
-  color: #341E12;
-  width: 81.3333333333vw;
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: clamp(14px, 3.7333333333vw, 16px);
-  font-weight: 700;
+.c-arrow--right {
   display: inline-block;
-  text-align: center;
-  line-height: 1.7142857143;
-  padding: max(3.2vw, 12px) 0;
-  text-decoration: none;
-  position: relative;
-  border: 1px solid "Noto Sans JP", sans-serif;
-  border-radius: 6px;
-}
-.c-link--recommendation::after {
-  content: "";
-  position: absolute;
-  left: 8px;
   width: 8px;
   height: 8px;
+  margin-right: 8px;
   transform: rotate(45deg);
   border-top: 2px solid #341E12;
   border-right: 2px solid #341E12;
-}
-.c-link--recommendation:hover {
-  background-color: #A88E25;
-  border: #A88E25;
-}
-@media screen and (min-width: 1025px) {
-  .c-link--recommendation {
-    width: 19.8125vw;
-    font-size: clamp(14px, 0.875vw, 16px);
-    padding: max(0.75vw, 12px) 0;
-  }
-}
-
-.c-card__thumbnail--recommendation-2nd {
-  background: url(../img/dmy_pd002.jpg) no-repeat;
-  height: min(48.5333333333vw, 192px);
-  background-size: contain;
-  margin-bottom: 6.6666666667vw;
-}
-@media screen and (min-width: 768px) {
-  .c-card__thumbnail--recommendation-2nd {
-    width: 100%;
-    height: min(18.5728250244vw, 192px);
-    margin-bottom: 2.4437927664vw;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .c-card__thumbnail--recommendation-2nd {
-    height: 11.875vw;
-    margin-bottom: 1.6875vw;
-  }
 }
 
 .u-margin-bottom--35px {

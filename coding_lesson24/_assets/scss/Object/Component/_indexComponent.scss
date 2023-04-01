@@ -24,9 +24,9 @@
 
 //recommendation
 @use './c-card__text--recommendation';
-@use './c-card__thumbnail--recommendation-1st';
+@use './c-card__thumbnail--recommendation';
 @use './c-card__title--recommendation';
+@use './c-tag__new-item';
 @use './c-card__text--price';
 @use './c-card__text--tax';
-@use './c-link--recommendation';
-@use './c-card__thumbnail--recommendation-2nd';
+@use './c-arrow--right';

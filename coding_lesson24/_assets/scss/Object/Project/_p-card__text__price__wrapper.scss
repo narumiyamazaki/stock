@@ -3,5 +3,7 @@
 
 .p-card__text__price__wrapper{
     display: flex;
-    align-items: flex-end;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top:auto;
 }

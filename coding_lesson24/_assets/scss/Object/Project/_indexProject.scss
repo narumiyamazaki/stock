@@ -27,9 +27,13 @@
 @use './p-recommendation__new-item-tag__wrapper';
 @use './p-recommendation__card__text__wrapper';
 @use './p-card__text__price__wrapper';
+@use './p-recommendation__card__link';
 
 //main
 @use './_p-main.scss';
 
 //common
 @use './p-heading2__wrapper';
+
+//category
+@use './p-product-cat__card__wrapper';

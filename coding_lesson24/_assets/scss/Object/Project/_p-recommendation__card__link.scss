@@ -1,9 +1,9 @@
 @use '../../Foundation/vars' as va;
 @use '../../Foundation/mixin';
 
-.c-link--recommendation{
+.p-recommendation__card__link{
     color: va.$textColor;
-	width:calc(305/va.$sp-design-width*100vw);
+	width:100%;
     font-family: va.$baseFont;
 	font-size: clamp(14px,(calc(14/va.$sp-design-width*100vw)),16px);
 	font-weight: 700;
@@ -13,25 +13,16 @@
 	padding: max(calc(12/va.$sp-design-width*100vw),12px) 0;
     text-decoration: none;
     position:relative;
-    border:1px solid va.$baseFont;
+    border:1px solid va.$textColor;
     border-radius: 6px;
-    &::after{
-        content:'';
-        position:absolute;
-        left: 8px;
-        width:8px;
-        height:8px;
-        transform:rotate(45deg);
-        border-top:2px solid va.$textColor;
-        border-right:2px solid va.$textColor;
-    }
     &:hover{
-        background-color:va.$hoverColor;
-        border:va.$hoverColor;
+        background-color:va.$areaColor;
+        border-color:va.$hoverColor;
+        //矢印の色も変える
     }
     @include mixin.mq(pc){
         width:calc(317/va.$pc-design-width*100vw);
-        font-size: clamp(14px,(calc(14/va.$pc-design-width*100vw)),16px);
+        font-size: max(calc(14/va.$pc-design-width*100vw),14px);
         padding: max(calc(12/va.$pc-design-width*100vw),12px) 0;
     }
 }
