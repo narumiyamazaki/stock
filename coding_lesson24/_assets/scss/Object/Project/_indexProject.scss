@@ -39,3 +39,10 @@
 @use './p-product-cat';
 @use './p-product-cat__card__wrapper';
 @use './p-product-cat__card__container';
+@use './p-product-cat__card__link';
+
+//consignment-sales
+@use './p-consignment-sales';
+
+//profile
+@use './p-profile';

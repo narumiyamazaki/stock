@@ -2,9 +2,13 @@
 @use '../../Foundation/mixin';
 
 .p-product-cat__card__wrapper{
-    display: flex;
-    align-items: center;
     border: 1px solid #DDDDDD;
+    &:hover{
+        border-color: va.$hoverColor;
+    }
+    &:hover > .p-product-cat__card__link{
+        background-color: va.$areaColor;
+    }
     @include mixin.mq(tb){
         width:max(348/va.$tb-design-width*100vw);
     }

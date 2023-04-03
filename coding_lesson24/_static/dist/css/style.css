@@ -749,11 +749,13 @@ body {
 }
 
 .p-news {
-  margin-bottom: 21.3333333333vw;
+  width: 89.3333333333vw;
+  margin: 0 auto 21.3333333333vw;
 }
 @media screen and (min-width: 1025px) {
   .p-news {
-    margin-bottom: 6.25vw;
+    width: 67.75vw;
+    margin: 0 auto 6.25vw;
   }
 }
 
@@ -807,11 +809,13 @@ body {
 }
 
 .p-recommendation {
-  margin-bottom: 21.3333333333vw;
+  width: 89.3333333333vw;
+  margin: 0 auto 21.3333333333vw;
 }
 @media screen and (min-width: 1025px) {
   .p-recommendation {
-    margin-bottom: 6.25vw;
+    width: 67.75vw;
+    margin: 0 auto 6.25vw;
   }
 }
 
@@ -910,14 +914,15 @@ body {
 }
 
 .p-main {
-  width: 89.3333333333vw;
+  width: 100%;
+  /*
+  width:calc(335/va.$sp-design-width*100vw);
   margin: 0 auto;
-}
-@media screen and (min-width: 1025px) {
-  .p-main {
-    width: 67.75vw;
-    margin: 0 auto;
+  @include mixin.mq(pc){
+      width:calc(1084/va.$pc-design-width*100vw);
+      margin:0 auto;
   }
+  */
 }
 
 .p-heading2__wrapper {
@@ -930,22 +935,23 @@ body {
 }
 
 .p-product-cat {
-  margin-bottom: 21.3333333333vw;
-}
-@media screen and (min-width: 768px) {
-  .p-product-cat {
-    margin-bottom: 9.7751710655vw;
+  width: 89.3333333333vw;
+  margin: 0 auto 21.3333333333vw;
+  /*
+  @include mixin.mq(tb){
+      width:calc(1084/va.$tb-design-width*100vw);
+      margin:0 auto calc(100/va.$tb-design-width*100vw);
   }
+  */
 }
 @media screen and (min-width: 1025px) {
   .p-product-cat {
-    margin-bottom: 6.25vw;
+    width: 67.75vw;
+    margin: 0 auto 9.7751710655vw;
   }
 }
 
 .p-product-cat__card__wrapper {
-  display: flex;
-  align-items: center;
   border: 1px solid #DDDDDD;
   /*grid gapで対応？
 
@@ -959,6 +965,12 @@ body {
       }
   }
   */
+}
+.p-product-cat__card__wrapper:hover {
+  border-color: #A88E25;
+}
+.p-product-cat__card__wrapper:hover > .p-product-cat__card__link {
+  background-color: #F5EFD7;
 }
 @media screen and (min-width: 768px) {
   .p-product-cat__card__wrapper {
@@ -985,6 +997,42 @@ body {
   .p-product-cat__card__container {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.25vw;
+  }
+}
+
+.p-product-cat__card__link {
+  display: flex;
+  align-items: center;
+}
+
+.p-consignment-sales {
+  background-color: #F5EFD7;
+  padding: 20vw 0 21.3333333333vw;
+  margin-bottom: 20vw;
+}
+@media screen and (min-width: 768px) {
+  .p-consignment-sales {
+    padding: 9.2864125122vw 0 9.7751710655vw;
+    margin-bottom: 9.2864125122vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-consignment-sales {
+    padding: 5.9375vw 0 6.25vw;
+    margin-bottom: 5.9375vw;
+  }
+}
+
+.p-profile {
+  width: 89.3333333333vw;
+  margin: 0 auto;
+  padding-bottom: 21.3333333333vw;
+}
+@media screen and (min-width: 1025px) {
+  .p-profile {
+    width: 67.75vw;
+    margin: 0 auto;
+    padding-bottom: 6.25vw;
   }
 }
 
