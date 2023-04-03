@@ -929,6 +929,20 @@ body {
   }
 }
 
+.p-product-cat {
+  margin-bottom: 21.3333333333vw;
+}
+@media screen and (min-width: 768px) {
+  .p-product-cat {
+    margin-bottom: 9.7751710655vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-product-cat {
+    margin-bottom: 6.25vw;
+  }
+}
+
 .p-product-cat__card__wrapper {
   display: flex;
   align-items: center;
@@ -957,15 +971,20 @@ body {
   }
 }
 
+.p-product-cat__card__container {
+  display: grid;
+  gap: 5.3333333333vw;
+}
 @media screen and (min-width: 768px) {
   .p-product-cat__card__container {
-    display: grid;
+    gap: 1.9550342131vw;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (min-width: 1025px) {
   .p-product-cat__card__container {
     grid-template-columns: repeat(3, 1fr);
+    gap: 1.25vw;
   }
 }
 

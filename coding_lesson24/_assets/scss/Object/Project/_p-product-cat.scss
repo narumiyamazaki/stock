@@ -1,0 +1,12 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-product-cat{
+    margin-bottom:calc(80/va.$sp-design-width*100vw);
+    @include mixin.mq(tb){
+        margin-bottom:calc(100/va.$tb-design-width*100vw);
+    }
+    @include mixin.mq(pc){
+        margin-bottom:calc(100/va.$pc-design-width*100vw);
+    }
+}
