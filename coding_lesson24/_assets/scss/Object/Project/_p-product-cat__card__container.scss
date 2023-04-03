@@ -1,0 +1,12 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-product-cat__card__container{
+    @include mixin.mq(tb){
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    @include mixin.mq(pc){
+        grid-template-columns: repeat(3,1fr);
+    }
+}

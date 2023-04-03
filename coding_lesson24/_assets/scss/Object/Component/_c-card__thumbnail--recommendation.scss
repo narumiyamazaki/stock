@@ -2,7 +2,7 @@
 @use '../../Foundation/mixin';
 
 .c-card__thumbnail--recommendation{
-    width:100%;
+    width:calc(305/va.$sp-design-width*100vw);
     height:calc(182/va.$sp-design-width*100vw);
     background-size:contain;
     margin-bottom:calc(25/va.$sp-design-width*100vw);

@@ -548,6 +548,7 @@ body {
   font-size: 1.6;
   line-height: 1.6;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
 }
 
 .l-header {
@@ -931,6 +932,41 @@ body {
 .p-product-cat__card__wrapper {
   display: flex;
   align-items: center;
+  border: 1px solid #DDDDDD;
+  /*grid gapで対応？
+
+  &:not(:last-child){
+      margin-bottom:calc(20/va.$sp-design-width*100vw);
+      @include mixin.mq(tb){
+          margin-bottom:calc(20/va.$tb-design-width*100vw);
+      }
+      @include mixin.mq(pc){
+          margin-bottom:calc(20/va.$pc-design-width*100vw);
+      }
+  }
+  */
+}
+@media screen and (min-width: 768px) {
+  .p-product-cat__card__wrapper {
+    width: 34.0175953079vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-product-cat__card__wrapper {
+    width: 21.75vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-product-cat__card__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-product-cat__card__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .c-logo--top {
@@ -1183,7 +1219,7 @@ body {
 }
 
 .c-card__thumbnail--recommendation {
-  width: 100%;
+  width: 81.3333333333vw;
   height: 48.5333333333vw;
   background-size: contain;
   margin-bottom: 6.6666666667vw;
@@ -1281,6 +1317,62 @@ body {
   border-right: 2px solid #341E12;
 }
 
+.c-card__thumbnail__product-cat {
+  width: 32vw;
+  height: 32vw;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .c-card__thumbnail__product-cat {
+    width: 7.5vw;
+    height: 7.5vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .c-card__thumbnail__product-cat {
+    width: 7.5vw;
+    height: 7.5vw;
+  }
+}
+
+.cat-resin {
+  background-image: url(../img/thumb_cat-resin.jpg);
+}
+
+.cat-collar {
+  background-image: url(../img/thumb_cat-collar.jpg);
+}
+
+.cat-stuffed-toy {
+  background-image: url(../img/thumb_cat-stuffed-toy.jpg);
+}
+
+.cat-accessories {
+  background-image: url(../img/thumb_cat-accessories.jpg);
+}
+
+.cat-other {
+  background-image: url(../img/thumb_cat-other.jpg);
+}
+
+.c-card__heading3--product-cat {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: clamp(16px, 4.2666666667vw, 18px);
+  color: #341E12;
+  line-height: 2.75;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .c-card__heading3--product-cat {
+    font-size: clamp(18px, 1.7595307918vw, 20px);
+  }
+}
+@media screen and (min-width: 1025px) {
+  .c-card__heading3--product-cat {
+    font-size: clamp(18px, 1.125vw, 20px);
+  }
+}
+
 .u-margin-bottom--35px {
   margin-bottom: min(9.3333333333vw, 35px);
 }
@@ -1295,6 +1387,20 @@ body {
 @media screen and (min-width: 1025px) {
   .u-margin-bottom--20px {
     margin-bottom: 1.25vw;
+  }
+}
+
+.u-margin-left--20px {
+  margin-left: 5.3333333333vw;
+}
+@media screen and (min-width: 768px) {
+  .u-margin-left--20px {
+    margin-left: 1.9550342131vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .u-margin-left--20px {
+    margin-left: 1.25vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
