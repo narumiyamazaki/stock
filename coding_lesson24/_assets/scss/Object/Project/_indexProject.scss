@@ -43,6 +43,8 @@
 
 //consignment-sales
 @use './p-consignment-sales';
+@use './p-consignment-sales__content__wrapper';
+@use './p-consignment-sales__content';
 
 //profile
 @use './p-profile';
