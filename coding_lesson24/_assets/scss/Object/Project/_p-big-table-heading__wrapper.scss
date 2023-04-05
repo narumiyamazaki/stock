@@ -3,6 +3,9 @@
 
 .p-big-table-heading__wrapper{
     background-color: va.$textColor;
-    color: #fff;
     padding:calc(11/va.$sp-design-width*100vw) 0 calc(11/va.$sp-design-width*100vw) calc(10/va.$sp-design-width*100vw);
+    margin-bottom:calc(20/va.$sp-design-width*100vw);
+    @include mixin.mq(pc){
+        margin-bottom:calc(30/va.$pc-design-width*100vw);
+    }
 }

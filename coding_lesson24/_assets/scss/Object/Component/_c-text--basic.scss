@@ -3,7 +3,7 @@
 
 .c-text--basic{
     font-family: va.$baseFont;
-    font-size:max(calc(16/va.$sp-design-width*100vw),16px);
+    font-size:clamp(16px,calc(16/va.$sp-design-width*100vw),18px);
     color: va.$textColor;
     line-height: calc( 28/16 );
     //width:calc(300/va.$sp-design-width*100vw);
@@ -13,5 +13,6 @@
     width:calc(335/va.$sp-design-width*100vw);
     @include mixin.mq(pc){
         width:calc(1084/va.$pc-design-width*100vw);
+        font-size:clamp(16px,calc(16/va.$sp-design-width*100vw),18px);
     }
 }

@@ -10,9 +10,10 @@
     //letter-spacing: calc(/1000 * 1em);
     font-weight: 700;
     text-align: center;
+    margin-bottom:calc(25/va.$sp-design-width*100vw);
     @include mixin.mq(pc){
     line-height: calc( 30/24 );
     font-size:max(calc(30/va.$pc-design-width*100vw),30px);
-    width:auto;
+    margin-bottom:calc(35/va.$pc-design-width*100vw);
     }
 }

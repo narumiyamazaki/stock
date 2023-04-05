@@ -7,7 +7,7 @@
     display: grid;
     gap: calc(20/va.$sp-design-width*100vw);;
     @include mixin.mq(pc){
-        width:calc(1084/va.$sp-design-width*100vw);
+        width:calc(1084/va.$pc-design-width*100vw);
         display: flex;
         gap:0;
         justify-content: space-between;
