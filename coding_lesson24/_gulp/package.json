@@ -15,5 +15,8 @@
     "gulp-notify": "^4.0.0",
     "gulp-plumber": "^1.2.1"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "gulp-sass-glob": "^1.1.0"
+  }
 }
