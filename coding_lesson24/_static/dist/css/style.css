@@ -1222,17 +1222,15 @@ body {
 
 .c-text--news {
   font-family: "Noto Sans JP", sans-serif;
-  font-size: clamp(16px, 4.2666666667vw, 18px);
+  font-size: min(4.2666666667vw, 16px);
   color: #341E12;
-  line-height: 1.5;
   font-weight: 400;
 }
 @media screen and (min-width: 1025px) {
   .c-text--news {
     font-family: "Noto Sans JP", sans-serif;
-    font-size: clamp(16px, 1vw, 18px);
+    font-size: max(1vw, 16px);
     color: #341E12;
-    line-height: 1.5;
     font-weight: 400;
   }
 }
