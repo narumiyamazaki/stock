@@ -1075,6 +1075,20 @@ body {
   }
 }
 
+.p-consignment-sales-heading3 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: max(5.3333333333vw, 20px);
+  color: #fff;
+  line-height: 1.4;
+  font-weight: 700;
+  width: 100%;
+}
+@media screen and (min-width: 1025px) {
+  .p-consignment-sales-heading3 {
+    font-size: max(20px, 1vw);
+  }
+}
+
 .c-logo--top {
   object-fit: cover;
   width: 89.3333333333vw;
