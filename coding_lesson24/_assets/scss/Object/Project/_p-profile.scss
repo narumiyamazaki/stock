@@ -5,6 +5,9 @@
     width:calc(335/va.$sp-design-width*100vw);
     margin: 0 auto;
     padding-bottom:calc(80/va.$sp-design-width*100vw);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     @include mixin.mq(pc){
         width:calc(1084/va.$pc-design-width*100vw);
         margin:0 auto;

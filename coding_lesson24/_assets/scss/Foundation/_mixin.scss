@@ -75,6 +75,13 @@ $breakpoint: (
   font-weight: 400;
 }
 
+@mixin text-16px-bold-sp{
+  font-family: va.$baseFont;
+  font-size:max((16/va.$sp-design-width*100vw),16px);
+  color: va.$textColor;
+  font-weight: 700;
+}
+
 @mixin text-16px-bold-pc{
   font-family: va.$baseFont;
   font-size:max((16/va.$pc-design-width*100vw),16px);

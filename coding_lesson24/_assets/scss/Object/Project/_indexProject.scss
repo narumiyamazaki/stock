@@ -45,8 +45,15 @@
 @use './p-consignment-sales';
 @use './p-consignment-sales__content__wrapper';
 @use './p-consignment-sales__content';
-@use './p-big-table-heading__wrapper';
+@use './p-consignment-sales__shop-info__container';
+@use './p-consignment-sales__text';
+@use './p-consignment-sales__shop-info';
+@use './p-consignment-sales__shop-info--term';
+@use './p-consignment-sales__shop-info--description';
+@use './p-consignment-sales-heading3';
 
 //profile
 @use './p-profile';
-@use './p-consignment-sales-heading3';
+@use './p-profile__heading2';
+@use './p-profile__img';
+@use './p-profile__sns-user-name';
