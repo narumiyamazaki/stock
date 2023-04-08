@@ -57,3 +57,15 @@
 @use './p-profile__heading2';
 @use './p-profile__img';
 @use './p-profile__sns-user-name';
+@use './p-profile__text';
+@use './p-profile__icon__wrapper';
+
+//footer
+@use './p-footer__logo';
+@use './p-footer__contents__wrapper';
+@use './p-footer__nav__wrapper';
+@use './p-footer__nav__item';
+@use './p-footer__nav__items--top';
+@use './p-footer__nav__items--bottom';
+@use './p-footer__right';
+@use './p-footer__nav__item--bottom';

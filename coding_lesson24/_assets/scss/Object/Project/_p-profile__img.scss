@@ -8,5 +8,7 @@
     margin-bottom:calc(20/va.$sp-design-width*100vw);
     @include mixin.mq(pc){
         margin-bottom:calc(20/va.$pc-design-width*100vw);
+        width:calc(140/va.$pc-design-width*100vw);
+        height:calc(140/va.$pc-design-width*100vw);
     }
 }

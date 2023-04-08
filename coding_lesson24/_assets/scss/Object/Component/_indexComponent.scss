@@ -1,5 +1,8 @@
-//header
+//page-top-btn
+@use './c-button__scroll-top';
 
+
+//header
 @use './c-logo--top';
 @use './c-text--top-explanation';
 @use './c-img--mv';
@@ -41,3 +44,11 @@
 @use './c-text--basic';
 @use './c-big-table-heading';
 @use './c-table-heading--consignment-sales';
+
+//profile
+@use './c-icon--twitter';
+@use './c-icon--Instagram';
+@use './c-footer__nav__item--link';
+
+//footer
+@use './c-footer__nav__line';
