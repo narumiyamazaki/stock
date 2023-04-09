@@ -19,56 +19,43 @@
     </head>
 	<body>
         <!--topに戻るボタン-->
-        <header class="l-header">
-            <div class="p-header__top__container">
-                <div class="p-header__top__wrapper">
-                    <h1 class="p-heading1">
-                        <img class="c-logo--top" src="./img/logo_top_header.svg" alt="ハンドメイド猫グッズのお店 ねこのもの l'atelier Queue">
-                    </h1>
-                    <p class="c-text--top-explanation">“Queue(クー)”は、フランス語で「しっぽ」の意味です。<br>猫にも人にも心地好いをモットーに、猫おもちゃ、雑貨を作っています。</p>
-                </div>
-                <div class="c-img--mv"></div>
-                <p class="p-nav__btn">
-                    <a href="javascript:void(0)">
-                        <span>メニューを開く</span>
-                    </a>
-                    <span class="c-btn__text active">menu</span>
-                    <span class="c-btn__text">close</span>
-                </p>
-            </div>
-            <!--gnav-->
-            <div class="p-header__nav__wrapper--sp">
-                <div class="c-logo__header__nav--sp u-margin-bottom--35px"></div>   
-                <nav class="p-header__nav__body--sp">
-                    <ul class="p-header__nav__items--sp">
-                        <li class="p-nav__item"><a class="c-item__link--nav" href="#">トップページ</a></li>
-                        <li class="p-nav__item"><a class="c-item__link--nav" href="./products/index.html">商品一覧</a></li>
-                        <li class="p-nav__item"><a class="c-item__link--nav" href="./blog/index.html">ねこブログ</a></li>
-                        <li class="p-nav__item"><a class="c-item__link--nav" href="./staff/index.html">ねこ店員紹介</a></li>
-                        <li class="p-nav__item"><a class="c-item__link--nav" href="./faq/index.html">よくあるご質問</a></li>
-                        <li class="p-nav__item"><a class="c-item__link--nav" href="./contact/index.html">お問い合わせ</a></li>
-                    </ul>
-                    <ul class="p-header__nav__items--second">
-                        <li class="p-nav__item--second"><a class="c-item__link--second-nav" href="./law/index.html">特定商取引法に関する表記</a></li>
-                        <span class="c-line__nav"></span>
-                        <li class="p-nav__item--second"><a class="c-item__link--second-nav" href="./privacy/index.html">プライバシーポリシー</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <header class="l-header__lower-page">
+            <h1 class="p-heading1">
+                <img class="c-logo--top" src="./img/logo_top_header.svg" alt="ハンドメイド猫グッズのお店 ねこのもの l'atelier Queue">
+            </h1>
             <div class="p-header__nav__wrapper--pc">
                 <nav class="p-header__nav__body--pc">
                     <ul class="p-header__nav__items--pc">
-                        <li class="p-nav__item"><a class="c-item__link--nav" href="./products/index.html">商品一覧</a></li>
-                        <li class="p-nav__item"><a class="c-item__link--nav" href="./blog/index.html">ねこブログ</a></li>
-                        <li class="p-nav__item"><a class="c-item__link--nav" href="./staff/index.html">ねこ店員紹介</a></li>
-                        <li class="p-nav__item"><a class="c-item__link--nav" href="./faq/index.html">よくあるご質問</a></li>
-                        <li class="p-nav__item"><a class="c-item__link--nav" href="./contact/index.html">お問い合わせ</a></li>
+                        <li class="p-nav__item"><a class="c-item__link--nav" href="#">商品一覧</a></li>
+                        <li class="p-nav__item"><a class="c-item__link--nav" href="#">ねこブログ</a></li>
+                        <li class="p-nav__item"><a class="c-item__link--nav" href="#">ねこ店員紹介</a></li>
+                        <li class="p-nav__item"><a class="c-item__link--nav" href="#">よくあるご質問</a></li>
+                        <li class="p-nav__item"><a class="c-item__link--nav" href="#">お問い合わせ</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <main>
-            <article class="">
+        <main class="l-main__lower-page">
+            <ul class="p-breadcrumbs-list">
+                <li class="p-breadcrumbs-list--other">ホーム</li>
+                <span class="c-arrow__breadcrumbs-list"></span>
+                <li class="p-breadcrumbs-list--current"></li>
+            </ul>
+            <article class="p-product-list">
+                <div class="p-product-list__heading__wrapper">
+                    <span classs="p-footprint"></span>
+                    <h2 class="p-product-list__heading2">商品一覧</h2>
+                    <span class="p-product-list__sub-heading">products</span>
+                </div>
+                <ul class="p-product-list__cat">
+                    <li class="p-product-list__cat__item"><a class="c-link__cat__product-list p-product-list__cat__current">すべて</a></li>
+                    <li class="p-product-list__cat__item"><a class="c-link__cat__product-list">レジンブローチ</a></li>
+                    <li class="p-product-list__cat__item"><a class="c-link__cat__product-list">猫用首輪</a></li>
+                    <li class="p-product-list__cat__item"><a class="c-link__cat__product-list">けりぐるみ</a></li>
+                    <li class="p-product-list__cat__item"><a class="c-link__cat__product-list">アクセサリー</a></li>
+                    <li class="p-product-list__cat__item"><a class="c-link__cat__product-list">その他雑貨</a></li>
+                </ul>
+                <!--今日はここまで4/9-->
                 <div class="p-recommendation__card__container">
                     <section class="p-recommendation__card__wrapper">
                         <img class="c-card__thumbnail--recommendation" alt="【焼印付】爪とぎ型キーホルダー" src="./img/dmy_pd001.jpg">
