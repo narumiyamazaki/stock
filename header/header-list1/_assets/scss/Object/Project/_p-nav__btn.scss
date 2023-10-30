@@ -1,6 +1,28 @@
 @use '../../Foundation/mixin';
 
 .p-nav__btn {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    @include mixin.mq(pc){
+        display: none;
+    }
+}
+.p-nav__btn.open{
+    position:relative;
+    z-index: 999;
+}
+
+/*
+
+@use '../../Foundation/mixin';
+
+.p-nav__btn {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
     @include mixin.mq(pc){
         display: none;
     }
@@ -63,3 +85,5 @@
     position:relative;
     z-index: 999;
 }
+
+*/
