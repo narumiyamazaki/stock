@@ -8,13 +8,13 @@ navBtn.addEventListener('click',() => {
     humbergerLine.classList.toggle('open');
 },false);
 
-/*ハンバーガーメニューのクリックイベント
-$('.p-nav__btn').on('click', function () {
-    $(this).toggleClass('open');
-    $('.p-header__nav__body--sp').toggleClass('open');
-    $('.p-nav__btn > a').toggleClass('open');
+//escキー押下でハンバーガーメニューを閉じられるように
+
+window.addEventListener("keydown", () => { if (event.key === "Escape") {
+    navBtn.classList.remove('open');
+    navSp.classList.remove('open');
+  }
 });
-*/
 
 /*サブメニューのクリックイベント*/
 $('.c-icon--has-sub-menu').on('click', function () {

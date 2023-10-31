@@ -2,13 +2,15 @@
 
 .p-humberger__line {
         display: inline-block;
+        position:relative;
         width: 23px;
         height: 2px;
         background-color:#000;
+        bottom:2px;
     &::before {
         position:absolute;
-        top: 15px;
-        left: 14px;
+        bottom: 13px;
+        left: 0;
         content: "";
         width: 23px;
         height: 2px;
@@ -17,8 +19,8 @@
     }
     &::after {
         position:absolute;
-        bottom: 15px;
-        left: 14px;
+        top: 13px;
+        left: 0;
         content: "";
         width: 23px;
         height: 2px;
@@ -29,11 +31,11 @@
         background-color: transparent;
     }
     &.open::before {
-        top: 24px;
+        bottom: 0;
         transform: rotate(-45deg);
     }
     &.open::after {
-        bottom: 24px;
+        top: 0;
         transform: rotate(-135deg);
     }
 }
