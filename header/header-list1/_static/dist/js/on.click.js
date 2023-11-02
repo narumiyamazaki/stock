@@ -13,6 +13,7 @@ navBtn.addEventListener('click',() => {
 window.addEventListener("keydown", () => { if (event.key === "Escape") {
     navBtn.classList.remove('open');
     navSp.classList.remove('open');
+    humbergerLine.classList.remove('open');
   }
 });
 
