@@ -25,6 +25,7 @@
         width: 23px;
         height: 2px;
         background-color:#000;
+        transition: .2s;
     }
     //ハンバーガーメニューのボタンを押したときの挙動
     &.open {
