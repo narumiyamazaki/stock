@@ -2,4 +2,5 @@
 
 .p-nav__sub-menu__btn{
     @extend %c-item__link--nav;
+    display: inline-block;
 }

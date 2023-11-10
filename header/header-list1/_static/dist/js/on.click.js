@@ -1,6 +1,8 @@
 const navBtn = document.querySelector(".p-nav__btn");
 const navSp = document.querySelector(".p-header__nav__body--sp");
 const humbergerLine = document.querySelector(".p-humberger__line");
+const navSubMenuBtn = document.querySelectorAll(".p-nav__sub-menu__btn");
+const navSubMenu = document.querySelectorAll('.p-sub-menu__items');
 let flg = false;
 
 const backgroundFix = (bool) => {
@@ -69,7 +71,14 @@ window.addEventListener("keydown", () => { if (event.key === "Escape") {
 });
 
 
-/*サブメニューのクリックイベント*/
+navSubMenuBtn.forEach(function (){
+  addEventListener('click', function() {
+  this.nextElementSibling.classList.toggle('open');
+  });
+});
+
+/*サブメニューのクリックイベント
 $('.c-icon--has-sub-menu').on('click', function () {
     $(this).siblings('.p-sub-menu__items').toggleClass('open');
 });
+*/
