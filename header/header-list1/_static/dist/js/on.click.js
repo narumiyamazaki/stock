@@ -71,14 +71,10 @@ window.addEventListener("keydown", () => { if (event.key === "Escape") {
 });
 
 
-navSubMenuBtn.forEach(function (){
-  addEventListener('click', function() {
-  this.nextElementSibling.classList.toggle('open');
+navSubMenuBtn.forEach(function (btn) {
+  btn.addEventListener('click', () => {
+    if (this.nextElementSibling) {
+      this.nextElementSibling.classList.toggle('open');
+    }
   });
 });
-
-/*サブメニューのクリックイベント
-$('.c-icon--has-sub-menu').on('click', function () {
-    $(this).siblings('.p-sub-menu__items').toggleClass('open');
-});
-*/
