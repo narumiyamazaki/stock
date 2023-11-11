@@ -4,6 +4,8 @@ const humbergerLine = document.querySelector(".p-humberger__line");
 const navSubMenuBtn = document.querySelectorAll(".p-nav__sub-menu__btn");
 const navSubMenu = document.querySelectorAll('.p-sub-menu__items');
 let flg = false;
+let accordionFlg = false;
+const focusTrap = document.querySelector("#js-focus-trap");
 
 const backgroundFix = (bool) => {
     const scrollingElement = () => {
@@ -71,10 +73,21 @@ window.addEventListener("keydown", () => { if (event.key === "Escape") {
 });
 
 
+//サブメニューのクリックイベント
 navSubMenuBtn.forEach(function (btn) {
-  btn.addEventListener('click', () => {
-    if (this.nextElementSibling) {
-      this.nextElementSibling.classList.toggle('open');
+  btn.addEventListener('click', function() {
+    if(accordionFlg){
+      this.setAttribute("aria-expanded", "false");
+      accordionFlg = false;
+    } else {
+      this.setAttribute("aria-expanded", "true");
+      accordionFlg = true;
     }
+      this.nextElementSibling.classList.toggle('open');
   });
+});
+
+// フォーカストラップ制御
+focusTrap.addEventListener("focus", (e) => {
+  humberger.focus();
 });

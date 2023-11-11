@@ -18,7 +18,7 @@
                 <ul class="p-header__nav__items">
                     <li class="p-nav__item"><a class="c-item__link--nav" href="#">ホーム</a></li>
                     <li class="p-nav__item">
-                        <button class="p-nav__sub-menu__btn">サービス</button>
+                        <button class="p-nav__sub-menu__btn" aria-expanded="false">サービス</button>
                         <ul class="p-sub-menu__items">
                             <li class="p-sub-menu__item"><a class="c-sub-menu__item__link" href="#">サービス A</a></li>
                             <li class="p-sub-menu__item"><a class="c-sub-menu__item__link" href="#">サービス B</a></li>
@@ -28,11 +28,12 @@
                     <li class="p-nav__item"><a class="c-item__link--nav" href="#">会社概要</a></li>
                     <li class="p-nav__item"><a class="c-item__link--nav" href="#">お問い合わせ</a></li>
                 </ul>
+                <div id="js-focus-trap" tabindex="0"></div>
             </nav>
             <!--ロゴ-->
             <img class="c-logo">
             <div class="p-header__nav__wrapper">
-                <button class="p-nav__btn" aria-expanded="false">
+                <button class="p-nav__btn" aria-controls="navigation" aria-expanded="false">
                     <span class="p-humberger__line"></span>
                     <span class="p-humberger__text">メニューを開く</span>
                 </button>
@@ -41,7 +42,7 @@
                         <li class="p-nav__item"><a class="c-item__link--nav" href="#">ホーム</a></li>
                         <li class="p-nav__item">
                             <button class="p-nav__sub-menu__btn">サービス</button>
-                            <ul class="p-sub-menu__items">
+                            <ul class="p-sub-menu__items" aria-expanded="false">
                                 <li class="p-sub-menu__item"><a class="c-sub-menu__item__link" href="#">サービス A</a></li>
                                 <li class="p-sub-menu__item"><a class="c-sub-menu__item__link" href="#">サービス B</a></li>
                                 <li class="p-sub-menu__item"><a class="c-sub-menu__item__link" href="#">サービス C</a></li>
@@ -54,6 +55,7 @@
             </div>
         </header>
         <main class="p-main">
+            <a href="#">この要素にもタブで移動できる？</a>
         </main>
     <script src="js/on.click.js"></script>
 	</body>
