@@ -1,7 +1,10 @@
+@use '../Foundation/mixin';
+
 .l-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row-reverse;
     //headerを固定する場合
     position:fixed;
     z-index: 1;
@@ -9,4 +12,7 @@
     left: 0;
     width: 100%;
     background-color: #fff;
+    @include mixin.mq(pc){
+        flex-direction: row;
+    }
 }

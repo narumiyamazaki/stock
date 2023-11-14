@@ -89,5 +89,5 @@ navSubMenuBtn.forEach(function (btn) {
 
 // フォーカストラップ制御
 focusTrap.addEventListener("focus", (e) => {
-  humberger.focus();
+  navBtn.focus();
 });
