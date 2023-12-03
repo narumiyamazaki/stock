@@ -2,7 +2,7 @@
 @use '../../Foundation/mixin';
 
 .p-service__card__wrapper{
-    display: inline-block;
+    //display: inline-block;
     margin-bottom:calc(20/va.$sp-design-width*100vw);
     &:last-child{
         margin-bottom:0;
