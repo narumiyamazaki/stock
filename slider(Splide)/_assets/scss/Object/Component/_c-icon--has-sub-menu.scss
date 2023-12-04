@@ -1,0 +1,18 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.c-icon--has-sub-menu{
+    position: relative;
+    &::after {
+        position:absolute;
+        display: contents;
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 900;
+        content: "\f078";
+        //margin-left: 10rem;
+        //left:clamp(100px,calc(200/va.$sp-design-width*100vw),500px);
+        @include mixin.mq(pc){
+            left:0;   
+        }
+    }
+}
