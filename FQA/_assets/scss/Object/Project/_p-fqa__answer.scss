@@ -9,7 +9,7 @@
     //基本隠しておき、クリックイベント時に出現
     height: 0;
     overflow: hidden;
-    transition: all .5s linear;
+    transition: all .2s linear;
     padding: 0 max(calc(40/va.$sp-design-width*100vw),40px);
         @include mixin.mq(pc){
         padding: 0 max(calc(40/va.$pc-design-width*100vw),40px);

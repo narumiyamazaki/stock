@@ -603,7 +603,7 @@ body {
   background-color: #fff;
   height: 0;
   overflow: hidden;
-  transition: all 0.5s linear;
+  transition: all 0.2s linear;
   padding: 0 max(5.2151238592vw, 40px);
   /*
   &.is-active{
