@@ -551,6 +551,15 @@ section {
 .splide__slide.splide2__slide3 {
   background-image: url("../img/img3.jpeg");
 }
+.splide__slide.splide2__slide1 {
+  background-image: url("../img/img1.jpeg");
+}
+.splide__slide.splide2__slide2 {
+  background-image: url("../img/img2.jpeg");
+}
+.splide__slide.splide2__slide3 {
+  background-image: url("../img/img3.jpeg");
+}
 
 .splide {
   height: 600px;
