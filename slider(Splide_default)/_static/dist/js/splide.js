@@ -28,16 +28,18 @@ const options2 = {
   //メインスライダー
   const mainSlider = new Splide("#main-slider",{
     cover: true,
-    heightRatio: 0.5,
+    //heightRatio: 0.5,
     type: "loop",
     pagination: false,
     mediaQuery:"min",
     //レスポンシブが必要な場合はこちらを有効に
+    /*
     breakpoints: {
     600: {
       heightRatio: 0.3,
      }
     }
+    */
   });
 
   //サムネイル
