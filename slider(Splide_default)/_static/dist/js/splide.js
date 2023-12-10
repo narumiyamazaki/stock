@@ -14,7 +14,6 @@ const options2 = {
   padding: "5rem", //左右のスライドを5rem分表示させる
   type: "loop", //スライドをループさせる
   focus: "center", //アクティブなスライドを中央に表示する
-
   };
   
   // ②スライド要素とオプション内容を定数「splide」に格納
@@ -63,3 +62,55 @@ const options2 = {
 mainSlider.sync(thumbnails); //mount()よりも先に実行する
 mainSlider.mount(); //メインスライダーをインスタンス化
 thumbnails.mount(); //サムネイルスライダーをインスタンス化
+
+
+//フェードインアニメーションで切り替わるスライダー
+
+const options4 = {
+  perMove: 1,
+  gap: 16,
+  cover: true,
+  heightRatio: 0.5,
+  updateOnMove: true,
+  pagination: false,
+  arrows: false,
+  autoplay: true,
+  //切り替わりの秒数
+  interval: 2500,
+  type: "fade",
+  rewind: true,
+};
+
+const splide4 = new Splide(".splide4", options4);
+splide4.mount();
+
+
+//自動再生
+
+const options5 = {
+  mediaQuery: "min", 
+  fixedWidth: "24rem",
+  heightRatio: 0.3,
+  gap: 16,
+  type: "loop",
+  arrows: false,
+  drag: "free", 
+  flickPower: 100,
+  pagination: false,
+
+  autoScroll: {
+    speed: 0.5, 
+    pauseOnHover: false,
+    pauseOnFocus: true,
+  },
+  breakpoints: {
+    1025: {
+      gap: 24,
+      fixedWidth: "36rem",
+    },
+  },
+};
+
+const splide5 = new Splide(".splide5", options5);
+
+splide5.mount(window.splide.Extensions);

@@ -560,6 +560,24 @@ section {
 .splide__slide.splide3__slide3 {
   background-image: url("../img/img3.jpeg");
 }
+.splide__slide.splide4__slide1 {
+  background-image: url("../img/img1.jpeg");
+}
+.splide__slide.splide4__slide2 {
+  background-image: url("../img/img2.jpeg");
+}
+.splide__slide.splide4__slide3 {
+  background-image: url("../img/img3.jpeg");
+}
+.splide__slide.splide5__slide1 {
+  background-image: url("../img/img1.jpeg");
+}
+.splide__slide.splide5__slide2 {
+  background-image: url("../img/img2.jpeg");
+}
+.splide__slide.splide5__slide3 {
+  background-image: url("../img/img3.jpeg");
+}
 
 .splide {
   height: 600px;
