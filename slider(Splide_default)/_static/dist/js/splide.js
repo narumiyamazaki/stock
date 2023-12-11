@@ -114,3 +114,29 @@ const options5 = {
 const splide5 = new Splide(".splide5", options5);
 
 splide5.mount(window.splide.Extensions);
+
+
+//レスポンシブによってスライダーかどうかを切り替える
+//別途CSSは記述の必要あり
+
+const options6 = {
+  perMove: 1,
+  gap: 16, 
+  cover: true,
+  heightRatio: 0.5,
+  updateOnMove: true,
+  padding: "5rem",
+  type: "loop",
+  focus: "center",
+  trimSpace: false,
+  mediaQuery: "min", 
+  breakpoints: {
+    600: {
+      //600px以下の時はスライダーを破棄
+      destroy: true,
+    },
+  },
+};
+
+const splide6 = new Splide(".splide6", options6);
+splide6.mount();

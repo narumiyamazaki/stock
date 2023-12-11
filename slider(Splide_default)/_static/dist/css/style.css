@@ -578,8 +578,23 @@ section {
 .splide__slide.splide5__slide3 {
   background-image: url("../img/img3.jpeg");
 }
+.splide__slide.splide6__slide1 {
+  background-image: url("../img/img1.jpeg");
+}
+.splide__slide.splide6__slide2 {
+  background-image: url("../img/img2.jpeg");
+}
+.splide__slide.splide6__slide3 {
+  background-image: url("../img/img3.jpeg");
+}
 
 .splide {
   height: 600px;
+}
+.splide:not(.is-active).splide6 .splide__list {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 240px);
 }
 /*# sourceMappingURL=style.css.map */

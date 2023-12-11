@@ -3,4 +3,10 @@
 
 .splide{
     height:600px;
+    &:not(.is-active).splide6 .splide__list{
+        display: grid;
+	    gap: 8px;
+	    grid-template-columns: repeat(3, 1fr);
+	    grid-template-rows: repeat(2, 240px);
+    }
 }
