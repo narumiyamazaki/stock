@@ -3,6 +3,7 @@
 
 .splide{
     height:600px;
+    //セレクタを3つ指定しないと、JS導入によって生成されるCSSに詳細度の関係で負けてしまう。
     &:not(.is-active).splide6 .splide__list{
         display: grid;
 	    gap: 8px;
