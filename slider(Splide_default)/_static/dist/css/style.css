@@ -587,6 +587,24 @@ section {
 .splide__slide.splide6__slide3 {
   background-image: url("../img/img3.jpeg");
 }
+.splide__slide.splide7__slide1 {
+  background-image: url("../img/img1.jpeg");
+  display: block;
+  width: 2.0833333333vw;
+  height: 3.9113428944vw;
+}
+.splide__slide.splide7__slide2 {
+  background-image: url("../img/img2.jpeg");
+  display: block;
+  width: 2.0833333333vw;
+  height: 3.9113428944vw;
+}
+.splide__slide.splide7__slide3 {
+  background-image: url("../img/img3.jpeg");
+  display: block;
+  width: 2.0833333333vw;
+  height: 3.9113428944vw;
+}
 
 .splide {
   height: 600px;
@@ -596,5 +614,11 @@ section {
   gap: 8px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 240px);
+}
+
+.p-sns-icons {
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  gap: 2.6075619296vw;
 }
 /*# sourceMappingURL=style.css.map */
