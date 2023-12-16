@@ -1,0 +1,40 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-footer__sns__text{
+    position: relative;
+    //スマホの時は消えているのでPCサイズのみ
+    font-size:max(calc(13/va.$pc-design-width*100vw),13px);
+    color: #fff;
+    font-family: va.$english;
+    letter-spacing: calc(40/1000*1em);
+    line-height: calc(17/13);
+    margin-right:max(calc(25/va.$sp-design-width*100vw),25px);
+    //margin-bottom:max(calc(25/va.$sp-design-width*100vw),25px);
+    text-transform: uppercase;
+    position: relative;
+    top:3px;
+    @include mixin.mq(pc){
+        writing-mode: vertical-lr;
+        margin-bottom:max(calc(25/va.$pc-design-width*100vw),25px);
+        margin-top: 0;
+        top:0;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        width:max(calc(25/va.$pc-design-width*100vw),25px);
+        height:1px;
+        top:18px;
+        right:0px;
+        background-color: #fff;
+        @include mixin.mq(pc){
+            width:max(calc(23/va.$pc-design-width*100vw),23px);
+            writing-mode: vertical-lr;
+            margin-bottom:max(calc(25/va.$pc-design-width*100vw),25px);
+            transform: rotate(90deg);
+            top:12px;
+            right:8px;
+        }
+    }
+}
