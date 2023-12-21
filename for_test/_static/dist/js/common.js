@@ -1,22 +1,3 @@
-/*トップに戻る
-$(function () {
-    var pagetop = $('#js-pagetop');
-    pagetop.hide();
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 500) {
-        pagetop.fadeIn();
-      } else {
-        pagetop.fadeOut();
-      }
-    });
-    pagetop.click(function () {
-      $('body, html').animate({
-          scrollTop: 0
-      }, 500);
-      return false;
-    });
-  });
-*/
 document.addEventListener('DOMContentLoaded', function () {
   const pagetop = document.querySelector('#js-pagetop');
   pagetop.style.display = 'none';
@@ -42,7 +23,7 @@ function fadeIn(element) {
     let val = parseFloat(element.style.opacity) || 0;
     
     if (val < 1) {
-      val += 0.05; // Adjust the step as needed
+      val += 0.02; // Adjust the step as needed
       element.style.opacity = val;
       requestAnimationFrame(fade);
     }
@@ -71,7 +52,10 @@ function scrollToTop() {
       startTime = currentTime;
     }
 
+    //アニメーションが開始されてからの経過時間
     let progress = currentTime - startTime;
+    
+    //イージング関数
     let easeInOutQuad;
     if (progress / (duration / 2) < 1) {
       easeInOutQuad = 0.5 * Math.pow(progress / (duration / 2), 2);
