@@ -1,0 +1,9 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.u-margin-right__90px--pc{
+    display: inline-block;
+    @include mixin.mq(pc){
+        margin-right:calc(90/va.$pc-design-width*100vw);
+    }
+}

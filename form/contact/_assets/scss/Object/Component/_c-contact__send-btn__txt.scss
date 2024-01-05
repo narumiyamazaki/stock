@@ -1,0 +1,21 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.c-contact__send-btn__txt{
+    //font-family: va.$font-base;
+    color: #FFFFFF;
+    background-color: #24292E;
+    font-size: max(calc(14/va.$sp-design-width*100vw));
+    //letter-spacing: calc(100/1000*1em);
+    //font-weight: 700;
+    text-align: center;
+    line-height: calc(17/14);
+    //padding: max(calc(40/1440*100vw),40px) 0;
+    padding:calc(19/va.$sp-design-width*100vw) 0;
+    width: max(calc(200/va.$sp-design-width*100vw));
+    @include mixin.mq(pc){
+        width: max(calc(200/va.$pc-design-width*100vw));
+        padding: max(calc(19/va.$pc-design-width*100vw)) 0;
+        font-size: max(calc(14/va.$pc-design-width*100vw));
+    }
+}

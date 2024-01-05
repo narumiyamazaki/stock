@@ -1,0 +1,16 @@
+@use '../Foundation/vars' as va;
+@use '../Foundation/mixin';
+
+.l-header{
+    padding:calc(20/va.$sp-design-width*100vw) 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    @include mixin.mq(pc){
+        flex-direction: row;
+        width:max(820/va.$pc-design-width*100vw);
+        padding:calc(120/va.$pc-design-width*100vw) 0; 
+        margin:0 auto;
+    }
+}

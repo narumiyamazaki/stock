@@ -1,0 +1,12 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-works__img__wrapper{
+    display: grid;
+    gap:calc(23/375 *100vw);
+    gap:auto;
+    @include mixin.mq(pc){
+        grid-template-columns: repeat(3,1fr);
+        gap:min(calc(48/840 *100vw),37px);
+    }
+}

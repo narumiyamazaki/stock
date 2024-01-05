@@ -1,0 +1,13 @@
+.p-concept__txt {
+  font-size: 4.2666666667vw;
+  color: #2D2D2D;
+  line-height: 1.6875;
+  font-weight: 500;
+}
+@media screen and (min-width: 834px) {
+  .p-concept__txt {
+    width: 24.7857142857vw;
+    font-size: 1.1428571429vw;
+  }
+}
+/*# sourceMappingURL=p-concept__txt.css.map */
