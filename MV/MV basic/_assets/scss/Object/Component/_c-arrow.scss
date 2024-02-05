@@ -1,0 +1,10 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.c-arrow{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bold;
+    margin-left: 4px;
+    color:va.$more-color;
+    padding:0 2px
+}

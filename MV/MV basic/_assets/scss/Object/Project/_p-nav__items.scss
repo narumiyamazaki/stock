@@ -1,0 +1,30 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-nav__items{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height:calc(451/793 * 100vh);
+    position:relative;
+    top:calc(112/va.$sp-design-width*100vw);
+    @include mixin.mq(pc){
+        position:static;
+        display: none;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        width:max(806/va.$pc-design-width*100vw);
+        height:auto;
+        //ボタンの色に対する中央
+        padding-top:calc(10/va.$pc-design-width*100vw);
+        //ふんわりさせるなら
+        //transition: 1s;
+        //opacity:0;
+        &.is-open{
+            display: flex;
+            //opacity:1;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-mv__first__wrapper{
+    display: none;
+    @include mixin.mq(pc){
+        position: relative;
+        display: block;
+        width:100vw;
+        height:100vh;
+        /* ローディング時に一番上になるように */
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        transition: all 3s;
+    }
+}

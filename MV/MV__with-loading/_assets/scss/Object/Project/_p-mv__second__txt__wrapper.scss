@@ -1,0 +1,19 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-mv__second__txt__wrapper{
+    @include mixin.mq(pc){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:max(1419/va.$pc-design-width*100vw);
+        height:max(793/va.$pc-design-width*100vw);
+        //margin-top:calc(12/va.$pc-design-width*100vw);
+        position:relative;
+        top:calc(-30/va.$pc-design-width*100vw);
+        //MVの高さを100vhに固定する場合
+        max-height: 400px;
+        max-width: 1500px;
+        margin:0 auto;
+    }
+}

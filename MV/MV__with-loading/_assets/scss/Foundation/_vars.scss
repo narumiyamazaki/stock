@@ -1,0 +1,31 @@
+//変数の定義
+
+//サイトの基本設定
+$pc-design-width:1440;
+//$tb-design-width:1023;
+$sp-design-width:375;
+
+//カラーの定義
+$main-color:#233765;
+$sub-color:#FFC048;
+
+$koba-color:#F95858;
+$mine-color:#3082F9;
+$jin-color:#58BF58;
+$yura-color:#8063F4;
+$box-color:#FFF38A;
+$text-color:#2B2B2B;
+$more-color:#888888;
+
+//フォント
+//$font-base:'M PLUS 1p', sans-serif,'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica;
+$sans:'Noto Sans JP', sans-serif;
+$serif:'Noto Serif JP', serif;
+$english: 'EB Garamond', serif;
+
+// メディアクエリのブレイクポイント用変数
+$breakpoints: (
+    'sp': 'screen and (max-width: 414px)',
+    'tb': 'screen and (max-width: 768px)',
+    'pc': 'screen and (max-width: 1024px)',
+  ) !default;

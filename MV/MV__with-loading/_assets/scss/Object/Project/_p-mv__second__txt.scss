@@ -1,0 +1,96 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-mv__second__txt{    
+    &--koba{
+        position:absolute;
+        width:calc(170/va.$sp-design-width*100vw);
+        height:calc(377/va.$sp-design-width*100vw);
+        left:calc(13/va.$sp-design-width*100vw);
+        top:calc(-35/va.$sp-design-width*100vw);
+        background: url('../img/MV/koba.png') no-repeat center center / contain;
+        opacity:0;
+        @include mixin.mq(pc){
+            position:static;
+            width:max(340/va.$pc-design-width*100vw);
+            height:calc(755/va.$pc-design-width*100vw);
+            max-height:700px;
+            max-width:400px;
+            flex:1;
+            display:block;
+        }
+    }
+    &--mine{
+        position:absolute;
+        width:calc(170/va.$sp-design-width*100vw);
+        height:calc(378/va.$sp-design-width*100vw);
+        left:calc(188/va.$sp-design-width*100vw);
+        top:calc(44/va.$sp-design-width*100vw);
+        background: url('../img/MV/mine.png') no-repeat center center / cover;
+        opacity:0;
+        @include mixin.mq(pc){
+            position:static;
+            width:max(340/va.$pc-design-width*100vw);
+            height:calc(755/va.$pc-design-width*100vw);
+            margin-left:max(calc(2/va.$pc-design-width*100vw),2px);
+            flex:1;
+            max-height:700px;
+            max-width:400px;
+        }
+    }
+    &--no{
+        position:absolute;
+        width:calc(150/va.$sp-design-width*100vw);
+        height:calc(123/va.$sp-design-width*100vw);
+        left:calc(92/va.$sp-design-width*100vw);
+        top:calc(250/va.$sp-design-width*100vw);
+        background: url('../img/MV/no.png') no-repeat center center / cover;
+        opacity:0;
+        @include mixin.mq(pc){
+            position:static;
+            width:calc(200/va.$pc-design-width*100vw);
+            height:calc(170/va.$pc-design-width*100vw);
+            flex: 0 0 8%;
+            max-height:700px;
+            max-width:400px;
+        }
+    }
+    &--jin{
+        position:absolute;
+        width:calc(170/va.$sp-design-width*100vw);
+        height:calc(383/va.$sp-design-width*100vw);
+        left:calc(-7/va.$sp-design-width*100vw);
+        top:calc(247/va.$sp-design-width*100vw);
+        background: url('../img/MV/jin.png') no-repeat center center / cover;
+        opacity:0;
+        @include mixin.mq(pc){
+            position:static;
+            width:max(340/va.$pc-design-width*100vw);
+            height:calc(755/va.$pc-design-width*100vw);
+            flex:1;
+            max-height:700px;
+            max-width:400px;
+        }
+    }
+    &--yura{
+        position:absolute;
+        width:calc(170/va.$sp-design-width*100vw);
+        height:calc(379/va.$sp-design-width*100vw);
+        left:calc(150/va.$sp-design-width*100vw);
+        top:calc(353/va.$sp-design-width*100vw);
+        background: url('../img/MV/yura.png') no-repeat center center / cover;
+        transform: rotate(15.71deg);
+        opacity:0;
+        @include mixin.mq(pc){
+            position:relative;
+            width:max(340/va.$pc-design-width*100vw);
+            height:calc(755/va.$pc-design-width*100vw);
+            transform: rotate(0deg);
+            left:0;
+            top:calc(45/va.$pc-design-width*100vw);
+            flex:1;
+            max-height:700px;
+            max-width:400px;
+        }
+    }
+}

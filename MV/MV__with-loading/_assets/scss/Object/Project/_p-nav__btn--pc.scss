@@ -1,0 +1,16 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-nav__btn--pc{
+    display: none;
+    @include mixin.mq(pc){
+        display: block;
+        background: url('../img/nav/menu-btn--open.png') no-repeat center center / contain; 
+        width:calc(47/va.$pc-design-width*100vw);
+        height:calc(69/va.$pc-design-width*100vw);
+        //margin-left:calc(17/va.$pc-design-width*100vw);
+        &.is-open{
+            background: url('../img/nav/menu-btn--close.png') no-repeat center center / contain;
+            }
+        }
+}

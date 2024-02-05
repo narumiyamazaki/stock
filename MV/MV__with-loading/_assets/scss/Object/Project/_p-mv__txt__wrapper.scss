@@ -1,0 +1,10 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-mv__txt__wrapper{
+    position:absolute;
+    z-index:1;
+    top:calc(88/va.$pc-design-width*100vw);
+    left:calc(589/va.$pc-design-width*100vw);
+    text-align: center;
+}

@@ -1,0 +1,15 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-mv__second{
+    position:relative;
+    background: url('../img/MV/MV-second--sp.png') no-repeat center center / cover;
+    width: 100vw;
+    height:calc(784/va.$sp-design-width*100vw);
+    @include mixin.mq(pc){
+        background: url('../img/MV/MV-second--pc.png') no-repeat center center / cover;
+        //デザインカンプ通りの高さ
+        //height:calc(972/va.$pc-design-width*100vw);
+        height:100vh;
+    }
+}

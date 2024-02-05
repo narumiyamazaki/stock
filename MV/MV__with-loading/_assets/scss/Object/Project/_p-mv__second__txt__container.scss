@@ -1,0 +1,11 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-mv__second__txt__container{
+    @include mixin.mq(pc){
+        display: grid;
+        place-items: center;
+        //header分調整の必要があるかも
+        height: 99vh;
+    }
+}

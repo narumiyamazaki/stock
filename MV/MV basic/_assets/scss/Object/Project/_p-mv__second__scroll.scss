@@ -1,0 +1,31 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-mv__second__scroll{
+    display: none;
+    @include mixin.mq(pc){
+            display: flex;
+            position:absolute;
+            z-index: 1;
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            font-weight: bold;
+            color:va.$more-color;
+            line-height: calc(36/va.$pc-design-width*100vw);
+            top:max(calc(500/va.$pc-design-width*100vw),550px);
+            left:calc(666/va.$pc-design-width*100vw);
+            font-size:calc(24/va.$pc-design-width*100vw);
+            opacity: .3;
+            &:hover{
+                opacity: .7;
+            }
+        &::after{
+            content: '';
+            position: absolute;
+            height: 2px;
+            border-radius: 28% 28%;
+            bottom:0;
+            background: va.$more-color;
+            width:calc(110/va.$pc-design-width*100vw);
+        }   
+    }
+}
