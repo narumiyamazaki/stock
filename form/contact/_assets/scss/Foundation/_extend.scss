@@ -1,0 +1,22 @@
+@use './vars' as va;
+@use './mixin';
+
+//extend
+
+%p-heading2{    
+    font-family: 'Meiryo';
+    font-size:calc(18/va.$sp-design-width*100vw);
+    font-weight: bold;
+    color:#333333;
+    text-align: center;
+    line-height: calc(22/18);
+    text-transform: uppercase;
+    @include mixin.mq(pc){
+        font-size:calc(18/va.$pc-design-width*100vw);
+    }
+    /*
+    > :hover{
+        background: #0090aa;
+    }
+    */
+}

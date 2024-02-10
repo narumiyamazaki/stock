@@ -1,0 +1,117 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+//headerの項目
+.fc-header-toolbar{
+  & .fc-toolbar-chunk:nth-child(1){
+    display: none;
+  }
+  & .fc-toolbar-chunk:nth-child(3){
+    display: none;
+  }
+}
+
+//日を真ん中に
+.fc .fc-daygrid-day-top{
+    justify-content: center;
+}
+
+//タイトルを先頭に
+.fc .fc-toolbar{
+    justify-content: center;
+}
+
+.fc-scrollgrid-section-body tbody tr:last-child {
+    display: none;
+}
+
+//日付の高さ
+.fc .fc-daygrid-day-number{
+    padding:0;
+}
+
+//日曜日の色
+.fc-day-sun{
+  background-color: #E5D3CA; 
+}
+
+//土曜日の色
+.fc-day-sat{
+  background-color: #C6D3E5; 
+}
+
+
+//日付の高さ
+.fc-daygrid-day{
+  height:calc(160/va.$sp-design-width*100vw);
+  @include mixin.mq(pc){
+    height:calc(132/va.$pc-design-width*100vw);
+  }
+}
+
+//カレンダー自体の幅調整
+.fc-view-harness{
+  width:calc(336/va.$sp-design-width*100vw);
+  margin:0 auto;
+}
+
+.fc-media-screen{
+  margin:0 auto calc(46/va.$sp-design-width*100vw);;
+  width:calc(336/va.$sp-design-width*100vw);
+  @include mixin.mq(pc){
+    width:calc(1192/va.$pc-design-width*100vw);
+    margin-bottom: 0;
+    //padding-bottom:calc(245/va.$pc-design-width*100vw);
+  }
+}
+
+.fc .fc-scrollgrid-liquid{
+  width:calc(336/va.$sp-design-width*100vw);
+  @include mixin.mq(pc){
+    width:calc(1192/va.$pc-design-width*100vw)
+  }
+}
+
+//カレンダーheaderのmargin削除
+.fc .fc-toolbar.fc-header-toolbar{
+  margin-bottom:0;
+}
+
+//ヘッダーのフォントサイズ
+.fc .fc-toolbar-title{
+  font-size:calc(16/va.$sp-design-width*100vw);
+  @include mixin.mq(pc){
+    font-size:calc(48/va.$pc-design-width*100vw);
+  }
+}
+
+thead{
+  height:calc(10/va.$sp-design-width*100vw);
+  @include mixin.mq(pc){
+    height:calc(10/va.$pc-design-width*100vw);
+  }
+}
+
+.js-event{
+  border: 1px solid #ffff89;
+  padding:calc(8/va.$sp-design-width*100vw);
+  font-size:calc(8/va.$sp-design-width*100vw);
+  @include mixin.mq(pc){
+    padding:0;
+    font-size:calc(16/va.$pc-design-width*100vw);
+  }
+}
+
+.js-holiday{
+  border: 1px solid #006400;
+  font-size:calc(8/va.$sp-design-width*100vw);
+  @include mixin.mq(pc){
+    font-size:calc(16/va.$pc-design-width*100vw);
+  }
+}
+
+//イベントの折り返し
+.fc-h-event .fc-event-title{
+  overflow: visible;
+  white-space: normal;
+}

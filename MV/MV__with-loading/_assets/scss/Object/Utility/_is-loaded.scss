@@ -1,0 +1,7 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.is-loaded{
+    //display: none;
+    opacity: 0;
+}

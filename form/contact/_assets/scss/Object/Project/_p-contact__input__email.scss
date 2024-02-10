@@ -1,0 +1,14 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-contact__input__email{
+    width:calc(345/va.$sp-design-width*100vw);
+    height:calc(43/va.$sp-design-width*100vw);
+    border: 1px solid #C8C8C8;
+    margin-bottom:calc(14/va.$sp-design-width*100vw);
+    @include mixin.mq(pc){
+        margin-bottom:calc(10/va.$pc-design-width*100vw);
+        width:100%;
+        height:min(calc(43/va.$pc-design-width*100vw),43px);
+    }
+}

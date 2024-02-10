@@ -1,0 +1,9 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-nav__item__link{
+    font-size:max(calc(24/va.$sp-design-width*100vw),14px);
+    @include mixin.mq(pc){
+    font-size:max(calc(32/va.$pc-design-width*100vw),16px);
+    }
+}

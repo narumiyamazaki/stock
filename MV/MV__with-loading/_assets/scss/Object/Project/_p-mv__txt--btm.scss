@@ -1,0 +1,7 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-mv__txt--btm{
+    font-size:max(calc(20/va.$pc-design-width*100vw),20px);
+    line-height: calc(24/va.$pc-design-width*100vw);
+}

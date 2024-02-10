@@ -1,0 +1,19 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-nav__btn--sp{
+    width:calc(38/va.$sp-design-width*100vw);
+    height:calc(55/va.$sp-design-width*100vw);
+    background: url('../img/nav/menu-btn-open--sp.png') no-repeat center center / contain;
+    display: block;
+    position:relative;
+    z-index: 2;
+    top:calc(20/va.$sp-design-width*100vw);
+    right:calc(-300/va.$sp-design-width*100vw);
+    &.is-open{
+        background: url('../img/nav/menu-btn-close--sp.png') no-repeat center center / contain;
+    }
+    @include mixin.mq(pc){ 
+        display: none;
+        }
+}

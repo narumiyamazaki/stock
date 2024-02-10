@@ -1,0 +1,16 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.c-news__link{
+    //font-family: va.//$font-Japanese;
+    font-size:max(calc(14/va.$sp-design-width*100vw));
+    color: va.$text-color;
+    line-height: calc( 17/14 );
+    //letter-spacing: calc(/1000 * 1em);
+    //font-weight: 500;
+    @include mixin.mq(pc){
+        font-size:max(calc(14/va.$pc-design-width*100vw));
+        //line-height: calc( / );
+        //letter-spacing: calc(/1000 * 1em);
+    }
+}

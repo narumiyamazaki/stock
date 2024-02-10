@@ -1,0 +1,9 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-mv__first{
+    position:relative;
+    width:100vw;
+    height:max(973/va.$pc-design-width*100vw);
+    object-fit: cover;
+}

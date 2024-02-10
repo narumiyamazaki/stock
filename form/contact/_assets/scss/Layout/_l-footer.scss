@@ -1,0 +1,12 @@
+@use '../Foundation/vars' as va;
+@use '../Foundation/mixin';
+
+.l-footer{
+    display: flex;
+    justify-content: center;
+    padding: calc(12/va.$sp-design-width*100vw) 0;
+    background-color: #24292E;
+    @include mixin.mq(pc){
+        padding: calc(12/va.$pc-design-width*100vw) 0;
+    }
+}

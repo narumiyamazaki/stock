@@ -1,0 +1,43 @@
+@use './p-mv--sp';
+@use './p-mv--pc';
+
+//header
+@use './p-logo';
+@use './p-nav__items';
+@use './p-nav__link';
+@use './p-nav__icon';
+
+//
+@use './p-main';
+
+//about
+@use './p-about';
+@use './p-about__heading2';
+@use './p-about__txt__wrapper';
+@use './p-adress';
+@use './p-tel';
+@use './p-url';
+@use './p-mail';
+@use './p-name';
+@use './p-profile-txt';
+
+//works
+@use './p-works__heading2';
+@use './p-works__img__wrapper';
+@use './p-works__img';
+@use './p-works';
+
+//news
+@use './p-news';
+@use './p-news__heading2';
+@use './p-news__items';
+@use './p-news__item';
+
+//contact
+@use './p-contact';
+@use './p-contact__heading2';
+@use './p-contact__input__name';
+@use './p-contact__input__email';
+@use './p-contact__input__textarea';
+@use './p-contact__label';
+@use './p-contact__item';
