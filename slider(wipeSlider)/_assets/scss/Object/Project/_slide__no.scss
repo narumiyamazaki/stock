@@ -1,0 +1,21 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.slide__no{
+    width: 300px;
+    height:300px;
+    display: grid;
+    place-items: center;
+    &.no1{
+        background: #95a8b9;
+    }
+    &.no2{
+        background: #d5bf19;
+    }
+    &.no3{
+        background: #f0190d;
+    }
+    & > span {
+        font-size:48px;
+    }
+}

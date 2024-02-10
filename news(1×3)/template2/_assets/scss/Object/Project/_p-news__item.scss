@@ -1,0 +1,12 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-news__item{
+    padding:calc(9/va.$sp-design-width*100vw) 0 calc(9/va.$sp-design-width*100vw) calc(33/va.$sp-design-width*100vw);
+    border-bottom: 1px solid va.$text-color;
+    @include mixin.mq(pc){
+        padding:calc(15/va.$pc-design-width*100vw) 0 calc(15/va.$pc-design-width*100vw) calc(46/va.$pc-design-width*100vw);
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,13 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-news__item__inner{
+    height:calc(52/va.$sp-design-width*100vw);
+    display: flex;
+    align-items: center;
+    @include mixin.mq(pc){
+        height:auto;
+        width:max(287/va.$pc-design-width*100vw);
+        justify-content: space-between;
+    }
+}

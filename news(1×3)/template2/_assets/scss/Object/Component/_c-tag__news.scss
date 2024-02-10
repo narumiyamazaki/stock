@@ -1,0 +1,22 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.c-tag__news{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:calc(16/va.$sp-design-width*100vw);
+    background-color: va.$box-color;
+    border-radius: 20px;
+    width:calc(83/va.$sp-design-width*100vw);
+    height:calc(30/va.$sp-design-width*100vw);
+    font-size:calc(14/va.$sp-design-width*100vw);
+    line-height: calc(28/va.$sp-design-width*100vw);
+    @include mixin.mq(pc){
+        margin-left :0;
+        line-height: calc(32/va.$pc-design-width*100vw);
+        width:calc(88/va.$pc-design-width*100vw);
+        height:calc(32/va.$pc-design-width*100vw);
+        font-size:calc(16/va.$pc-design-width*100vw);
+    }
+}
