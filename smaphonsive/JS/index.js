@@ -1,58 +1,34 @@
-const myTarget = document.querySelectorAll('[data-nav-number]');
-
-const myNavTarget = document.querySelectorAll('.is-nav-target');
-
-// IntersectionObserverのオプション設定　...手順(3)の部分
-let myOptions = {
-  root: null,
-  rootMargin: '0px 0px',
-  threshold: '.6'
-};
+document.addEventListener("DOMContentLoaded", function() {
+	const myTarget = document.querySelectorAll('[data-nav-number]');
+	const myNavTarget = document.querySelectorAll('[data-heading-number]');
   
-// myObserverにIntersectionObserverのインスタンスを代入
-const myObserver = new IntersectionObserver(myIntersect, myOptions);
-
-  // 複数の対象要素を監視
-  for (let n = 0; n < myTarget.length; n++) {
-    myObserver.observe(myTarget[n]);
-  }
-
-  //完成コード
-  function myIntersect(entries, myObserver) {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        //下から戻ってきたときにたけのこに付与されているis-activeを削除する
-        //if (entry.target.getAttribute('data-nav-number') == 0) {
-          //myTarget[0].classList.remove('is-current');
-        
-          //Concept
-        if (entry.target.getAttribute('data-nav-number') === 1) {
-          myTarget[0].classList.add('is-current');
-                   
-          //下から戻るとき
-          myTarget[1].classList.remove('is-current');
-        
-        } else if(entry.target.getAttribute('data-nav-number') === 2) {
-          
-          //price
-          //上のis-activeを削除
-          myTarget[0].classList.remove('is-current');
-          
-          myTarget[1].classList.add('is-current');
+	// IntersectionObserverのオプション設定
+	let myOptions = {
+	  root: null,
+	  rootMargin: '0px 0px -30% 0px', // 下から30%分上に余裕を持たせる
+	  threshold: 0 // 交差し始めたらトリガー
+	};
   
-          //下から戻るとき
-          myTarget[2].classList.remove('is-current');
-          
-        //3 Early Release Specials
-        } else if(entry.target.getAttribute('data-nav-number') == 3) {
-          //上のis-activeを削除する
-          myNavTarget[1].classList.remove('is-current');
-        
-          myNavTarget[2].classList.add('is-current');
-          
-          //下から戻るとき
-          myNavTarget[3].classList.remove('is-current');
-          }  
-        }          
-      })   
-    }
+	// IntersectionObserverのインスタンスを作成
+	const myObserver = new IntersectionObserver(myIntersect, myOptions);
+  
+	// 各ヘッダーにオブザーバーを登録
+	myNavTarget.forEach((target) => myObserver.observe(target));
+  
+	// Intersection Observerのコールバック関数
+	function myIntersect(entries) {
+	  entries.forEach((entry) => {
+		const headingNumber = parseInt(entry.target.getAttribute('data-heading-number'), 10);
+		const navItem = document.querySelector(`[data-nav-number="${headingNumber}"]`);
+  
+		if (entry.isIntersecting && navItem) {
+		  // すべての.nav-itemから.is-currentを一旦削除
+		  myTarget.forEach((item) => item.classList.remove('is-current'));
+  
+		  // 現在のビューポートに入っている要素にのみ.is-currentを追加
+		  navItem.classList.add('is-current');
+		}
+	  });
+	}
+  });
+  
