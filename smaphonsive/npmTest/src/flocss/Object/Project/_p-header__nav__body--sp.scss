@@ -8,9 +8,9 @@
     height:100vh;
     width: 100%;
     background-color: #9d8ebe;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    place-items: center;
+	text-align: center;
     @include mixin.mq(pc){
         display: none;
     }

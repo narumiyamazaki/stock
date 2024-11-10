@@ -129,3 +129,32 @@ focusTrap.addEventListener("focus", (e) => {
   navBtn.focus();
 });
 */
+
+// aタグクリック時にハンバーガーメニューを閉じてスムーススクロール
+
+const navLinks = document.querySelectorAll('.p-header__nav__link');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        // ハンバーガーメニューを閉じる
+        navBtn.classList.remove('open');
+        navSp.classList.remove('open');
+        humbergerLine.classList.remove('open');
+        backgroundFix(false);
+        navBtn.setAttribute("aria-expanded", "false");
+        flg = false;
+
+        // スムーススクロール（40pxの余裕を持たせる）
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.querySelector(`#${targetId}`);
+        if (targetElement) {
+            const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - 140;
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+});

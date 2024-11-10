@@ -1,6 +1,12 @@
-.p-header__nav{
-	display:flex;
-	align-items:center;
-	justify-content:center;
-	width:calc((100% - 600px) / 2);
+@use '../../Foundation/mixin';
+@use '../../Foundation/vars' as va;
+
+.p-side-menu__nav{
+	display: none;
+	@include mixin.mq(pc){
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		width:calc((100% - 600px) / 2);
+    }
   }
