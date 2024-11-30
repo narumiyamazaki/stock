@@ -589,39 +589,17 @@ section {
 }
 .splide__slide.splide7__slide1 {
   background-image: url("../img/img1.jpeg");
-  display: block;
-  width: 3.9113428944vw;
-  height: 3.9113428944vw;
-}
-@media screen and (min-width: 1025px) {
-  .splide__slide.splide7__slide1 {
-    width: 2.0833333333vw;
-    height: 2.0833333333vw;
-  }
 }
 .splide__slide.splide7__slide2 {
   background-image: url("../img/img2.jpeg");
-  display: block;
-  width: 3.9113428944vw;
-  height: 3.9113428944vw;
-}
-@media screen and (min-width: 1025px) {
-  .splide__slide.splide7__slide2 {
-    width: 2.0833333333vw;
-    height: 2.0833333333vw;
-  }
 }
 .splide__slide.splide7__slide3 {
   background-image: url("../img/img3.jpeg");
-  display: block;
-  width: 3.9113428944vw;
-  height: 3.9113428944vw;
 }
-@media screen and (min-width: 1025px) {
-  .splide__slide.splide7__slide3 {
-    width: 2.0833333333vw;
-    height: 2.0833333333vw;
-  }
+
+.splide.splide7 {
+  display: grid;
+  place-items: center;
 }
 
 .splide {
