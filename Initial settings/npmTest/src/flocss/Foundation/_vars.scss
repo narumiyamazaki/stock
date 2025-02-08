@@ -1,0 +1,28 @@
+//
+//サイトの基本設定
+$pc-design-width:1920;
+//$tb-design-width:1023;
+$sp-design-width:750;
+
+//カラーの定義
+
+//フォント
+
+//ヒラギノ角ゴ(Mac標準フォントだが、Windowsの場合に代替手段が必要)
+//Noto sans Japaneseに変更
+$fontHiragino:"Noto Sans JP", serif;
+
+//小塚ゴシック(Adobe Fonts)
+//M PLUS 1に変更
+
+$fontKozuka:"M PLUS 1", serif;
+
+//源ノ明朝(Noto Serif)
+$fontMinamoto:"Noto Serif JP", serif;
+
+// メディアクエリのブレイクポイント用変数
+$breakpoints: (
+    'sp': 'screen and (max-width: 414px)',
+    'tb': 'screen and (max-width: 768px)',
+    'pc': 'screen and (max-width: 1024px)'
+  ) !default;

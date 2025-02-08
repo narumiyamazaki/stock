@@ -1,0 +1,4 @@
+node_modules
+# Photoshopファイルを無視
+*.psd
+*.psb

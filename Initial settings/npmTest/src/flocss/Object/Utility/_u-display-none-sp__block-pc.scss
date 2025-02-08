@@ -1,0 +1,9 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.u-display-none-sp__block-pc{
+	display: none;
+	@include mixin.mq(pc){
+        display:block;
+	}
+}

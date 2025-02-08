@@ -1,0 +1,13 @@
+@use './vars' as va;
+
+$breakpoint: (
+  //sp: 'screen and (max-width: 767px)',
+  //tb: 'screen and (min-width: 768px)',
+  pc: 'screen and (min-width: 1024px)'
+);
+
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+   @content;
+  }
+}
