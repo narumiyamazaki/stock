@@ -140,3 +140,22 @@ const options6 = {
 
 const splide6 = new Splide(".splide6", options6);
 splide6.mount();
+
+const options7 = {
+	perMove: 1,
+	gap: 16,
+	cover: true,
+	heightRatio: .5,
+	updateOnMove: true,
+	pagination: false,
+	arrows: true,
+	fixedWidth:'80vw',
+	//切り替わりの秒数
+	interval: 2500,
+	rewind: true,
+	direction:'ttb',
+  };
+  
+  const splide7 = new Splide(".splide7", options7);
+  splide7.mount();
+  
